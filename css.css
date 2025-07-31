@@ -1,0 +1,77 @@
+body {
+
+	font-family: Courier;
+	background-color: #000;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #ff0;
+}
+	a:hover {
+		color: #0ff;
+	}
+
+
+
+#nav {
+	margin: 0 0 10px 0;
+}
+	#nav .btn {
+		display: inline-block;
+		margin: 1px;
+		padding: 1px 10px;
+		border-radius: 5px;
+		background: linear-gradient( to bottom, #000, #005 );
+		color: #fff;
+		cursor: pointer;
+	}
+		#nav .btn:hover {
+			background: linear-gradient( to top, #000, #005 );
+		}
+
+
+
+.spoiler {
+	margin: 0 0 5px 0;
+}
+	.spoiler .spoiler-title {
+		padding: 0 10px;
+		border-radius: 5px;
+		font-weight: bold;
+		background: linear-gradient( to bottom, #000, #005 );
+		cursor: pointer;
+	}
+		.spoiler .spoiler-title:hover {
+			background: linear-gradient( to top, #000, #005 );
+		}
+
+		.spoiler-title-cat {
+			color: #777;
+		}
+
+	.spoiler .spoiler-body {
+		margin: 20px 0 30px 20px;
+	}
+		.spoiler .spoiler-body .link {
+			margin: 0px 0 15px 0px;
+		}
+
+		.spoiler .spoiler-body table {
+			border-collapse: collapse;
+			/*border: 2px dotted blue;*/
+		}	
+			.spoiler .spoiler-body table td {
+				padding: 1px 20px;
+				border: 1px dotted #333;
+				color: #fff;
+
+			}
+			.spoiler .spoiler-body table td.txt-key {
+				font-style: oblique;
+				color: #999;
+			}
+			.spoiler .spoiler-body table td.td-separator {
+				background: linear-gradient( to top, #000, #002 );
+			}
