@@ -143,7 +143,7 @@ function showSpoilers( arr ) {
 		
 
 		htmlSpoilers += `<div class="spoiler" data-id="${ k_spoiler.id }">
-			<div class="spoiler-title">${ htmlType }${ k_spoiler.title }</div>
+			<div class="spoiler-title" onmousedown="return false;">${ htmlType }${ k_spoiler.title }</div>
 			<div class="spoiler-body" hidden>${ htmlBody }</div>
 		</div>`;
 	});
@@ -198,7 +198,8 @@ nav.addEventListener( 'click', function( e ) {
 
 content.addEventListener( 'click', function( e ) {
 
-	if ( e.target.classList.contains( 'spoiler-title' )) {
+	if ( e.target.classList.contains( 'spoiler-title' ) || e.target.closest( '.spoiler-title' )) {
+	//if ( e.target.closest( '.spoiler' )) {
 
 		let elemParent = e.target.closest( '.spoiler' );
 

@@ -46,7 +46,7 @@ a {
 		cursor: pointer;
 	}
 		.spoiler .spoiler-title:hover {
-			background: linear-gradient( to top, #001, #055 );
+			background: linear-gradient( to bottom, #000, #077 );
 		}
 
 		.spoiler-title-cat {
