@@ -1,7 +1,9 @@
 body {
 
 	font-family: Courier;
-	background-color: #000;
+	/*background-color: #000;*/
+	background: linear-gradient( to right, #001, #077 );
+
 	color: #fff;
 }
 
@@ -23,12 +25,12 @@ a {
 		margin: 1px;
 		padding: 1px 10px;
 		border-radius: 5px;
-		background: linear-gradient( to bottom, #000, #005 );
+		background: linear-gradient( to bottom, #001, #077 );
 		color: #fff;
 		cursor: pointer;
 	}
 		#nav .btn:hover {
-			background: linear-gradient( to top, #000, #005 );
+			background: linear-gradient( to top, #001, #077 );
 		}
 
 
@@ -40,11 +42,11 @@ a {
 		padding: 0 10px;
 		border-radius: 5px;
 		font-weight: bold;
-		background: linear-gradient( to bottom, #000, #005 );
+		background: linear-gradient( to bottom, #011, #055 );
 		cursor: pointer;
 	}
 		.spoiler .spoiler-title:hover {
-			background: linear-gradient( to top, #000, #005 );
+			background: linear-gradient( to top, #001, #055 );
 		}
 
 		.spoiler-title-cat {
@@ -73,5 +75,5 @@ a {
 				color: #999;
 			}
 			.spoiler .spoiler-body table td.td-separator {
-				background: linear-gradient( to top, #000, #002 );
+				background: linear-gradient( to bottom, #000, #033 );
 			}
