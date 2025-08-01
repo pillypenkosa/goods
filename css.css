@@ -98,5 +98,17 @@ a {
 
 
 
+footer {
+	text-align: center;
+	/*margin: 0 auto;*/
+}
+
+
+
+	footer img {
+		height: 200px;
+	}
+
+
 
 
