@@ -77,3 +77,26 @@ a {
 			.spoiler .spoiler-body table td.td-separator {
 				background: linear-gradient( to bottom, #000, #033 );
 			}
+
+
+
+
+
+
+
+
+
+.txt-clue-manufacturer {
+	color: #0ff;
+	cursor: help;
+}
+	.txt-clue-manufacturer:hover {
+		color: #0f0;
+	}
+
+
+
+
+
+
+

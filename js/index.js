@@ -13,6 +13,7 @@ const htmlLinkSign = '&#11023;';
 
 
 
+document.querySelector( 'title' ).innerHTML = 'Goods ' + appVersion;
 
 
 
@@ -43,6 +44,9 @@ function showSpoilers( arr ) {
 		if ( k_spoiler.keyval ) {
 
 			//console.log( k_spoiler.keyval );
+			//console.log( objManufacturer );
+
+
 
 			let htmlTBody = '';
 			k_spoiler.keyval.forEach( k_keyval => {
@@ -55,7 +59,7 @@ function showSpoilers( arr ) {
 				} else {
 
 					let htmlVal = '';
-					if ( k_keyval.href || k_keyval.gps ) {
+					if ( k_keyval.href || k_keyval.gps || k_keyval.clue_manufacturer ) {
 
 						if ( k_keyval.href ) 
 							htmlVal = `<a href="${ k_keyval.href }" target="_blank">www.${ k_keyval.v }${ htmlLinkSign }</a>`;
@@ -64,11 +68,56 @@ function showSpoilers( arr ) {
 							htmlVal = `<a href="${ k_keyval.gps }" target="_blank">${ k_keyval.v } (GPS${ htmlLinkSign })</a>`;
 
 
+						let htmlClue = '';
+						if ( k_keyval.clue_manufacturer ) {
+							if ( objManufacturer && objCountry ) {
+
+								if ( objManufacturer[ k_keyval.clue_manufacturer ] ) {
+
+									let manufacturer = objManufacturer[ k_keyval.clue_manufacturer ];
+
+									//console.log( objCountry );
+									//console.log( manufacturer );
+
+									let country = '';
+									if ( manufacturer.country ) {
+										for ( let k_name in manufacturer.country ) {
+
+											if ( objCountry[ k_name ] ) {
+												if ( objCountry[ k_name ].title ) {
+
+													if ( objCountry[ k_name ].title.ua ) 
+														country += `${ objCountry[ k_name ].title.ua }, `;
+
+												}
+											}
+										}
+									}
+
+									htmlClue = country.slice( 0, -2 );
+
+									//console.log( htmlClue );
+
+									if ( objManufacturer[ k_keyval.clue_manufacturer ].year ) {
+
+										htmlClue = `${ htmlClue } (${ objManufacturer[ k_keyval.clue_manufacturer ].year })`;
 
 
+										htmlVal = `<span class="txt-clue-manufacturer" title="${ k_keyval.v }, ${ htmlClue }">${ k_keyval.v }</span>`;
+										
+										//console.log( htmlClue );
+										//console.log( htmlVal );
 
 
+									}
 
+									//console.log( objCountry );
+								}
+							}
+
+							//htmlVal = `<a href="${ k_keyval.gps }" target="_blank">${ k_keyval.v } (GPS${ htmlLinkSign })</a>`;
+							//console.log( 'htmlClue: ', htmlClue );
+						}
 					}
 					else
 						htmlVal = k_keyval.v;
