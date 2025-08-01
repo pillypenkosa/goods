@@ -66,7 +66,7 @@ a {
 		}	
 			.spoiler .spoiler-body table td {
 				padding: 1px 20px;
-				border: 1px dotted #333;
+				border: 1px dotted #777;
 				color: #fff;
 
 			}
@@ -75,7 +75,13 @@ a {
 				color: #999;
 			}
 			.spoiler .spoiler-body table td.td-separator {
-				background: linear-gradient( to bottom, #000, #033 );
+
+
+				padding: 0 0 10px 0;
+				/*background: linear-gradient( to right, #033, #055 );*/
+				border-width: 0;
+
+
 			}
 
 

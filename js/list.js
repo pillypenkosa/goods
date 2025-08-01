@@ -12,6 +12,7 @@ const arrListCat = [
 	{ id: 'hh_techno' 		, title: 'Побутова техніка' 	, }, //household appliances
 	{ id: 'home' 			, title: 'Дім' 					, },
 	{ id: 'clothing' 		, title: 'Одяг' 				, },
+	{ id: 'chemical' 		, title: 'Хімія' 				, },
 	//{ id: 'household' 		, title: 'Домогосподарство' 	, },
 
 
@@ -32,160 +33,33 @@ const arrListDevice = [
 
 
 
-// electronics ----------------------------------------------------------------------
+
+
 {
-	id: 'pc_desktop', title: 'PC', type: 'Компьютер', cat: { electronics: 1, }, 
+	id: 'charger_usb_wuw', title: 'WUW Fast Charger 48w', type: 'Зарядний пристрій', cat: { electronics: 1, },
 	keyval: [
 		
-		{ k: '--- MotherBoard' 		, v: '' 								, },
-		{ k: 'Модель' 				, v: 'Gigabyte Z370 HD3' 				, },
-		{ k: 'Сокет' 				, v: 's-1151' 							, },
-		{ k: 'Чипсет' 				, v: 'Intel Z370' 						, },
-		{ k: 'Тип RAM' 				, v: 'DDR4 * 4 шт' 						, },
-		{ k: 'Об\'єм RAM' 			, v: '64 Гб' 							, },
-		{ k: 'Частоти пам\'яті' 	, v: '2133 МГц, 2400 МГц, 2666 МГц' 	, },
-		
-		{ k: 'Процесори для Z370' 	, v: 'gigabyte.com' 					, href: 'https://www.gigabyte.com/Motherboard/Z370-HD3-rev-10/support#support-cpu' 		, },
-
-		{ k: 'Продавець' 			, v: 'PC Shop' 			, },
-		{ k: 'ElMir' 				, v: 'elmir.ua' 		, href: 'https://elmir.ua/motherboards/motherboard_gigabyte_z370_hd3_s-1151_z370.html' 	, },
-		{ k: 'Rozetka' 				, v: 'rozetka.com.ua' 	, href: 'https://hard.rozetka.com.ua/ua/gigabyte_z370_hd3/p24386964/'					, },
-		{ backspace: true },
-		
-		{ k: '--- CPU' 				, v: '' 					, },
-		{ k: 'Модель' 				, v: 'Intel Core i3-8100' 	, },
-		{ k: 'Частота ядра' 		, v: '3.6 ГГц' 				, },
-		{ k: 'Кількість ядер' 		, v: 4 						, },
-		{ k: 'Тип пам\'яти' 		, v: 'DDR4' 				, },
-		{ k: 'Частота пам\'яті' 	, v: '2400 МГц' 			, },
-		{ k: 'Ядро' 				, v: 'Coffee Lake' 			, },
-		{ k: 'Кеш L1' 				, v: '256 КБ' 				, },
-		{ k: 'Кеш L2' 				, v: '1 МБ' 				, },
-		{ k: 'Кеш L3' 				, v: '6 МБ' 				, },
-		{ k: 'Техпроцес' 			, v: '14 нм' 				, },
-		{ k: 'TDP' 					, v: '65 Вт' 				, },
-
-		{ k: 'Відеоядро' 			, v: 'Intel UHD Graphics 630' 	, },
-		{ k: 'Пропускна здатність' 	, v: '42.7 GB/s' 				, },
-		{ k: 'Шина' 				, v: '128 bit' 					, },
-
-		{ k: 'Продавець' 			, v: 'PC Shop' 					, },
-		{ k: 'ElMir' 				, v: 'elmir.ua' 				, href: 'https://elmir.ua/processors/processor_intel_core_i3-8100_s-1151_3_6ghz_6mb_box_bx80684i38100.html' 	, },
-		{ k: 'Rozetka' 				, v: 'rozetka.com.ua' 			, href: 'https://hard.rozetka.com.ua/intel_core_i3_8100/p23602096/characteristics/' 							, },
-		{ backspace: true },
-
-		{ k: '--- RAM' 			, v: '' 					, },
-		{ k: 'Модель' 			, v: 'HyperX Fury Black' 	, },
-		{ k: 'Код' 				, v: 'HX426C16FB3K2/16' 	, },
-		{ k: 'Тип' 				, v: 'DDR4' 				, },
-		{ k: 'Об\'єм' 			, v: '16 Гб = 8GB * 2' 		, },
-		{ k: 'Частота' 			, v: '2666(1333) МГц' 		, },
-		{ k: 'Таймінги' 		, v: 'CL16' 				, },
-		{ k: 'Напруга' 			, v: '1,2 В' 				, },
-
-		{ k: 'Продавець' 		, v: 'PC Shop' 				, },
-		{ k: 'ElMir' 			, v: 'elmir.ua' 			, href: 'https://elmir.ua/memory_modules/memory_module_hyperx_ddr4_16gb_2x8gb_2666mhz_fury_black_hx426c16fb3k2_16.html', },
-		{ backspace: true },
-
-		{ k: '--- Power AC/DC' 	, v: '', },
-		{ k: 'Модель' 			, v: 'Chieftec Core BBS-700S' 	, },
-		{ k: 'Потужність' 		, v: '700 Вт' 					, },
-		{ k: 'Продавець' 		, v: 'PC Shop' 					, },
-		{ k: 'ElMir' 			, v: 'elmir.ua' 				, href: 'https://elmir.ua/power_supplies/power_supply_unit_700w_chieftec_core_bbs-700s.html', },
-		{ backspace: true },
-
-		{ k: '--- SSD M.2' 	, v: '' 			, },
-		{ k: 'Назва' 		, v: 'Kingston NV1' , },
-		{ k: 'об\'єм' 		, v: '1 TB' 		, },
-		{ k: 'запис' 		, v: '1700 МБ/с' 	, },
-		{ k: 'зчитування' 	, v: '2100 МБ/с' 	, },
-		{ k: 'ключ' 		, v: 'М' 			, },
-
-		{ k: 'Продавець' 	, v: 'ElMir' 		, },
-		{ k: 'ElMir' 		, v: 'elmir.ua' 	, href: 'https://elmir.ua/ua/ssd-drives/ssd-drive_m_2_1tb_kingston_nv1_snvs_1000g.html', },
-		{ backspace: true },
-
-		{ k: '--- SSD SATA-3' 	, v: '' 					, },
-		{ k: 'Назва' 			, v: 'Silicon Power A55' 	, },
-		{ k: 'об\'єм' 			, v: '128 GB' 				, },
-		{ k: 'запис' 			, v: '360 МБ/с' 			, },
-		{ k: 'зчитування' 		, v: '460 МБ/с' 			, },
-		{ k: 'Продавець' 		, v: 'ElMir' 				, },
-		{ k: 'ElMir' 			, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/ssd-drives/ssd-drive_2_5_sata_128gb_silicon_power_a55_sp128gbss3a55s25.html', },
-		{ backspace: true },
-
-		{ k: '--- Монітор' 		, v: '' 								, },
-		{ k: 'Назва' 			, v: 'Samsung' 							, },
-		{ k: 'Модель' 			, v: 'S32D700EAI (LS32D700EAIXCI)' 		, },
-		{ k: 's/n' 				, v: '8806095545035, 0UYNHNBX900040' 	, },
-		{ k: 'Розширення' 		, v: '3840x2160' 						, },
-		{ k: 'Частота' 			, v: '60 Гц' 							, },
-		{ k: 'Матриця' 			, v: 'VA' 								, },
-		{ k: 'Співвідношення' 	, v: '16:9' 							, },
-		{ k: 'Час реакції' 		, v: '5 мс' 							, },
-		{ k: 'HDMI' 			, v: '2.0' 								, },
-		{ k: 'ElMir' 			, v: 'elmir.ua' 					, href: 'https://elmir.ua/ua/monitors/monitor-32-samsung-s32d700eai-ls32d700eaixci.html', },
-		{ backspace: true },
-
+		{ k: 'Зарядний пристрій' 	, v: 'WUW Fast Charger 48w' 	, },
+		{ k: 'модель' 				, v: 'C212' 					, },
+		{ k: 'продавець' 			, v: 'Комп\'ютерний всесвіт' 	, gps: 'https://maps.app.goo.gl/zeagAPopSe8TQ8oX6', },
+		{ k: 'ціна' 				, v: '145 грн' 					, },
+		{ k: 'дата' 				, v: '2025-07-30' 				, },
 	],
 },
 {
-	id: 'lenovo_ideapad_320_15', title: 'Lenovo Ideapad 320-15 IKB', type: 'Ноутбук', cat: { electronics: 1, }, 
+	id: 'samsung_a26', title: 'Samsung A26', type: 'Телефон', cat: { electronics: 1, }, 
 	keyval: [
 		
-		{ k: 'ноутбук' 			, v: 'Lenovo Ideapad 320-15 IKB' 	, },
-		{ k: 'модель' 			, v: '80XL03WBRA' 					, },
-		{ k: 's/n' 				, v: 'PF10DUAV' 					, },
-		{ backspace: true },
-
-		{ k: 'MainBoard' 		, v: 'Lenovo' 			, },
-		{ k: 'model' 			, v: 'LNVNB161216' 		, },
-		{ k: '' 				, v: 'DDR4' 			, },
-		{ backspace: true },
-
-		{ k: 'CPU' 				, v: '' 					, },
-		{ k: '' 				, v: 'Intel Core i3-7130U' 	, },
-		{ k: '' 				, v: '4 * 2.7 GHz' 			, },
-		{ k: '' 				, v: 'Kaby Lake (7)' 		, },
-		{ backspace: true },
-
-		{ k: 'RAM' 				, v: '8 GB // 2 * 4 Гб' 	, },
-		{ k: '' 				, v: 'DDR4' 				, },
-		{ k: '' 				, v: '2133 MHz' 			, },
-		{ k: '' 				, v: 'SODIMM' 				, },
-		{ backspace: true },
-
-		{ k: 'дісплей' 			, v: '15.6&#698;, 1920 x 1080' 							, },
-		{ k: 'відео' 			, v: 'Intel HD Graphic 620' 							, },
-		{ k: '' 				, v: 'nVidia GeForce 640 MX (2 GB)' 					, },
-		{ k: 'SSD' 				, v: '256 GB' 											, },
-		{ backspace: true },
-
-		{ k: 'BIOS' 			, v: ' F2' 							, },
-		{ k: 'Boot' 			, v: ' F12' 						, },
-		{ backspace: true },
-
-		{ k: 'Блок живлення' 	, v: '' 							, },
-		{ k: '- модель' 		, v: 'ADLX65CDGE2A' 				, },
-		{ k: '- input' 			, v: '100-240 V, 1.5 A, 50-60 Hz' 	, },
-		{ k: '- output' 		, v: '20 V, 3.25 A (65 Вт)' 		, },
-		{ backspace: true },
-
-		{ k: 'продавець' 		, v: 'Comfy' 			, gps: 'https://maps.app.goo.gl/gdXKpmaikkyycc99A', }, 	// вул. Героїв Праці, 9
-		{ k: 'ціна' 			, v: '16000 грн' 		, },
-		{ backspace: true },
-
-		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 	, href: 'https://rozetka.com.ua/ua/lenovo_80xl03wbra/p28306433/', },
-		{ k: 'Elmir' 			, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/laptops/notebook_lenovo_ideapad_320-15_80xl03wbra.html', },
-		{ backspace: true },
-
-		{ k: 'Сведения о системе' 		, v: '' 		, },
-		{ k: 'Win + R' 					, v: 'msinfo32' 		, },
-		{ backspace: true },
-
-		{ k: 'Розборка' 			, v: 'youtube.com' 		, href: 'https://www.youtube.com/watch?v=4epRkTuxqLE', },
-		{ backspace: true },
-
+		{ k: 'телефон' 			, v: 'Samsung Galaxy A26 5G' 	, },
+		{ k: 'модель' 			, v: 'SM-A266B/DS' 				, },
+		{ k: 's/n' 				, v: 'R5CY50LX9QL' 				, },
+		{ k: 'IMEI 1' 			, v: '351728903444736' 			, },
+		{ k: 'IMEI 2' 			, v: '352285783444731' 			, },
+		{ k: 'продавець' 		, v: 'Rozetka' 					, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
+		{ k: 'ціна' 			, v: '12000 грн' 				, },
+		{ k: 'дата' 			, v: '2025-07-04' 				, },
+		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 			, href: 'https://rozetka.com.ua/ua/samsung-sm-a266bzkceuc/p484698759/', },
+		{ k: 'Elmir' 			, v: 'elmir.ua' 				, href: 'https://elmir.ua/ua/cell_phones/mobile-phone-samsung-galaxy-a26-5g-8-256gb-black-sm-a266bzkceuc.html', },
 	],
 },
 {
@@ -213,10 +87,38 @@ const arrListDevice = [
 		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 			, href: 'https://rozetka.com.ua/ua/samsung-sm-a266bzkceuc/p484698759/', },		
 	],
 },
+{
+	id: 'headphones_jbl_720bt', title: 'JBL Tune 720 BT', type: 'Навушники', cat: { electronics: 1, },
+	keyval: [
+		
+		{ k: 'Навушники' 		, v: 'JBL Tune 720 BT' 	, },
+		{ k: 'модель' 			, v: 'JBLT720BTBLK' 		, },
+		{ backspace: true },
+
+		{ k: 'продавець' 		, v: 'Vodafon' 				, gps: 'https://maps.app.goo.gl/nWUMVZoFYBLeWAv26', },
+		{ k: 'ціна' 			, v: '3300 грн' 			, },
+		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 		, href: 'https://rozetka.com.ua/ua/jbl_jblt720btblk/p369896661/?gad_source=1&gad_campaignid=17661883199&gbraid=0AAAAADk6sCd3iLfBACBL6OS4CptGJqbqG&gclid=EAIaIQobChMIqezusOPnjgMVpg-iAx3DNALYEAQYBiABEgKnCvD_BwE', },
+	],
+},
 
 
 
-// phone ----------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
 	id: 'xiaomi_redmi_8f', title: 'Xiaomi Redmi 8A', type: 'Телефон', cat: { electronics: 1, }, 
 	keyval: [
@@ -235,53 +137,12 @@ const arrListDevice = [
 		{ k: 'Allo' 			, v: 'allo.ua' 				, href: 'https://allo.ua/ua/products/mobile/xiaomi-redmi-8a-2-32-midnight-black.html?srsltid=AfmBOooXfbqmdQF3x71KBS5MKa4FLh3iMliz4iDfhl1di1s0gW3J6uARl', },	
 	],
 },
-{
-	id: 'samsung_a26', title: 'Samsung A26', type: 'Телефон', cat: { electronics: 1, }, 
-	keyval: [
-		
-		{ k: 'телефон' 			, v: 'Samsung Galaxy A26 5G' 	, },
-		{ k: 'модель' 			, v: 'SM-A266B/DS' 				, },
-		{ k: 's/n' 				, v: 'R5CY50LX9QL' 				, },
-		{ k: 'IMEI 1' 			, v: '351728903444736' 			, },
-		{ k: 'IMEI 2' 			, v: '352285783444731' 			, },
-		{ backspace: true },
 
-		{ k: 'продавець' 		, v: 'Rozetka' 					, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
-		{ k: 'ціна' 			, v: '12000 грн' 				, },
-		{ k: 'дата' 			, v: '2025-07-04' 				, },
-		{ backspace: true },
 
-		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 			, href: 'https://rozetka.com.ua/ua/samsung-sm-a266bzkceuc/p484698759/', },
-		{ k: 'Elmir' 			, v: 'elmir.ua' 				, href: 'https://elmir.ua/ua/cell_phones/mobile-phone-samsung-galaxy-a26-5g-8-256gb-black-sm-a266bzkceuc.html', },
-	],
-},
-{
-	id: 'headphones_jbl_720bt', title: 'JBL Tune 720 BT', type: 'Навушники', cat: { electronics: 1, },
-	keyval: [
-		
-		{ k: 'Навушники' 		, v: 'JBL Tune 720 BT' 	, },
-		{ k: 'модель' 			, v: 'JBLT720BTBLK' 		, },
-		{ backspace: true },
 
-		{ k: 'продавець' 		, v: 'Vodafon' 				, gps: 'https://maps.app.goo.gl/nWUMVZoFYBLeWAv26', },
-		{ k: 'ціна' 			, v: '3300 грн' 			, },
-		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 		, href: 'https://rozetka.com.ua/ua/jbl_jblt720btblk/p369896661/?gad_source=1&gad_campaignid=17661883199&gbraid=0AAAAADk6sCd3iLfBACBL6OS4CptGJqbqG&gclid=EAIaIQobChMIqezusOPnjgMVpg-iAx3DNALYEAQYBiABEgKnCvD_BwE', },
 
-	],
-},
-{
-	id: 'charger_usb_wuw', title: 'WUW Fast Charger 48w', type: 'Зарядний пристрій', cat: { electronics: 1, },
-	keyval: [
-		
-		{ k: 'Зарядний пристрій' 	, v: 'WUW Fast Charger 48w' 	, },
-		{ k: 'модель' 				, v: 'C212' 					, },
-		{ backspace: true },
 
-		{ k: 'продавець' 			, v: 'ПК Плюс' 		, gps: 'https://maps.app.goo.gl/HPNejCbozjcLW8GSA', },
-		{ k: 'ціна' 				, v: '145 грн' 		, },
-		{ k: 'дата' 				, v: '2025-07-30' 	, },
-	],
-},
+
 {
 	id: 'maxtop', title: 'Maxtop Dragon Hair Clipper', type: 'Машинка для стрижки', cat: { hh_techno: 1, },
 	keyval: [
@@ -521,7 +382,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20241130_oil', title: 'Liqui Moly', type: 'Масло', cat: { car: 1, },
+	id: '20241130_oil', title: 'Liqui Moly', type: 'Масло', cat: { car: 1, chemical: 1, },
 	keyval: [
 		{ k: 'Масло моторне' 	, v: ' Liqui Moly' 		, },
 		{ k: 'Маркування' 		, v: '10W-40, ACEA A3/B4, API SN, VW 50101/50500' 		, },
@@ -626,7 +487,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20231201_brake_liquid', title: 'гальмівна', type: 'Рідина', cat: { car: 1, },
+	id: '20231201_brake_liquid', title: 'гальмівна', type: 'Рідина', cat: { car: 1, chemical: 1, },
 	keyval: [
 		{ k: 'Гальмівна рідина' 	, v: '' 				, },
 		{ k: 'Продавець' 			, v: 'Лоск 2/4, Макс' 	, },
@@ -681,7 +542,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20231112_oil_1', title: 'Aral', type: 'Масло моторне', cat: { car: 1, },
+	id: '20231112_oil_1', title: 'Aral', type: 'Масло моторне', cat: { car: 1, chemical: 1, },
 	keyval: [
 		{ k: 'Масло моторне' 	, v: 'Aral' 			, },
 		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 	, },
@@ -690,7 +551,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20231112_oil_4', title: 'Aral', type: 'Масло моторне', cat: { car: 1, },
+	id: '20231112_oil_4', title: 'Aral', type: 'Масло моторне', cat: { car: 1, chemical: 1, },
 	keyval: [
 		{ k: 'Масло моторне' 	, v: 'Aral' 			, },
 		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 	, },
@@ -831,7 +692,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20230804_', title: 'Новий стиль', type: 'Крісло офісне', cat: { car: 1, },
+	id: '20230804_', title: 'Новий стиль', type: 'Крісло офісне', cat: { home: 1, },
 	keyval: [
 		{ k: 'Крісло офісне' 	, v: 'Новий стиль' 						, },
 		{ k: 'Модель' 			, v: 'BOSS KD TILT PL64 (CH) ECO-30' 	, },
@@ -840,20 +701,338 @@ const arrListDevice = [
 		{ k: 'Ціна' 			, v: '3650 грн' 						, },
 	],
 },
+{
+	id: '20230726_muffler', title: 'задній', type: 'Глушник', cat: { car: 1, },
+	keyval: [
+		{ k: 'Глушник задній' 		, v: '' 				, },
+		{ k: 'Продавець' 			, v: 'Лоск 2/4, Макс' 	, },
+		{ k: 'Дата' 				, v: '2023-07-26' 		, },
+		{ k: 'Ціна' 				, v: '2000 грн' 		, },
+	],
+},
+{
+	id: '20230602_ina', title: 'INA', type: 'Гідрокомпенсатори', cat: { car: 1, },
+	keyval: [
+		{ k: 'Гідрокомпенсатори' 	, v: 'INA' 				, },
+		{ k: 'Код' 					, v: '420004010' 		, },
+		{ k: 'Маркування' 			, v: 'F-46516.30.TSTH' 	, },
+		{ k: 'Дата' 				, v: '2023-06-02' 	, },
+		{ k: 'Ціна' 				, v: '1512 грн за 8 шт' 			, },
+	],
+},
+{
+	id: '20230602_shaft_seal', title: 'Elring', type: 'Сальник вала', cat: { car: 1, },
+	keyval: [
+		{ k: 'Сальник вала' 	, v: 'Elring' 					, },
+		{ k: 'Маркування' 		, v: 'ASW F WD FPAC 32x74x10' 	, },
+		{ k: 'Код' 				, v: '325.155' 					, },
+		{ k: 'Дата' 			, v: '2023-06-02' 				, },
+		{ k: 'Ціна' 			, v: '90 грн' 					, },
+	],
+},
+{
+	id: '20230602_gasket', title: 'Elring', type: 'Прокладка', cat: { car: 1, },
+	keyval: [
+		{ k: 'Прокладка' 	, v: 'Elring' 						, },
+		{ k: 'Код' 			, v: '915.653' 						, },
+		{ k: 'Призначення' 	, v: 'для клапанної кришки двигуна' , },
+		{ k: 'Дата' 		, v: '2023-06-02' 					, },
+		{ k: 'Ціна' 		, v: '335 грн' 						, },
+	],
+},
+{
+	id: '20230601_', title: 'JP Group', type: 'Троси ручника', cat: { car: 1, },
+	keyval: [
+		{ k: 'Троси ручника' 	, v: 'JP Group' 						, },
+		{ k: 'Код' 				, v: '1170303700' 						, },
+		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 					, },
+		{ k: 'Дата' 			, v: '2023-06-01' 						, },
+		{ k: 'Ціна' 			, v: '700 грн за 2 шт (лівий/правий)' 	, },
+	],
+},
+{
+	id: '20230518_multi_mat', title: 'MultiMat PRO', type: 'Шумоізоляція', cat: { car: 1, },
+	keyval: [
+		{ k: 'Шумоізоляція' , v: 'MultiMat PRO' 		, },
+		{ k: 'Продавець' 	, v: 'Лоск' 				, },
+		{ k: 'Дата' 		, v: '2023_05_18_1321' 		, },
+		{ k: 'Ціна' 		, v: '1280 грн за 4 листа' 	, },
+	],
+},
+{
+	id: '20230518_vibrex', title: 'Vibrex', type: 'Віброізоляція', cat: { car: 1, },
+	keyval: [
+		{ k: 'Віброізоляція' 	, v: 'Vibrex' 				, },
+		{ k: 'Продавець' 		, v: 'Лоск' 				, },
+		{ k: 'Дата' 			, v: '2023_05_18_' 			, },
+		{ k: 'Ціна' 			, v: '720 грн за 4 листа' 	, },
+	],
+},
+{
+	id: '20230518_oil', title: 'Aral', type: 'Масло моторне', cat: { car: 1, chemical: 1, },
+	keyval: [
+		{ k: 'Масло моторне' 	, v: 'Aral' 			, },
+		{ k: 'Дата' 			, v: '2023-05-18' 		, },
+		{ k: 'Ціна' 			, v: '1000 грн за 4 л' 	, },
+	],
+},
+{
+	id: '20230518_meyle', title: 'Meyle', type: 'Фільтр масляний', cat: { car: 1, },
+	keyval: [
+		{ k: 'Фільтр масляний' 	, v: 'Meyle' 			, },
+		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 	, },
+		{ k: 'Дата' 			, v: '2023-05-18' 		, },
+		{ k: 'Ціна' 			, v: '200 грн' 			, },
+	],
+},
+{
+	id: '20230517_glass', title: 'лобове', type: 'Скло', cat: { car: 1, },
+	keyval: [
+		{ k: 'Скло лобове' 		, v: '' 			, },
+		{ k: 'Продавець' 		, v: 'А/Р Сервіс' 	, gps: 'https://maps.app.goo.gl/eUtXw1mpJU9gFPsp7', },
+		{ k: 'Дата' 			, v: '2023-05-17' 	, },
+		{ k: 'Ціна' 			, v: '2650 грн' 	, },
+	],
+},
+{
+	id: '20230509_relay_67', title: '67', type: 'Реле', cat: { car: 1, },
+	keyval: [
+		{ k: 'Реле 67' 			, v: '' 			, },
+		{ k: 'Призначення' 		, v: 'Бензонасос' 	, },
+		{ k: 'Дата' 			, v: '2023-05-09' 	, },
+		{ k: 'Ціна' 			, v: '270 грн' 		, },
+	],
+},
+{
+	id: '20230508_lamps', title: 'діодні', type: 'Лампи', cat: { car: 1, },
+	keyval: [
+		{ k: 'Лампи діодні' 	, v: '' 				, },
+		{ k: 'Дата' 			, v: '2023-05-08' 		, },
+		{ k: 'Ціна' 			, v: '480 грн за 4 шт' 	, },
+	],
+},
+{
+	id: '20230506_jbl', title: 'JBL', type: 'Колонка Bluetooth', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Bluetooth колонка' 	, v: 'JBL Xtreme Big' 	, },
+		{ k: 'Продавець' 			, v: 'prom.ua' 			, href: 'https://kharkov.prom.ua/ua/p795971389-kolonka-xtreme-big.html?adjust_campaign=share&adjust_adgroup=android&adjust_creative=product&utm_campaign=share_button&utm_medium=referral_link&utm_source=b2c_app_android', },
+		{ k: 'Дата' 				, v: '2023-05-06' 		, },
+		{ k: 'Ціна' 				, v: '665 грн' 			, },
+	],
+},
+{
+	id: '20230502_vag_com', title: 'VAG COM', type: 'Діагностичний адаптер', cat: { car: 1, electronics: 1, },
+	keyval: [
+		{ k: 'Діагностичний адаптер' 	, v: 'VAG COM 22.3' 	, },
+		{ k: 'Продавець' 				, v: 'prom.ua'  		, href: 'https://kharkov.prom.ua/ua/p1700609345-diagnosticheskij-adapter-vcds.html?adjust_campaign=share&adjust_adgroup=android&adjust_creative=product&utm_campaign=share_button&utm_medium=referral_link&utm_source=b2c_app_android', },
+		{ k: 'Дата' 					, v: '2023-05-02' 		, },
+		{ k: 'Ціна' 					, v: '840 грн' 			, },
+	],
+},
+{
+	id: '20230428_xado', title: 'Xado', type: 'Очисник контактів', cat: { chemical: 1, },
+	keyval: [
+		{ k: 'Очисник контактів' 	, v: 'Xado Verylube' 	, },
+		{ k: 'Продавець' 			, v: 'xado.com'			, href: 'https://xado.com/avtomobilnaya-himiya/ochistiteli-razlichnih-sistem-avtomobilya/ochistitel-kontaktov-s-effektom-udaleniya-vlagi' , },
+		{ k: 'Дата' 				, v: '2023-04-28' 		, },
+		{ k: 'Ціна' 				, v: '135 грн' 			, },
+	],
+},
+{
+	id: '20230418_dnipro_m', title: 'Шабельна пила', type: 'Інструмент', cat: { home: 1, },
+	keyval: [
+		{ k: 'Шабельна пила (Лобзик)' 	, v: 'Dnipro-M' 	, },
+		{ k: 'Продавець' 				, v: 'Dnipro-M' 	, gps: 'https://maps.app.goo.gl/yonUHsSrQDgHDj1CA', },
+		{ k: 'Дата' 					, v: '2023-04-18' 	, },
+		{ k: 'Ціна' 					, v: '3800 грн' 	, },
+		{ k: 'Dnipro-M' 				, v: 'dnipro-m.ua' 	, href: 'https://dnipro-m.ua/tovar/sabelnaya-pila-sr-115/?campaignid=17136142487&adgroupid=&targetid=&adid=&network=x&keyword=&gclid=Cj0KCQjwmZejBhC_ARIsAGhCqndlkLZBzSjCdMK964s0F5KjB4-EOGnQ0x23b-p8lpWIP8BtgwqtRI4aAtWdEALw_wcB', },
+	],
+},
+{
+	id: '20230418_jp_group', title: 'JP Group', type: 'Розподільник запалювання', cat: { car: 1, },
+	keyval: [
+		{ k: 'Розподільник запалювання' 	, v: 'JP Group' 	, },
+		{ k: 'Код' 							, v: '1191100500' 	, },
+		{ k: 'Дата' 						, v: '2023-04-18' 	, },
+		{ k: 'Ціна' 						, v: '1200 грн' 	, },
+	],
+},
+{
+	id: '20230401_febi', title: 'Febi', type: 'Реле 21', cat: { car: 1, },
+	keyval: [
+		{ k: 'Реле 21' 		, v: 'Febi' 			, },
+		{ k: 'Призначення' 	, v: 'Поворотники' 		, },
+		{ k: 'Код' 			, v: '11574' 			, },
+		{ k: 'Продавець' 	, v: 'busauto.kh.ua' 	, href: 'https://busauto.kh.ua/ua/p1214881753-febi-11574-rele.html' , },
+		{ k: 'Дата' 		, v: '2023-04-01' 		, },
+		{ k: 'Ціна' 		, v: '185 грн' 			, },
+	],
+},
+{
+	id: '20230330_lpg', title: 'ГБО 4', type: 'Обладнання', cat: { car: 1, },
+	keyval: [
+		{ k: 'ГБО 4' 		, v: '' 						, },
+		{ k: 'Продавець' 	, v: 'Тітов Микола Петрович' 	, },
+		{ k: 'СТО' 			, v: 'LPG Master' 				, gps: 'https://maps.app.goo.gl/oBwBhEhPwsg3aGWX6', },
+		{ k: 'Дата' 		, v: '2023-03-30' 				, },
+		{ k: 'Пробіг' 		, v: '443000 км' 				, },
+		{ k: 'Ціна' 		, v: '9000 грн з установкою' 	, },
+	],
+},
+{
+	id: '20230330_valtek', title: 'Valtek', type: 'Форсунки', cat: { car: 1, },
+	keyval: [
+		{ k: 'Форсунки' 	, v: '' 						, },
+		{ k: 'Кількість' 	, v: '4 шт' 					, },
+		{ k: 'Продавець' 	, v: 'Тітов Микола Петрович' 	, },
+		{ k: 'СТО' 			, v: 'LPG Master' 				, gps: 'https://maps.app.goo.gl/oBwBhEhPwsg3aGWX6', },
+		{ k: 'Дата' 		, v: '2023-03-30' 				, },
+	],
+},
+{
+	id: '20230330_tomasetto', title: 'Tomasetto', type: 'Редуктор', cat: { car: 1, },
+	keyval: [
+		{ k: 'Редуктор' 	, v: 'Tomasetto' 				, },
+		{ k: 'Продавець' 	, v: 'Тітов Микола Петрович' 	, },
+		{ k: 'СТО' 			, v: 'LPG Master' 				, gps: 'https://maps.app.goo.gl/oBwBhEhPwsg3aGWX6', },
+		{ k: 'Дата' 		, v: '2023-03-30' 				, },
+	],
+},
+{
+	id: '20221228_hose', title: 'пожежний', type: 'Шланг', cat: { home: 1, },
+	keyval: [
+		{ k: 'Шланг пожежний' 	, v: '' 						, },
+		{ k: 'Призначення' 		, v: 'для насоса фекального' 	, },
+		{ k: 'Продавець' 		, v: 'Центральний ринок' 		, },
+		{ k: 'Дата' 			, v: '2022-12-28' 				, },
+		{ k: 'Ціна' 			, v: '900 грн = 20 м / 45 грн' 	, },
+	],
+},
+{
+	id: '20221228_delta', title: 'Delta', type: 'Насос фекальний', cat: { home: 1, },
+	keyval: [
+		{ k: 'Насос фекальний' 	, v: 'Delta' 		, },
+		{ k: 'Модель' 			, v: 'WQD' 			, },
+		{ k: 'Продавець' 		, v: 'АкваЕра' 		, gps: 'https://maps.app.goo.gl/DsbTDWofhoqkcQH4A', },
+		{ k: 'Дата' 			, v: '2022-12-28' 	, },
+		{ k: 'Ціна' 			, v: '2500 грн' 	, },
+	],
+},
+{
+	id: '20221211_exide', title: 'Exide', type: 'Акумулятор', cat: { car: 1, },
+	keyval: [
+		{ k: 'Акумулятор' 	, v: 'Exide' 		, },
+		{ k: 'Ємність' 		, v: '64 A/h' 		, },
+		{ k: 'Продавець' 	, v: 'Лоск 10/22' 	, },
+		{ k: 'Дата' 		, v: '2022-12-11' 	, },
+		{ k: 'Ціна' 		, v: '3200 грн' 	, },
+	],
+},
+{
+	id: '20221203_cb_7747', title: 'Crownberg 7747', type: 'Тепловентилятор', cat: { hh_techno: 1, },
+	keyval: [
+		{ k: 'Тепловентилятор' 	, v: 'Crownberg' 	, },
+		{ k: 'Модель' 			, v: 'CB-7747' 		, },
+		{ k: 'Продавець' 		, v: 'prom.ua' 		, href: 'https://prom.ua/ua/p1617063396-teploventilyator-obogrevatel-dujka.html?adjust_campaign=share&adjust_adgroup=android&adjust_creative=product&utm_campaign=share_button&utm_medium=referral_link&utm_source=b2c_app_android', },
+		{ k: 'Дата' 			, v: '2022-12-03' 	, },
+		{ k: 'Ціна' 			, v: '440 грн' 		, },
+	],
+},
+{
+	id: '20221203_cb_7746', title: 'Crownberg 7746', type: 'Тепловентилятор', cat: { hh_techno: 1, },
+	keyval: [
+		{ k: 'Тепловентилятор' 	, v: 'Crownberg' 	, },
+		{ k: 'Модель' 			, v: 'CB-7746' 		, },
+		{ k: 'Продавець' 		, v: 'prom.ua' 		, href: 'https://prom.ua/ua/p1617063394-teploventilyator-obogrevatel-dujka.html?adjust_campaign=share&adjust_adgroup=android&adjust_creative=product&utm_campaign=share_button&utm_medium=referral_link&utm_source=b2c_app_android', },
+		{ k: 'Дата' 			, v: '2022-12-03' 	, },
+		{ k: 'Ціна' 			, v: '440 грн' 		, },
+	],
+},
+{
+	id: '20221203_febi', title: 'Febi', type: 'Масло ГУР', cat: { car: 1, chemical: 1, },
+	keyval: [
+		{ k: 'Масло ГУР' 	, v: 'Febi' 			, },
+		{ k: 'аркування' 	, v: '№ 06161' 			, },
+		{ k: 'Продавець' 	, v: 'Лоск 2/4, Макс' 	, },
+		{ k: 'Дата' 		, v: '2022-12-03' 		, },
+		{ k: 'Ціна' 		, v: '380 грн за 1 л' 	, },
+	],
+},
+{
+	id: '20221203_', title: 'пробка маслозливна', type: 'Болт', cat: { car: 1, },
+	keyval: [
+		{ k: 'Болт-пробка маслозливна' 	, v: '' 				, },
+		{ k: 'Продавець' 				, v: 'Лоск 2/4, Макс' 	, },
+		{ k: 'Дата' 					, v: '2022_12_03_1101' 	, },
+		{ k: 'Ціна' 					, v: '50 грн' 			, },
+	],
+},
+{
+	id: '20221201_ssd', title: 'Kingston NV1', type: 'SSD M.2', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'SSD M.2' 		, v: 'Kingston NV1' 	, },
+		{ k: 'Об\'єм' 		, v: '1 TB' 			, },
+		{ k: 'Код' 			, v: '9KXJKEJ4RC6A66' 	, },
+		{ k: 'Продавець' 	, v: 'elmir.ua' 		, href: 'https://elmir.ua/ssd-drives/ssd-drive_m_2_1tb_kingston_nv1_snvs_1000g.html', },
+		{ k: 'Дата' 		, v: '2022-12-01' 		, },
+		{ k: 'Ціна' 		, v: '2878 грн' 		, },
+	],
+},
+{
+	id: '20221118_wilo', title: 'Wilo', type: 'Насос циркуляційний', cat: { home: 1, },
+	keyval: [
+		{ k: 'Насос циркуляційний' 	, v: 'Wilo' 					, },
+		{ k: 'Модель' 				, v: 'Star-RS 25/6 (4032956)' 	, },
+		{ k: 'Призначення' 			, v: 'для циркуляції води в батареях' 	, },
+		{ k: 'Продавець' 			, v: 'rozetka.com.ua' 			, href: 'https://rozetka.com.ua/wilo_star_rs_25_6_4032956/p5503491/characteristics/', },
+		{ k: 'Дата' 				, v: '2022-11-18' 				, },
+		{ k: 'Ціна' 				, v: '3100 грн' 				, },
+	],
+},
+{
+	id: '20221118_bag', title: 'спальний', type: 'Мішок', cat: { clothing: 1, },
+	keyval: [
+		{ k: 'Мішок спальний' 	, v: '' 				, },
+		{ k: 'Продавець' 		, v: 'вул.Ярославська' 	, gps: 'https://maps.app.goo.gl/HiesR2HpwXe2RxHS9' , },
+		{ k: 'Дата' 			, v: '2022-11-18' 		, },
+		{ k: 'Ціна' 			, v: '1850 грн' 		, },
+	],
+},
+{
+	id: '20221028_aral_4', title: 'Aral', type: 'Масло моторне', cat: { car: 1, chemical: 1, },
+	keyval: [
+		{ k: 'Масло моторне' 	, v: 'Aral Blue Tronic' , },
+		{ k: 'Маркування' 		, v: '10w40, ACEA A3/B4, API SN, VW 501.01/505.00' 		, },
+		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 	, },
+		{ k: 'Дата' 			, v: '2022-10-28' 		, },
+		{ k: 'Кількість' 		, v: '4 л' 				, },
+	],
+},
+{
+	id: '20221028_aral_1', title: 'Aral', type: 'Масло моторне', cat: { car: 1, chemical: 1, },
+	keyval: [
+		{ k: 'Масло моторне' 	, v: 'Aral Blue Tronic' , },
+		{ k: 'Маркування' 		, v: '10w40, ACEA A3/B4, API SN, VW 501.01/505.00' 		, },
+		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 	, },
+		{ k: 'Дата' 			, v: '2022-10-28' 		, },
+		{ k: 'Кількість' 		, v: '1 л' 				, },
+	],
+},
+{
+	id: '20221028_', title: 'Mahle', type: 'Фільтр масляний', cat: { car: 1, },
+	keyval: [
+		{ k: 'Фільтр масляний' 	, v: 'Mahle' 			, clue_manufacturer: 'mahle', },
+		{ k: 'Код' 				, v: 'OC 2640' 			, },
+		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 	, },
+		{ k: 'Дата' 			, v: '2022-10-28' 		, },
+	],
+},
 
 
 
 
 
-
-
-
-
-
-
-
-
-
+/*
 
 
 
@@ -874,6 +1053,7 @@ const arrListDevice = [
 	],
 },
 
+*/
 
 
 
@@ -885,6 +1065,173 @@ const arrListDevice = [
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+{
+	id: 'lenovo_ideapad_320_15', title: 'Lenovo Ideapad 320-15 IKB', type: 'Ноутбук', cat: { electronics: 1, }, 
+	keyval: [
+		
+		{ k: 'ноутбук' 			, v: 'Lenovo Ideapad 320-15 IKB' 	, },
+		{ k: 'модель' 			, v: '80XL03WBRA' 					, },
+		{ k: 's/n' 				, v: 'PF10DUAV' 					, },
+		{ backspace: true },
+
+		{ k: 'MainBoard' 		, v: 'Lenovo' 			, },
+		{ k: 'model' 			, v: 'LNVNB161216' 		, },
+		{ k: '' 				, v: 'DDR4' 			, },
+		{ backspace: true },
+
+		{ k: 'CPU' 				, v: '' 					, },
+		{ k: '' 				, v: 'Intel Core i3-7130U' 	, },
+		{ k: '' 				, v: '4 * 2.7 GHz' 			, },
+		{ k: '' 				, v: 'Kaby Lake (7)' 		, },
+		{ backspace: true },
+
+		{ k: 'RAM' 				, v: '8 GB // 2 * 4 Гб' 	, },
+		{ k: '' 				, v: 'DDR4' 				, },
+		{ k: '' 				, v: '2133 MHz' 			, },
+		{ k: '' 				, v: 'SODIMM' 				, },
+		{ backspace: true },
+
+		{ k: 'дісплей' 			, v: '15.6&#698;, 1920 x 1080' 							, },
+		{ k: 'відео' 			, v: 'Intel HD Graphic 620' 							, },
+		{ k: '' 				, v: 'nVidia GeForce 640 MX (2 GB)' 					, },
+		{ k: 'SSD' 				, v: '256 GB' 											, },
+		{ backspace: true },
+
+		{ k: 'BIOS' 			, v: ' F2' 							, },
+		{ k: 'Boot' 			, v: ' F12' 						, },
+		{ backspace: true },
+
+		{ k: 'Блок живлення' 	, v: '' 							, },
+		{ k: '- модель' 		, v: 'ADLX65CDGE2A' 				, },
+		{ k: '- input' 			, v: '100-240 V, 1.5 A, 50-60 Hz' 	, },
+		{ k: '- output' 		, v: '20 V, 3.25 A (65 Вт)' 		, },
+		{ backspace: true },
+
+		{ k: 'продавець' 		, v: 'Comfy' 			, gps: 'https://maps.app.goo.gl/gdXKpmaikkyycc99A', }, 	// вул. Героїв Праці, 9
+		{ k: 'ціна' 			, v: '16000 грн' 		, },
+		{ backspace: true },
+
+		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 	, href: 'https://rozetka.com.ua/ua/lenovo_80xl03wbra/p28306433/', },
+		{ k: 'Elmir' 			, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/laptops/notebook_lenovo_ideapad_320-15_80xl03wbra.html', },
+		{ backspace: true },
+
+		{ k: 'Сведения о системе' 		, v: '' 		, },
+		{ k: 'Win + R' 					, v: 'msinfo32' 		, },
+		{ backspace: true },
+
+		{ k: 'Розборка' 			, v: 'youtube.com' 		, href: 'https://www.youtube.com/watch?v=4epRkTuxqLE', },
+		{ backspace: true },
+
+	],
+},
+{
+	id: 'pc_desktop', title: 'PC', type: 'Компьютер', cat: { electronics: 1, }, 
+	keyval: [
+		
+		{ k: '--- MotherBoard' 		, v: '' 								, },
+		{ k: 'Модель' 				, v: 'Gigabyte Z370 HD3' 				, },
+		{ k: 'Сокет' 				, v: 's-1151' 							, },
+		{ k: 'Чипсет' 				, v: 'Intel Z370' 						, },
+		{ k: 'Тип RAM' 				, v: 'DDR4 * 4 шт' 						, },
+		{ k: 'Об\'єм RAM' 			, v: '64 Гб' 							, },
+		{ k: 'Частоти пам\'яті' 	, v: '2133 МГц, 2400 МГц, 2666 МГц' 	, },
+		
+		{ k: 'Процесори для Z370' 	, v: 'gigabyte.com' 					, href: 'https://www.gigabyte.com/Motherboard/Z370-HD3-rev-10/support#support-cpu' 		, },
+
+		{ k: 'Продавець' 			, v: 'PC Shop' 			, },
+		{ k: 'ElMir' 				, v: 'elmir.ua' 		, href: 'https://elmir.ua/motherboards/motherboard_gigabyte_z370_hd3_s-1151_z370.html' 	, },
+		{ k: 'Rozetka' 				, v: 'rozetka.com.ua' 	, href: 'https://hard.rozetka.com.ua/ua/gigabyte_z370_hd3/p24386964/'					, },
+		{ backspace: true },
+		
+		{ k: '--- CPU' 				, v: '' 					, },
+		{ k: 'Модель' 				, v: 'Intel Core i3-8100' 	, },
+		{ k: 'Частота ядра' 		, v: '3.6 ГГц' 				, },
+		{ k: 'Кількість ядер' 		, v: 4 						, },
+		{ k: 'Тип пам\'яти' 		, v: 'DDR4' 				, },
+		{ k: 'Частота пам\'яті' 	, v: '2400 МГц' 			, },
+		{ k: 'Ядро' 				, v: 'Coffee Lake' 			, },
+		{ k: 'Кеш L1' 				, v: '256 КБ' 				, },
+		{ k: 'Кеш L2' 				, v: '1 МБ' 				, },
+		{ k: 'Кеш L3' 				, v: '6 МБ' 				, },
+		{ k: 'Техпроцес' 			, v: '14 нм' 				, },
+		{ k: 'TDP' 					, v: '65 Вт' 				, },
+
+		{ k: 'Відеоядро' 			, v: 'Intel UHD Graphics 630' 	, },
+		{ k: 'Пропускна здатність' 	, v: '42.7 GB/s' 				, },
+		{ k: 'Шина' 				, v: '128 bit' 					, },
+
+		{ k: 'Продавець' 			, v: 'PC Shop' 					, },
+		{ k: 'ElMir' 				, v: 'elmir.ua' 				, href: 'https://elmir.ua/processors/processor_intel_core_i3-8100_s-1151_3_6ghz_6mb_box_bx80684i38100.html' 	, },
+		{ k: 'Rozetka' 				, v: 'rozetka.com.ua' 			, href: 'https://hard.rozetka.com.ua/intel_core_i3_8100/p23602096/characteristics/' 							, },
+		{ backspace: true },
+
+		{ k: '--- RAM' 			, v: '' 					, },
+		{ k: 'Модель' 			, v: 'HyperX Fury Black' 	, },
+		{ k: 'Код' 				, v: 'HX426C16FB3K2/16' 	, },
+		{ k: 'Тип' 				, v: 'DDR4' 				, },
+		{ k: 'Об\'єм' 			, v: '16 Гб = 8GB * 2' 		, },
+		{ k: 'Частота' 			, v: '2666(1333) МГц' 		, },
+		{ k: 'Таймінги' 		, v: 'CL16' 				, },
+		{ k: 'Напруга' 			, v: '1,2 В' 				, },
+
+		{ k: 'Продавець' 		, v: 'PC Shop' 				, },
+		{ k: 'ElMir' 			, v: 'elmir.ua' 			, href: 'https://elmir.ua/memory_modules/memory_module_hyperx_ddr4_16gb_2x8gb_2666mhz_fury_black_hx426c16fb3k2_16.html', },
+		{ backspace: true },
+
+		{ k: '--- Power AC/DC' 	, v: '', },
+		{ k: 'Модель' 			, v: 'Chieftec Core BBS-700S' 	, },
+		{ k: 'Потужність' 		, v: '700 Вт' 					, },
+		{ k: 'Продавець' 		, v: 'PC Shop' 					, },
+		{ k: 'ElMir' 			, v: 'elmir.ua' 				, href: 'https://elmir.ua/power_supplies/power_supply_unit_700w_chieftec_core_bbs-700s.html', },
+		{ backspace: true },
+
+		{ k: '--- SSD M.2' 	, v: '' 			, },
+		{ k: 'Назва' 		, v: 'Kingston NV1' , },
+		{ k: 'об\'єм' 		, v: '1 TB' 		, },
+		{ k: 'запис' 		, v: '1700 МБ/с' 	, },
+		{ k: 'зчитування' 	, v: '2100 МБ/с' 	, },
+		{ k: 'ключ' 		, v: 'М' 			, },
+
+		{ k: 'Продавець' 	, v: 'ElMir' 		, },
+		{ k: 'ElMir' 		, v: 'elmir.ua' 	, href: 'https://elmir.ua/ua/ssd-drives/ssd-drive_m_2_1tb_kingston_nv1_snvs_1000g.html', },
+		{ backspace: true },
+
+		{ k: '--- SSD SATA-3' 	, v: '' 					, },
+		{ k: 'Назва' 			, v: 'Silicon Power A55' 	, },
+		{ k: 'об\'єм' 			, v: '128 GB' 				, },
+		{ k: 'запис' 			, v: '360 МБ/с' 			, },
+		{ k: 'зчитування' 		, v: '460 МБ/с' 			, },
+		{ k: 'Продавець' 		, v: 'ElMir' 				, },
+		{ k: 'ElMir' 			, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/ssd-drives/ssd-drive_2_5_sata_128gb_silicon_power_a55_sp128gbss3a55s25.html', },
+		{ backspace: true },
+
+		{ k: '--- Монітор' 		, v: '' 								, },
+		{ k: 'Назва' 			, v: 'Samsung' 							, },
+		{ k: 'Модель' 			, v: 'S32D700EAI (LS32D700EAIXCI)' 		, },
+		{ k: 's/n' 				, v: '8806095545035, 0UYNHNBX900040' 	, },
+		{ k: 'Розширення' 		, v: '3840x2160' 						, },
+		{ k: 'Частота' 			, v: '60 Гц' 							, },
+		{ k: 'Матриця' 			, v: 'VA' 								, },
+		{ k: 'Співвідношення' 	, v: '16:9' 							, },
+		{ k: 'Час реакції' 		, v: '5 мс' 							, },
+		{ k: 'HDMI' 			, v: '2.0' 								, },
+		{ k: 'ElMir' 			, v: 'elmir.ua' 					, href: 'https://elmir.ua/ua/monitors/monitor-32-samsung-s32d700eai-ls32d700eaixci.html', },
+		{ backspace: true },
+
+	],
+},
 
 
 
