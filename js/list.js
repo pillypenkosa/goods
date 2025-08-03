@@ -8,11 +8,19 @@ const arrListCat = [
 
 	{ id: 'all' 			, title: 'Усі' 					, },
 	{ id: 'car' 			, title: 'Авто' 				, },
-	{ id: 'electronics' 	, title: 'Електроніка' 			, },
-	{ id: 'hh_techno' 		, title: 'Побутова техніка' 	, }, //household appliances
+	{ id: 'warstore' 		, title: 'ВійськТорг' 			, },
 	{ id: 'home' 			, title: 'Дім' 					, },
+	{ id: 'electronics' 	, title: 'Електроніка' 			, },
+	{ id: 'tools' 			, title: 'Інструмент' 			, },
 	{ id: 'clothing' 		, title: 'Одяг' 				, },
+	{ id: 'hh_techno' 		, title: 'Техніка обутова' 		, }, //household appliances
 	{ id: 'chemical' 		, title: 'Хімія' 				, },
+
+
+
+
+
+
 	//{ id: 'household' 		, title: 'Домогосподарство' 	, },
 
 
@@ -33,10 +41,18 @@ const arrListDevice = [
 
 
 
-
-
 {
-	id: 'charger_usb_wuw', title: 'WUW Fast Charger 48w', type: 'Зарядний пристрій', cat: { electronics: 1, },
+	id: '20250801_bonro', title: 'Bonro', type: 'Крісло офісне', cat: { home: 1, },
+	keyval: [
+		{ k: 'Крісло офісне' 	, v: 'Bonro B-635' 					, },
+		{ k: 'Модель' 			, v: '42400371' 					, },
+		{ k: 'Продавець' 		, v: 'bonro.ua' 					, gps: 'https://bonro.ua/krislo-ofisne-na-kolesakh-bonro-b-635-chorno-chervone-42400371/', },
+		{ k: 'Дата' 			, v: '2025-08-01' 					, },
+		{ k: 'Ціна' 			, v: '2550 грн + 400 грн доставка' 	, },
+	],
+},
+{
+	id: '20250730_wuw', title: 'WUW Fast Charger 48w', type: 'Зарядний пристрій', cat: { electronics: 1, },
 	keyval: [
 		
 		{ k: 'Зарядний пристрій' 	, v: 'WUW Fast Charger 48w' 	, },
@@ -47,7 +63,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: 'samsung_a26', title: 'Samsung A26', type: 'Телефон', cat: { electronics: 1, }, 
+	id: '20250704_samsung', title: 'Samsung A26', type: 'Телефон', cat: { electronics: 1, }, 
 	keyval: [
 		
 		{ k: 'телефон' 			, v: 'Samsung Galaxy A26 5G' 	, },
@@ -63,7 +79,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: 'samsung_galaxy_tab_a9', title: 'Samsung', type: 'Планшет', cat: { electronics: 1, }, 
+	id: '20250620_samsung', title: 'Samsung', type: 'Планшет', cat: { electronics: 1, }, 
 	keyval: [
 		
 		{ k: 'планшет' 			, v: 'Samsung Galaxy Tab A9' 	, },
@@ -569,7 +585,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20231029_sthor', title: 'Sthor', type: 'Дровокол', cat: { home: 1, },
+	id: '20231029_sthor', title: 'Sthor', type: 'Дровокол', cat: { tools: 1, },
 	keyval: [
 		{ k: 'Дровокол гвинтовий' 	, v: 'Sthor' 		, },
 		{ k: 'Код' 					, v: '22591' 		, },
@@ -692,7 +708,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20230804_', title: 'Новий стиль', type: 'Крісло офісне', cat: { home: 1, },
+	id: '20230804_armchair', title: 'Новий стиль', type: 'Крісло офісне', cat: { home: 1, },
 	keyval: [
 		{ k: 'Крісло офісне' 	, v: 'Новий стиль' 						, },
 		{ k: 'Модель' 			, v: 'BOSS KD TILT PL64 (CH) ECO-30' 	, },
@@ -839,10 +855,9 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20230418_dnipro_m', title: 'Шабельна пила', type: 'Інструмент', cat: { home: 1, },
+	id: '20230418_dnipro_m', title: 'Dnipro-M', type: 'Пила шабельна', cat: { tools: 1, },
 	keyval: [
 		{ k: 'Шабельна пила (Лобзик)' 	, v: 'Dnipro-M' 	, },
-		{ k: 'Продавець' 				, v: 'Dnipro-M' 	, gps: 'https://maps.app.goo.gl/yonUHsSrQDgHDj1CA', },
 		{ k: 'Дата' 					, v: '2023-04-18' 	, },
 		{ k: 'Ціна' 					, v: '3800 грн' 	, },
 		{ k: 'Dnipro-M' 				, v: 'dnipro-m.ua' 	, href: 'https://dnipro-m.ua/tovar/sabelnaya-pila-sr-115/?campaignid=17136142487&adgroupid=&targetid=&adid=&network=x&keyword=&gclid=Cj0KCQjwmZejBhC_ARIsAGhCqndlkLZBzSjCdMK964s0F5KjB4-EOGnQ0x23b-p8lpWIP8BtgwqtRI4aAtWdEALw_wcB', },
@@ -990,7 +1005,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20221118_bag', title: 'спальний', type: 'Мішок', cat: { clothing: 1, },
+	id: '20221118_bag', title: 'спальний', type: 'Мішок', cat: { warstore: 1, },
 	keyval: [
 		{ k: 'Мішок спальний' 	, v: '' 				, },
 		{ k: 'Продавець' 		, v: 'вул.Ярославська' 	, gps: 'https://maps.app.goo.gl/HiesR2HpwXe2RxHS9' , },
@@ -1298,61 +1313,312 @@ const arrListDevice = [
 		{ k: 'Ремінь ГРМ' 	, v: 'Contitech' 		, },
 		{ k: 'Код' 			, v: 'CT 630. 0433 10022022' 		, },
 		{ k: 'Продавець' 	, v: 'Лоск 2/4, Макс' 	, },
-		{ k: 'Дата' 		, v: '2022_06_09_' 		, },
+		{ k: 'Дата' 		, v: '2022-06-09' 		, },
 		{ k: 'Ціна' 		, v: '530 грн' 			, },
 	],
 },
-
-
-
-
-
-
-/*
-
 {
-	id: '', title: '', type: '', cat: { car: 1, },
+	id: '20220607_dnipro_m', title: 'Dnipro-M', type: 'Зарядний пристрій', cat: { car: 1, },
 	keyval: [
-		{ k: '' 		, v: '' 		, },
-		{ k: '' 		, v: '' 		, },
-		{ k: '' 		, v: '' 		, },
-		{ k: '' 		, v: '' 		, },
-		{ k: '' 		, v: '' 		, },
-		{ k: '' 		, v: '' 		, },
-
-		{ k: 'Продавець' 			, v: 'Лоск 2/4, Макс' 	, },
-		{ k: 'Дата' 				, v: '' 		, },
-		{ k: 'Ціна' 				, v: '0 грн' 			, },
+		{ k: 'Зарядний пристрій' 	, v: 'Dnipro-M' 	, },
+		{ k: 'Модель' 				, v: 'BC-16' 		, },
+		{ k: 'Продавець' 			, v: 'Dnipro-M' 	, href: 'https://dnipro-m.ua/tovar/zaryadnoe-ystroistvo-cb-16s/?tab=description', },
+		{ k: '' 					, v: 'Dnipro-M' 	, gps: 'https://maps.app.goo.gl/YFGbJ8g1weQLDe4Z7', },
+		{ k: 'Дата' 				, v: '2022-06-07' 	, },
+		{ k: 'Ціна' 				, v: '1800 грн' 	, },
 	],
 },
+{
+	id: '20220520_pouch', title: 'для магазинів (чорний)', type: 'Підсумок', cat: { warstore: 1, },
+	keyval: [
+		{ k: 'Підсумок' 	, v: 'на чорний бронік' 	, },
+		{ k: 'Призначення' 	, v: 'для 3 магазинів АК' 	, },
+		{ k: 'Продавець' 	, v: 'Армійський' 			, gps: 'https://maps.app.goo.gl/tD2QEPDt9Zn2tAuF7', },
+		{ k: 'Адреса' 		, v: 'вул. Ярославська, 4' 	,  },
+		{ k: 'Дата' 		, v: '2022-05-20' 			, },
+		{ k: 'Ціна' 		, v: '400 грн' 				, },
+	],
+},
+{
+	id: '20220520_balaclava', title: 'чорна', type: 'Балаклава', cat: { warstore: 1, },
+	keyval: [
+		{ k: 'Балаклава' 	, v: 'чорна' 					, },
+		{ k: 'Адреса' 		, v: 'вул. Ярославська, 2/2' 	, },
+		{ k: 'Продавець' 	, v: 'Гвардійський' 			, gps: 'https://maps.app.goo.gl/UQBEFi6KqfBG8PN9A', },
+		{ k: 'Дата' 		, v: '2022-05-20' 				, },
+		{ k: 'Ціна' 		, v: '120 грн' 					, },
+	],
+},
+{
+	id: '20220520_xiaomi', title: 'Xiaomi Poco', type: 'Телефон', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Телефон' 		, v: 'Xiaomi Poco' 				, },
+		{ k: 'Модель' 		, v: 'Poco M3 Pro 5G 4/64GB' 	, },
+		{ k: 'Діагональ' 	, v: '6.5"' 					, },
+		{ k: 'Екран' 		, v: '1080х2400' 				, },
+		{ k: 'Процесор' 	, v: 'MediaTek Dimensity 700' 	, },
+		{ k: '' 			, v: '8 * 2,2 GHz' 				, },
+		{ k: 'RAM' 			, v: '4 GB' 					, },
+		{ k: 'Пам\'ять' 	, v: '64 GB' 					, },
+		{ k: 'Акумулятор' 	, v: '5000  mAh' 				, },
 
+		{ k: 'Продавець' 	, v: 'elmir.ua' 				, href: 'https://elmir.ua/cell_phones/mobile_phone_xiaomi_poco_m3_pro_5g_4_64gb_black_eu.html', },
+		{ k: 'Подарунок' 	, v: 'для Вовки )))' 			, },
+		{ k: 'Дата' 		, v: '2022-05-20' 				, },
+		{ k: 'Ціна' 		, v: '7500 грн' 				, },
+	],
+},
+{
+	id: '20220517_screwdriver', title: 'Dnipro-M', type: 'Шуруповерт', cat: { tools: 1, },
+	keyval: [
+		{ k: 'Шуруповерт' 	, v: 'Dnipro-M' 	, },
+		{ k: 'Модель' 		, v: 'TD-32Q' 		, },
+		{ k: 'Продавець' 	, v: 'dnipro-m.ua' 	, href: 'https://dnipro-m.ua/tovar/drel-shurupovert-setevaya-td-32q/?tab=characteristics', },
+		{ k: 'Дата' 		, v: '2022-05-17' 	, },
+		{ k: 'Ціна' 		, v: '1200 грн' 	, },
+	],
+},
+{
+	id: '20220517_grinder', title: 'Dnipro-M', type: 'Болгарка', cat: { tools: 1, },
+	keyval: [
+		{ k: 'Болгарка' 	, v: 'Dnipro-M' 		, },
+		{ k: 'Потужність' 	, v: '960 Вт' 			, },
+		{ k: 'Продавець' 	, v: 'Dnipro-M' 		, gps: 'https://maps.app.goo.gl/qdnHx4wx36tx5AVWA', },
+		{ k: '' 			, v: 'немає на сайті' 	, },
+		{ k: 'Дата' 		, v: '2022_05_17_1000' 	, },
+		{ k: 'Ціна' 		, v: '1700 грн' 		, },
+	],
+},
+{
+	id: '20220516_canister', title: 'пластикова 20 л', type: 'Каністра', cat: { car: 1, },
+	keyval: [
+		{ k: 'Каністра' 	, v: 'пластикова (червона)' , },
+		{ k: 'Призначення' 	, v: 'для бензину' 			, },
+		{ k: 'Об\'єм' 		, v: '20 л' 				, },
+		{ k: 'Продавець' 	, v: 'Автоград' 			, },
+		{ k: 'Дата' 		, v: '2022-05-16' 			, },
+		{ k: 'Ціна' 		, v: '600 грн' 				, },
+	],
+},
+{
+	id: '20220516_funnel ', title: 'воронка', type: 'Лійка', cat: { car: 1, },
+	keyval: [
+		{ k: 'Лійка' 		, v: 'воронка пластикова чорна' 	, },
+		{ k: 'Призначення' 	, v: 'для бензину' 					, },
+		{ k: 'Продавець' 	, v: 'Автоград' 					, },
+		{ k: 'Дата' 		, v: '2022-05-16' 					, },
+		{ k: 'Ціна' 		, v: '100 грн' 						, },
+	],
+},
+{
+	id: '20220515_powerbank', title: 'no name', type: 'PowerBank', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Power Bank' 	, v: '' 				, },
+		{ k: '' 			, v: 'No Name' 			, },
+		{ k: 'Ємність' 		, v: '10000 mAh' 		, },
+		{ k: 'Продавець' 	, v: 'Павлюченко Ігор' 	, },
+		{ k: 'Дата' 		, v: '2022_05_15_2200' 	, },
+		{ k: 'Ціна' 		, v: '400 грн' 			, },
+	],
+},
+{
+	id: '20220504_door_handle_br', title: 'Topran (зп)', type: 'Ручка дверей', cat: { car: 1, },
+	keyval: [
+		{ k: 'Ручка дверей' , v: 'Topran' 			, },
+		{ k: 'Призначення' 	, v: 'Задня права' 	, },
+		{ k: 'Продавець' 	, v: 'Лоск 2/4, Макс' 	, },
+		{ k: 'Дата' 		, v: '2022-05-04' 		, },
+		{ k: 'Ціна' 		, v: '320 грн' 			, },
+	],
+},
+{
+	id: '20220504_door_handle_bl', title: 'Topran (зл)', type: 'Ручка дверей', cat: { car: 1, },
+	keyval: [
+		{ k: 'Ручка дверей' , v: 'Topran' 			, },
+		{ k: 'Призначення' 	, v: 'Задня ліва' 		, },
+		{ k: 'Продавець' 	, v: 'Лоск 2/4, Макс' 	, },
+		{ k: 'Дата' 		, v: '2022-05-04' 		, },
+		{ k: 'Ціна' 		, v: '320 грн' 			, },
+	],
+},
+{
+	id: '20220504_door_handle_tl', title: 'Topran (пл)', type: 'Ручка дверей', cat: { car: 1, },
+	keyval: [
+		{ k: 'Ручка дверей' , v: 'Topran' 				, },
+		{ k: 'Призначення' 	, v: 'Водійська з дротом' 	, },
+		{ k: '' 			, v: 'дріт не потрібен' 	, },
+		{ k: 'Продавець' 	, v: 'Лоск 2/4, Макс' 		, },
+		{ k: 'Дата' 		, v: '2022-05-04' 			, },
+		{ k: 'Ціна' 		, v: '500 грн' 				, },
+	],
+},
+{
+	id: '20220504_febi', title: 'Febi', type: 'Рігеля', cat: { car: 1, },
+	keyval: [
+		{ k: 'Рігеля' 		, v: 'Febi' 						, },
+		{ k: '' 			, v: 'Шпільки-упори замків дверей' 	, },
+		{ k: '' 			, v: 'Шайбы тонкі, згинаються' 		, },
+		{ k: 'Продавець' 	, v: 'Лоск 2/4, Макс' 				, },
+		{ k: 'Дата' 		, v: '2022-05-04' 					, },
+		{ k: 'Ціна' 		, v: '160 грн за 4 шт' 				, },
+	],
+},
+{
+	id: '20220504_vag', title: 'VAG', type: 'Кліпси', cat: { car: 1, },
+	keyval: [
+		{ k: 'Кліпси дверних ручек' 	, v: 'VAG' 							, },
+		{ k: '' 						, v: 'П-образні білі пластмаски' 	, },
+		{ k: 'Продавець' 				, v: 'Лоск 2/4, Макс' 				, },
+		{ k: 'Дата' 					, v: '2022-05-04' 					, },
+		{ k: 'Ціна' 					, v: '200 грн за 4 шт' 				, },
+	],
+},
+{
+	id: '20220422_bushing', title: 'стабілізатора', type: 'Втулки', cat: { car: 1, },
+	keyval: [
+		{ k: 'Втулки стабілізатора' , v: 'резинові' 		, },
+		{ k: 'Продавець' 			, v: 'Лоск 2/4, Макс' 	, },
+		{ k: 'Дата' 				, v: '2022-04-22' 		, },
+		{ k: 'Ціна' 				, v: '150 грн за 2 шт' 	, },
+	],
+},
+{
+	id: '20220422_brake_shoe', title: 'гальмівні', type: 'Колодки', cat: { car: 1, },
+	keyval: [
+		{ k: 'Гальмівні колодки' 	, v: '' 				, },
+		{ k: 'Продавець' 			, v: 'Лоск 2/4, Макс' 	, },
+		{ k: 'Дата' 				, v: '2022-04-22' 		, },
+		{ k: 'Ціна' 				, v: '900 грн за 8 шт' 	, },
+	],
+},
+{
+	id: '20220422_meyle', title: 'Meyle', type: 'Амортизатори', cat: { car: 1, },
+	keyval: [
+		{ k: 'Стійки-амортизатори' 	, v: 'Meyle' 				, },
+		{ k: 'Призначення' 			, v: 'передні ліва/права' 	, },
+		{ k: 'Продавець' 			, v: 'Лоск 2/4, Макс' 		, },
+		{ k: 'Дата' 				, v: '2022-04-22' 			, },
+		{ k: 'Ціна' 				, v: '3300 грн за 2 шт' 	, },
+	],
+},
+{
+	id: '20220410_camera', title: 'Media-Tech', type: 'Web-камера', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Web-камера' 	, v: 'Media-Tech' 		, },
+		{ k: 'Модель' 		, v: 'LOOK V MT4107' 	, },
+		{ k: 'Продавець' 	, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/web_camera/web_camera_media-tech_look_v_mt4107_black.html', },
+		{ k: 'Дата' 		, v: '2022_04_10_1000' 	, },
+	],
+},
+{
+	id: '20220402_philips', title: 'Philips', type: 'Машинка для стрижки', cat: { hh_techno: 1, },
+	keyval: [
+		{ k: 'Машинка для стрижки' 	, v: 'Philips' 			, },
+		{ k: 'Модель' 				, v: 'HC3510/15' 		, },
+		{ k: 'Продавець' 			, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/clippers_trimmers/shearer_philips_hc3510_15.html', },
+		{ k: 'Дата' 				, v: '2022-04-02' 		, },
+	],
+},
+{
+	id: '20211209_winso', title: 'Winso', type: 'Компресор', cat: { car: 1, },
+	keyval: [
+		{ k: 'Компресор' 	, v: 'Winso' 		, },
+		{ k: 'Призначення' 	, v: 'для колес' 	, },
+		{ k: 'Продавець' 	, v: 'Лоск 11/49' 	, },
+		{ k: 'Дата' 		, v: '2021-12-09' 	, },
+		{ k: 'Ціна' 		, v: '0 грн' 		, },
+	],
+},
+{
+	id: '20211209_filter', title: 'Масляний фільтр', type: 'Масляний фільтр', cat: { car: 1, },
+	keyval: [
+		{ k: 'Фільтр масляний' 	, v: '' 			, },
+		{ k: 'Продавець' 		, v: 'Лоск 9/97' 	, },
+		{ k: 'Дата' 			, v: '2021-12-09' 	, },
 
-
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	],
+},
+{
+	id: '20211209_valvoline', title: 'Valvoline', type: 'Масло моторне', cat: { car: 1, chemical: 1, },
+	keyval: [
+		{ k: 'Масло моторне' 	, v: 'Valvoline MaxLife' 			, },
+		{ k: 'Маркування' 		, v: '10w40 Synthetic Technology' 	, },
+		{ k: 'Допуск' 			, v: 'VW 50200/50500' 				, },
+		{ k: 'Двигуни' 			, v: 'Бензин, газ, дизель' 			, },
+		{ k: 'Продавець' 		, v: 'Лоск 9/97' 					, },
+		{ k: 'Дата' 			, v: '2021-12-09' 					, },
+		{ k: 'Ціна' 			, v: '750 грн за 5 л' 				, },
+	],
+},
+{
+	id: '20210000_beru', title: 'Beru ZEF 561', type: 'Дроти свічні', cat: { car: 1, },
+	keyval: [
+		{ k: 'Дроти ВВ (свічні)' 	, v: 'Beru' 					, },
+		{ k: 'Модель' 				, v: 'ZEF 561' 					, },
+		{ k: 'Код' 					, v: '0300.890.561' 			, },
+		{ k: 'Призначення' 			, v: 'для свічок' 				, },
+		{ k: 'Продавець' 			, v: 'СТО на пушці в Комарівці' , },
+		{ k: 'Дата' 				, v: '~ 2021 рік' 				, },
+	],
+},
+{
+	id: '20210000_bosch', title: 'Bosch', type: 'Лямбда-зонд', cat: { car: 1, },
+	keyval: [
+		{ k: 'Лямбда-зонд' 	, v: 'Bosch' 					, },
+		{ k: 'Код' 			, v: '0 258 005 133' 			, },
+		{ k: 'Продавець' 	, v: 'СТО на пушці в Комарівці' , },
+		{ k: 'Дата' 		, v: '~ 2021 рік' 				, },
+	],
+},
+{
+	id: '20210000_pipe_branch', title: 'ДМРВ-колектора', type: 'Патрубок (хобот)', cat: { car: 1, },
+	keyval: [
+		{ k: 'Патрубок' 	, v: 'хобот' 					, },
+		{ k: 'Призначення' 	, v: 'для колектора від ДМРВ' 	, },
+		{ k: 'Продавець' 	, v: 'Автоград' 				, },
+		{ k: 'Дата' 		, v: '~ 2021 рік' 				, },
+		{ k: 'Ціна' 		, v: '500 грн (б/в)' 			, },
+	],
+},
+{
+	id: '20210000_dmrv', title: 'Bosch', type: 'ДМРВ', cat: { car: 1, },
+	keyval: [
+		{ k: 'ДМРВ' 		, v: ' Bosch' 			, },
+		{ k: 'Продавець' 	, v: 'Автоград' 		, },
+		{ k: 'Дата' 		, v: '~ 2021 рік' 		, },
+		{ k: 'Ціна' 		, v: '2700 грн (б/в)' 	, },
+	],
+},
+{
+	id: '20201015_battery', title: 'для ДБЖ', type: 'Акумулятори', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Акумулятори' 		, v: '' 					, },
+		{ k: 'Модель' 			, v: 'HR1234WF2' 			, },
+		{ k: 'Маркування' 		, v: 'CSB 12В 9Ач' 			, },
+		{ k: 'Призначення' 		, v: 'для безперебійника' 	, },
+		{ k: 'Продавець' 		, v: 'ElMir' 				, },
+		{ k: 'Дата' 			, v: '2020-10-15' 			, },
+	],
+},
+{
+	id: '20200810_bremi', title: 'Bremi', type: 'Котушка запалювання', cat: { car: 1, },
+	keyval: [
+		{ k: 'Котушка запалювання' 	, v: 'Bremi' 				, },
+		{ k: 'Продавець' 			, v: 'Лоск, InsideParts UA' , },
+		{ k: 'Дата' 				, v: '2020-08-10' 			, },
+		{ k: 'Ціна' 				, v: '900 грн' 				, },
+	],
+},
+{
+	id: '20191119_mirta', title: 'Mirta', type: 'Ваги підлогові', cat: { home: 1, },
+	keyval: [
+		{ k: 'Ваги підлогові' 	, v: 'Mirta' 		, },
+		{ k: 'Маркування' 		, v: 'SB-3120' 		, },
+		{ k: 'Продавець' 		, v: 'ElMir' 		, href: 'https://elmir.ua/ua/household_scales/scales_mirta_sb-3120.html', },
+		{ k: 'Дата' 			, v: '2019-11-19' 	, },
+		{ k: 'Ціна' 			, v: '0 грн' 		, },
+	],
+},
 {
 	id: 'lenovo_ideapad_320_15', title: 'Lenovo Ideapad 320-15 IKB', type: 'Ноутбук', cat: { electronics: 1, }, 
 	keyval: [
@@ -1403,8 +1669,8 @@ const arrListDevice = [
 		{ k: 'Elmir' 			, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/laptops/notebook_lenovo_ideapad_320-15_80xl03wbra.html', },
 		{ backspace: true },
 
-		{ k: 'Сведения о системе' 		, v: '' 		, },
-		{ k: 'Win + R' 					, v: 'msinfo32' 		, },
+		{ k: 'Сведения о системе' 	, v: '' 		, },
+		{ k: 'Win + R' 				, v: 'msinfo32' 		, },
 		{ backspace: true },
 
 		{ k: 'Розборка' 			, v: 'youtube.com' 		, href: 'https://www.youtube.com/watch?v=4epRkTuxqLE', },
@@ -1412,6 +1678,116 @@ const arrListDevice = [
 
 	],
 },
+{
+	id: '20180312_seagate', title: 'Seagate Barracuda', type: 'HDD', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Диск HDD' 	, v: 'Seagate Barracuda' , },
+		{ k: 'Form' 		, v: 'SATA' 			, },
+		{ k: 'Об\'єм' 		, v: '2 TB' 			, },
+		{ k: 'Продавець' 	, v: 'ElMir' 			, },
+		{ k: 'Дата' 		, v: '2018-03-12' 		, },
+	],
+},
+{
+	id: '20180123_a55', title: 'Silicon Power', type: 'SSD', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Диск SSD' 	, v: 'Silicon Power' 	, },
+		{ k: 'Модель' 		, v: 'A55' 				, },
+		{ k: 'Form' 		, v: 'SATA' 			, },
+		{ k: 'Об\'єм' 		, v: 'GB' 				, },
+		{ k: 'Продавець' 	, v: 'ElMir' 			, },
+		{ k: 'Дата' 		, v: '2018-01-23' 		, },
+		{ k: 'Ціна' 		, v: '1480 грн' 		, },
+	],
+},
+{
+	id: '20170929_flash', title: 'GoodRam', type: 'USB Flash', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'USB Flash' 	, v: 'GoodRam' 		, },
+		{ k: 'Маркування' 	, v: 'UTS3' 		, },
+		{ k: 'Об\'єм' 		, v: '64 GB' 		, },
+		{ k: 'Продавець' 	, v: 'ElMir' 		, },
+		{ k: 'Дата' 		, v: '2017-09-29' 	, },
+	],
+},
+{
+	id: '20080616_mustek', title: 'Mustek', type: 'UPS ДЖБ', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Джерело безперебійного живлення' 	, v: 'Mustek' 				, },
+		{ k: 'Модель' 							, v: 'PowerMust 1400 USB' 	, },
+		{ k: 'Продавець' 						, v: 'ElMir' 				, },
+		{ k: 'Дата' 							, v: '2008-06-16' 			, },
+	],
+},
+{
+	id: '20080307_lg', title: 'LG Flatron', type: 'Монітор', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Монітор' 		, v: 'LG Flatron' 					, },
+		{ k: 'Модель' 		, v: 'L204WT' 						, },
+		{ k: 'Діагональ' 	, v: '20"' 							, },
+		{ k: 'Технологія' 	, v: 'TFT LCD' 						, },
+		{ k: 'Продавець' 	, v: 'відділ в Універмазі Харків' 	, },
+		{ k: 'Дата' 		, v: '2008_03_07_1600' 				, },
+		{ k: 'Ціна' 		, v: '1500 грн' 					, },
+	],
+},
+{
+	id: '20071121_casio', title: 'Casio', type: 'Сінтезатор', cat: { car: 1, },
+	keyval: [
+		{ k: 'Сінтезатор' 	, v: 'Casio' 		, },
+		{ k: 'Модель' 		, v: 'CDP 100' 		, },
+		{ k: 'Продавець' 	, v: 'Атланта-Шоу' 	, },
+		{ k: 'Дата' 		, v: '2007-11-21' 	, },
+		{ k: 'Ціна' 		, v: '3510 грн' 	, },
+	],
+},
+
+
+
+
+
+/*
+
+{
+	id: '', title: '', type: '', cat: { car: 1, },
+	keyval: [
+		{ k: '' 		, v: '' 		, },
+		{ k: '' 		, v: '' 		, },
+		{ k: '' 		, v: '' 		, },
+		{ k: '' 		, v: '' 		, },
+		{ k: '' 		, v: '' 		, },
+		{ k: '' 		, v: '' 		, },
+
+		{ k: 'Продавець' 			, v: '' 	, },
+		{ k: 'Дата' 				, v: '' 		, },
+		{ k: 'Ціна' 				, v: '0 грн' 			, },
+	],
+},
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
 	id: 'pc_desktop', title: 'PC', type: 'Компьютер', cat: { electronics: 1, }, 
 	keyval: [
