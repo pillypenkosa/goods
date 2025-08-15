@@ -390,6 +390,19 @@ const arrListDevice = [
 },
 
 
+
+
+{
+	id: '20250812_f19_tws', title: 'Bluetooth F19 TWS', type: 'Гарнітура', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Bluetooth гарнітура' 	, v: 'F19 TWS' 			, },
+		{ k: 'Модель' 				, v: '87344006' 		, },
+		{ k: 'Продавець' 			, v: 'Rozetka' 			, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
+		{ k: 'Дата' 				, v: '2025-08-12' 		, },
+		{ k: 'Ціна' 				, v: '500 грн' 			, },
+		{ k: 'Rozetka' 				, v: 'rozetka.com.ua' 	, href: 'https://rozetka.com.ua/ua/441711929/p441711929/', },
+	],
+},
 {
 	id: '20250801_bonro', title: 'Bonro', type: 'Крісло офісне', cat: { home: 1, },
 	keyval: [
@@ -405,24 +418,24 @@ const arrListDevice = [
 	keyval: [
 		
 		{ k: 'Зарядний пристрій' 	, v: 'WUW Fast Charger 48w' 	, },
-		{ k: 'модель' 				, v: 'C212' 					, },
-		{ k: 'продавець' 			, v: 'Комп\'ютерний всесвіт' 	, gps: 'https://maps.app.goo.gl/zeagAPopSe8TQ8oX6', },
-		{ k: 'ціна' 				, v: '145 грн' 					, },
-		{ k: 'дата' 				, v: '2025-07-30' 				, },
+		{ k: 'Модель' 				, v: 'C212' 					, },
+		{ k: 'Продавець' 			, v: 'Комп\'ютерний всесвіт' 	, gps: 'https://maps.app.goo.gl/zeagAPopSe8TQ8oX6', },
+		{ k: 'Ціна' 				, v: '145 грн' 					, },
+		{ k: 'Дата' 				, v: '2025-07-30' 				, },
 	],
 },
 {
 	id: '20250704_samsung', title: 'Samsung A26', type: 'Телефон', cat: { electronics: 1, }, 
 	keyval: [
 		
-		{ k: 'телефон' 			, v: 'Samsung Galaxy A26 5G' 	, },
-		{ k: 'модель' 			, v: 'SM-A266B/DS' 				, },
+		{ k: 'Телефон' 			, v: 'Samsung Galaxy A26 5G' 	, },
+		{ k: 'Модель' 			, v: 'SM-A266B/DS' 				, },
 		{ k: 's/n' 				, v: 'R5CY50LX9QL' 				, },
 		{ k: 'IMEI 1' 			, v: '351728903444736' 			, },
 		{ k: 'IMEI 2' 			, v: '352285783444731' 			, },
-		{ k: 'продавець' 		, v: 'Rozetka' 					, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
-		{ k: 'ціна' 			, v: '12000 грн' 				, },
-		{ k: 'дата' 			, v: '2025-07-04' 				, },
+		{ k: 'Продавець' 		, v: 'Rozetka' 					, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
+		{ k: 'Ціна' 			, v: '12000 грн' 				, },
+		{ k: 'Дата' 			, v: '2025-07-04' 				, },
 		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 			, href: 'https://rozetka.com.ua/ua/samsung-sm-a266bzkceuc/p484698759/', },
 		{ k: 'Elmir' 			, v: 'elmir.ua' 				, href: 'https://elmir.ua/ua/cell_phones/mobile-phone-samsung-galaxy-a26-5g-8-256gb-black-sm-a266bzkceuc.html', },
 	],
