@@ -161,8 +161,30 @@ nav.addEventListener( 'click', function( e ) {
 
 		//let elemParent = e.target.closest( '.spoiler-each' );
 
-		//console.log( e.target.dataset.id );
+
+		{ // підсвічування кнопок --------------------------------------------
+			let arrElem = document.querySelectorAll( '#nav .btn' );
+
+			arrElem.forEach( elem => {
+				elem.classList.remove( 'active' );
+
+			});
+
+			e.target.classList.add( 'active' );
+		} // ------------------------------------------------------------------
+
+
+
+
+
+
+
+		//console.log( arrElem );
 		//console.log( elemParent.dataset.id );
+
+
+
+
 
 		//elemParent.querySelector( '.spoiler-body' ).hidden = !elemParent.querySelector( '.spoiler-body' ).hidden;
 

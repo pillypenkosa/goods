@@ -7,19 +7,16 @@
 const arrListCat = [
 
 	{ id: 'all' 			, title: 'Усі' 					, },
+	{ id: 'pc' 				, title: 'PC' 					, },
 	{ id: 'car' 			, title: 'Авто' 				, },
 	{ id: 'warstore' 		, title: 'ВійськТорг' 			, },
 	{ id: 'home' 			, title: 'Дім' 					, },
 	{ id: 'electronics' 	, title: 'Електроніка' 			, },
 	{ id: 'tools' 			, title: 'Інструмент' 			, },
 	{ id: 'clothing' 		, title: 'Одяг' 				, },
-	{ id: 'hh_techno' 		, title: 'Техніка обутова' 		, }, //household appliances
+	{ id: 'hh_techno' 		, title: 'Техніка побутова' 	, }, //household appliances
 	{ id: 'chemical' 		, title: 'Хімія' 				, },
-
-
-	//{ id: 'household' 	, title: 'Домогосподарство' 	, },
-
-	{ id: 'other' 			, title: 'Інші' 			, },
+	{ id: 'other' 			, title: 'Інші' 				, },
 
 ];
 
@@ -275,15 +272,8 @@ const arrListDevice = [
 	],
 },
 
-
-
-
-
-
-
-
 {
-	id: 'pc_desktop', title: 'PC', type: 'Компьютер', cat: { electronics: 1, }, 
+	id: 'pc_desktop', title: 'PC', type: 'Компьютер', cat: { pc: 1, }, 
 	keyval: [
 		
 		{ k: '--- MotherBoard' 		, v: '' 								, },
@@ -380,18 +370,99 @@ const arrListDevice = [
 
 		{ k: '--- Монітор' 		, v: '' 							, },
 		{ k: 'Назва' 			, v: 'LG Flatron' 					, },
-		{ k: 'Модель' 			, v: 'L204WT' 						, },
+		{ k: 'Модель' 			, v: 'L204WT-SF' 					, },
 		{ k: 'Діагональ' 		, v: '20"' 							, },
 		{ k: 'Технологія' 		, v: 'TFT LCD' 						, },
-		{ k: 'Продавець' 		, v: 'відділ в Універмазі Харків' 	, },
+		{ k: 'Продавець' 		, v: 'відділ в Універмазі Харків' 	, }, // ФОП Яковенко Ігор Сергійович
 		{ k: 'Дата' 			, v: '2008-03-07' 					, },
 		{ k: 'Ціна' 			, v: '1500 грн' 					, },
 	],
 },
 
 
+{
+	id: '20180604_lenovo', title: 'Lenovo Ideapad 320-15 IKB', type: 'Ноутбук', cat: { pc: 1, }, 
+	keyval: [
+		
+		{ k: 'ноутбук' 			, v: 'Lenovo Ideapad 320-15 IKB' 	, },
+		{ k: 'модель' 			, v: '80XL03WBRA' 					, },
+		{ k: 's/n' 				, v: 'PF10DUAV' 					, },
+		{ backspace: true },
+
+		{ k: 'MainBoard' 		, v: 'Lenovo' 			, },
+		{ k: 'model' 			, v: 'LNVNB161216' 		, },
+		{ k: '' 				, v: 'DDR4' 			, },
+		{ backspace: true },
+
+		{ k: 'CPU' 				, v: '' 					, },
+		{ k: '' 				, v: 'Intel Core i3-7130U' 	, },
+		{ k: '' 				, v: '4 * 2.7 GHz' 			, },
+		{ k: '' 				, v: 'Kaby Lake (7)' 		, },
+		{ backspace: true },
+
+		{ k: 'RAM' 				, v: '8 GB // 2 * 4 Гб' 	, },
+		{ k: '' 				, v: 'DDR4' 				, },
+		{ k: '' 				, v: '2133 MHz' 			, },
+		{ k: '' 				, v: 'SODIMM' 				, },
+		{ backspace: true },
+
+		{ k: 'дісплей' 			, v: '15.6&#698;, 1920 x 1080' 							, },
+		{ k: 'відео' 			, v: 'Intel HD Graphic 620' 							, },
+		{ k: '' 				, v: 'nVidia GeForce 640 MX (2 GB)' 					, },
+		{ k: 'SSD' 				, v: '256 GB' 											, },
+		{ backspace: true },
+
+		{ k: 'BIOS' 			, v: ' F2' 							, },
+		{ k: 'Boot' 			, v: ' F12' 						, },
+		{ backspace: true },
+
+		{ k: 'Блок живлення' 	, v: '' 							, },
+		{ k: '- модель' 		, v: 'ADLX65CDGE2A' 				, },
+		{ k: '- input' 			, v: '100-240 V, 1.5 A, 50-60 Hz' 	, },
+		{ k: '- output' 		, v: '20 V, 3.25 A (65 Вт)' 		, },
+		{ backspace: true },
+
+		{ k: 'Продавець' 		, v: 'Comfy' 			, gps: 'https://maps.app.goo.gl/gdXKpmaikkyycc99A', }, 	// вул. Героїв Праці, 9
+		{ k: 'Ціна' 			, v: '16000 грн' 		, },
+		{ k: 'Дата' 			, v: '2018-06-04' 		, },
+		{ backspace: true },
+
+		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 	, href: 'https://rozetka.com.ua/ua/lenovo_80xl03wbra/p28306433/', },
+		{ k: 'Elmir' 			, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/laptops/notebook_lenovo_ideapad_320-15_80xl03wbra.html', },
+		{ backspace: true },
+
+		{ k: 'Сведения о системе' 	, v: '' 		, },
+		{ k: 'Win + R' 				, v: 'msinfo32' 		, },
+		{ backspace: true },
+
+		{ k: 'Розборка' 			, v: 'youtube.com' 		, href: 'https://www.youtube.com/watch?v=4epRkTuxqLE', },
+		{ backspace: true },
+
+	],
+},
 
 
+
+
+
+{
+	id: '20250817_tolsen', title: 'Tolsen', type: 'Тримач-присоска', cat: { tools: 1, },
+	keyval: [
+		{ k: 'Тримач-присоска' 		, v: 'Tolsen' 			, },
+		{ k: 'Продавець' 			, v: 'Тетяна ХТТ' 		, gps: 'https://maps.app.goo.gl/pSvsJLEozy6aKAhS8', },
+		{ k: 'Дата' 				, v: '2025-08-17' 		, },
+		{ k: 'Ціна' 				, v: '200 грн' 			, },
+	],
+},
+{
+	id: '20250816_imprese', title: 'Imprese', type: 'Унітаз', cat: { home: 1, },
+	keyval: [
+		{ k: 'Унітаз' 		, v: 'Imprese' 			, },
+		{ k: 'Продавець' 	, v: 'Епіцентр' 		, gps: 'https://maps.app.goo.gl/PqzkHuZd6nz3YAcf7', },
+		{ k: 'Дата' 		, v: '2025-08-16' 		, },
+		{ k: 'Ціна' 		, v: '10000 грн' 		, },
+	],
+},
 {
 	id: '20250812_f19_tws', title: 'Bluetooth F19 TWS', type: 'Гарнітура', cat: { electronics: 1, },
 	keyval: [
@@ -414,10 +485,10 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20250730_wuw', title: 'WUW Fast Charger 48w', type: 'Зарядний пристрій', cat: { electronics: 1, },
+	id: '20250730_wuw', title: 'WUW Fast Charger 48w', type: 'Пристрій зарядний', cat: { electronics: 1, },
 	keyval: [
 		
-		{ k: 'Зарядний пристрій' 	, v: 'WUW Fast Charger 48w' 	, },
+		{ k: 'Пристрій зарядний' 	, v: 'WUW Fast Charger 48w' 	, },
 		{ k: 'Модель' 				, v: 'C212' 					, },
 		{ k: 'Продавець' 			, v: 'Комп\'ютерний всесвіт' 	, gps: 'https://maps.app.goo.gl/zeagAPopSe8TQ8oX6', },
 		{ k: 'Ціна' 				, v: '145 грн' 					, },
@@ -478,9 +549,6 @@ const arrListDevice = [
 		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 		, href: 'https://rozetka.com.ua/ua/jbl_jblt720btblk/p369896661/?gad_source=1&gad_campaignid=17661883199&gbraid=0AAAAADk6sCd3iLfBACBL6OS4CptGJqbqG&gclid=EAIaIQobChMIqezusOPnjgMVpg-iAx3DNALYEAQYBiABEgKnCvD_BwE', },
 	],
 },
-
-
-
 {
 	id: 'xiaomi_redmi_8f', title: 'Xiaomi Redmi 8A', type: 'Телефон', cat: { electronics: 1, }, 
 	keyval: [
@@ -499,34 +567,25 @@ const arrListDevice = [
 		{ k: 'Allo' 			, v: 'allo.ua' 				, href: 'https://allo.ua/ua/products/mobile/xiaomi-redmi-8a-2-32-midnight-black.html?srsltid=AfmBOooXfbqmdQF3x71KBS5MKa4FLh3iMliz4iDfhl1di1s0gW3J6uARl', },	
 	],
 },
-
-
-
-
-
-
 {
-	id: 'maxtop', title: 'Maxtop Dragon Hair Clipper', type: 'Машинка для стрижки', cat: { hh_techno: 1, },
+	id: '20250704_maxtop', title: 'Maxtop Dragon Hair Clipper', type: 'Машинка для стрижки', cat: { hh_techno: 1, },
 	keyval: [
-		
-		{ k: 'Машинка для стрижки' 		, v: 'Maxtop Dragon Hair Clipper' 	, },
-		{ k: 'модель' 					, v: 'M 99' 						, },
-		{ backspace: true },
-
-		{ k: 'продавець' 		, v: 'MobiWorld' 		, gps: 'https://maps.app.goo.gl/JR38CkZZmcePUvxZ7', }, // кіоск в супермаркеті Чудо
-		{ k: 'ціна' 			, v: '280 грн' 			, },
-		{ k: 'дата' 			, v: '2025-07-04' 		, },
+		{ k: 'Машинка для стрижки' 	, v: 'Maxtop Dragon Hair Clipper' 	, },
+		{ k: 'модель' 				, v: 'M 99' 						, },
+		{ k: 'продавець' 			, v: 'MobiWorld' 					, gps: 'https://maps.app.goo.gl/JR38CkZZmcePUvxZ7', }, // кіоск в супермаркеті Чудо
+		{ k: 'ціна' 				, v: '280 грн' 						, },
+		{ k: 'дата' 				, v: '2025-07-04' 					, },
 	],
 },
-
-
-
-
-
-
-
-
-
+{
+	id: '20240000_1', title: '', type: 'Наручники', cat: { warstore: 1, },
+	keyval: [
+		{ k: 'Наручники' 		, v: '' 				, },
+		{ k: 'Продавець' 		, v: 'Patch KH' 		, }, // Харків, вул. Ярославська, 2/2
+		{ k: 'Дата' 			, v: '~ 2024-09..12' 	, },
+		{ k: 'Ціна' 			, v: '900 грн' 		, },
+	],
+},
 {
 	id: '20241130_filter', title: 'Kolbenschmidt', type: 'Фільтр масляний', cat: { car: 1, },
 	keyval: [
@@ -546,11 +605,6 @@ const arrListDevice = [
 		{ k: 'Ціна' 			, v: '2000 грн за 5 л' 	, },
 	],
 },
-
-
-
-
-
 {
 	id: '20241130_adriauto', title: 'Adriauto', type: 'Трос спідометра', cat: { car: 1, },
 	keyval: [
@@ -574,19 +628,37 @@ const arrListDevice = [
 {
 	id: '20240409_lamps', title: 'ліхтарів заднього ходу', type: 'Лампи діодні', cat: { car: 1, },
 	keyval: [
-		{ k: 'Лампи діодні ліхтарів заднього ходу' 	, v: '' , },
-		{ k: 'Продавець' 			, v: 'Лоск' 			, },
-		{ k: 'Дата' 				, v: '2024-09-09' 		, },
-		{ k: 'Ціна' 				, v: '200 грн за 2 шт' 	, },
+		{ k: 'Лампи діодні ліхтарів заднього ходу' 	, v: '' 				, },
+		{ k: 'Продавець' 							, v: 'Лоск' 			, },
+		{ k: 'Дата' 								, v: '2024-09-09' 		, },
+		{ k: 'Ціна' 								, v: '200 грн за 2 шт' 	, },
 	],
 },
 {
 	id: '20240409_button', title: 'ліхтарів заднього ходу', type: 'Датчик-вимикач', cat: { car: 1, },
 	keyval: [
-		{ k: 'Датчик-вимикач' 		, v: 'ліхтарів заднього ходу' 			, },
-		{ k: 'Продавець' 			, v: 'Лоск 2/4, Макс' 	, },
-		{ k: 'Дата' 				, v: '2024-04-09' 		, },
-		{ k: 'Ціна' 				, v: '350 грн' 			, },
+		{ k: 'Датчик-вимикач' 		, v: 'ліхтарів заднього ходу' 	, },
+		{ k: 'Продавець' 			, v: 'Лоск 2/4, Макс' 			, },
+		{ k: 'Дата' 				, v: '2024-04-09' 				, },
+		{ k: 'Ціна' 				, v: '350 грн' 					, },
+	],
+},
+{
+	id: '20240600_strike_face', title: 'Strike Face', type: 'Бронеплити', cat: { warstore: 1, },
+	keyval: [
+		{ k: 'Бронеплити' 		, v: 'Strike Face' 			, },
+		{ k: 'Продавець' 		, v: 'Patch KH' 			, }, // Харків, вул. Ярославська, 2/2
+		{ k: 'Дата' 			, v: '~ 2024-06' 			, },
+		{ k: 'Ціна' 			, v: '16000 грн за 2 шт.' 	, },
+	],
+},
+{
+	id: '20240600_1', title: '', type: 'Плитоноска', cat: { warstore: 1, },
+	keyval: [
+		{ k: 'Плитоноска' 		, v: '' 			, },
+		{ k: 'Продавець' 		, v: 'Patch KH' 	, }, // Харків, вул. Ярославська, 2/2
+		{ k: 'Дата' 			, v: '~ 2024-06' 	, },
+		{ k: 'Ціна' 			, v: '4000 грн' 	, },
 	],
 },
 {
@@ -981,9 +1053,9 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20230502_vag_com', title: 'VAG COM', type: 'Діагностичний адаптер', cat: { car: 1, electronics: 1, },
+	id: '20230502_vag_com', title: 'VAG COM', type: 'Адаптер діагностичний', cat: { car: 1, electronics: 1, },
 	keyval: [
-		{ k: 'Діагностичний адаптер' 	, v: 'VAG COM 22.3' 	, },
+		{ k: 'Адаптер діагностичний' 	, v: 'VAG COM 22.3' 	, },
 		{ k: 'Відеоінструкція' 			, v: 'youtube.com' 		, href: 'https://www.youtube.com/watch?v=OZlzpd1M7Mw' , },
 		{ k: 'Прога' 					, v: 'drive.google.com' , href: 'https://drive.google.com/file/d/1BAckpBdCncuTk9622DknMWn52ZZscO2R/view' , },
 		{ k: 'Продавець' 				, v: 'prom.ua'  		, href: 'https://kharkov.prom.ua/ua/p1700609345-diagnosticheskij-adapter-vcds.html?adjust_campaign=share&adjust_adgroup=android&adjust_creative=product&utm_campaign=share_button&utm_medium=referral_link&utm_source=b2c_app_android' , },
@@ -1129,7 +1201,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20221201_ssd', title: 'Kingston NV1', type: 'SSD M.2', cat: { electronics: 1, },
+	id: '20221201_ssd', title: 'Kingston NV1', type: 'SSD M.2', cat: { pc: 1, },
 	keyval: [
 		{ k: 'SSD M.2' 		, v: 'Kingston NV1' 	, },
 		{ k: 'Об\'єм' 		, v: '1 TB' 			, },
@@ -1180,7 +1252,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20221028_', title: 'Mahle', type: 'Фільтр масляний', cat: { car: 1, },
+	id: '20221028_mahle', title: 'Mahle', type: 'Фільтр масляний', cat: { car: 1, },
 	keyval: [
 		{ k: 'Фільтр масляний' 	, v: 'Mahle' 			, clue_manufacturer: 'mahle', },
 		{ k: 'Код' 				, v: 'OC 2640' 			, },
@@ -1333,13 +1405,14 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20220605_pump', title: 'Насос', type: 'нс', cat: { home: 1, },
+	id: '20220605_euroaqua', title: 'Насос тиску', type: 'нс', cat: { home: 1, },
 	keyval: [
-		{ k: 'Насос' 		, v: 'Euroaqua JET 100' , },
-		{ k: 'Код' 			, v: '25117002-01' 		, },
-		{ k: 'Продавець' 	, v: 'АкваЕра' 			, gps: 'https://maps.app.goo.gl/DsbTDWofhoqkcQH4A', },
-		{ k: 'Дата' 		, v: '2022-06-05' 		, },
-		{ k: 'Ціна' 		, v: '3200 грн' 		, },
+		{ k: 'Насос' 		, v: 'Euroaqua JET 100' 		, },
+		{ k: 'Код' 			, v: '25117002-01' 				, },
+		{ k: 'Призначення' 	, v: 'для насосної станції' 	, },
+		{ k: 'Продавець' 	, v: 'АкваЕра' 					, gps: 'https://maps.app.goo.gl/DsbTDWofhoqkcQH4A', },
+		{ k: 'Дата' 		, v: '2022-06-05' 				, },
+		{ k: 'Ціна' 		, v: '3200 грн' 				, },
 	],
 },
 {
@@ -1464,14 +1537,15 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20220607_dnipro_m', title: 'Dnipro-M', type: 'Зарядний пристрій', cat: { car: 1, },
+	id: '20220607_dnipro_m', title: 'Dnipro-M', type: 'Пристрій зарядний', cat: { car: 1, electronics: 1, },
 	keyval: [
-		{ k: 'Зарядний пристрій' 	, v: 'Dnipro-M' 	, },
-		{ k: 'Модель' 				, v: 'BC-16' 		, },
-		{ k: 'Продавець' 			, v: 'Dnipro-M' 	, href: 'https://dnipro-m.ua/tovar/zaryadnoe-ystroistvo-cb-16s/?tab=description', },
-		{ k: '' 					, v: 'Dnipro-M' 	, gps: 'https://maps.app.goo.gl/YFGbJ8g1weQLDe4Z7', },
-		{ k: 'Дата' 				, v: '2022-06-07' 	, },
-		{ k: 'Ціна' 				, v: '1800 грн' 	, },
+		{ k: 'Пристрій зарядний' 	, v: 'Dnipro-M' 				, },
+		{ k: 'Модель' 				, v: 'BC-16' 					, },
+		{ k: 'Призначення' 			, v: 'для акумулятора авто' 	, },
+		{ k: 'Продавець' 			, v: 'Dnipro-M' 				, href: 'https://dnipro-m.ua/tovar/zaryadnoe-ystroistvo-cb-16s/?tab=description', },
+		{ k: '' 					, v: 'Dnipro-M' 				, gps: 'https://maps.app.goo.gl/YFGbJ8g1weQLDe4Z7', },
+		{ k: 'Дата' 				, v: '2022-06-07' 				, },
+		{ k: 'Ціна' 				, v: '1800 грн' 				, },
 	],
 },
 {
@@ -1648,9 +1722,9 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20220410_camera', title: 'Media-Tech', type: 'Web-камера', cat: { electronics: 1, },
+	id: '20220410_camera', title: 'Media-Tech', type: 'Камера Web', cat: { pc: 1, },
 	keyval: [
-		{ k: 'Web-камера' 	, v: 'Media-Tech' 		, },
+		{ k: 'Камера Web' 	, v: 'Media-Tech' 		, },
 		{ k: 'Модель' 		, v: 'LOOK V MT4107' 	, },
 		{ k: 'Продавець' 	, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/web_camera/web_camera_media-tech_look_v_mt4107_black.html', },
 		{ k: 'Дата' 		, v: '2022_04_10_1000' 	, },
@@ -1676,7 +1750,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20211209_filter', title: 'Масляний фільтр', type: 'Масляний фільтр', cat: { car: 1, },
+	id: '20211209_filter', title: 'Масляний', type: 'Фільтр', cat: { car: 1, },
 	keyval: [
 		{ k: 'Фільтр масляний' 	, v: '' 			, },
 		{ k: 'Продавець' 		, v: 'Лоск 9/97' 	, },
@@ -1729,21 +1803,48 @@ const arrListDevice = [
 {
 	id: '20210000_dmrv', title: 'Bosch', type: 'ДМРВ', cat: { car: 1, },
 	keyval: [
-		{ k: 'ДМРВ' 		, v: ' Bosch' 			, },
+		{ k: 'ДМРВ' 		, v: 'Bosch' 			, },
 		{ k: 'Продавець' 	, v: 'Автоград' 		, },
 		{ k: 'Дата' 		, v: '~ 2021 рік' 		, },
 		{ k: 'Ціна' 		, v: '2700 грн (б/в)' 	, },
 	],
 },
 {
-	id: '20201015_battery', title: 'для ДБЖ', type: 'Акумулятори', cat: { electronics: 1, },
+	id: '20210000_mask', title: 'Dnipro-M', type: 'Маска захисна', cat: { tools: 1, },
 	keyval: [
-		{ k: 'Акумулятори' 		, v: '' 					, },
+		{ k: 'Маска захисна' 	, v: 'Dnipro-M' 				, },
+		{ k: 'Призначення' 		, v: 'для зварювальних робіт' 	, },
+		{ k: 'Продавець' 		, v: 'Dnipro-M' 		, },
+		{ k: 'Дата' 			, v: '~ 2021 рік' 		, },
+	],
+},
+{
+	id: '20210000_dnipro_m', title: 'Dnipro-M', type: 'Апарат зварювальний', cat: { tools: 1, },
+	keyval: [
+		{ k: 'Апарат зварювальний' 		, v: 'Dnipro-M' 		, },
+		{ k: 'Продавець' 				, v: 'Dnipro-M' 		, },
+		{ k: 'Дата' 					, v: '~ 2021 рік' 		, },
+	],
+},
+{
+	id: '20201015_battery', title: 'CSB', type: 'Акумулятори', cat: { pc: 1, },
+	keyval: [
+		{ k: 'Акумулятори' 		, v: 'CSB' 					, },
 		{ k: 'Модель' 			, v: 'HR1234WF2' 			, },
 		{ k: 'Маркування' 		, v: 'CSB 12В 9Ач' 			, },
-		{ k: 'Призначення' 		, v: 'для безперебійника' 	, },
+		{ k: 'Призначення' 		, v: 'для ДБЖ ' 			, },
 		{ k: 'Продавець' 		, v: 'ElMir' 				, },
 		{ k: 'Дата' 			, v: '2020-10-15' 			, },
+	],
+},
+{
+	id: '20200820_xiaomi', title: 'Xiaomi Yi Smart', type: 'Відеореєстратор', cat: { electronics: 1, car: 1, },
+	keyval: [
+		{ k: 'Відеореєстратор ' 	, v: 'Xiaomi' 					, },
+		{ k: 'Модель ' 				, v: 'Yi Smart Dash Camera' 	, },
+		{ k: 'Продавець' 			, v: 'Цитрус' 					, },
+		{ k: 'Дата' 				, v: '2020-08-20' 				, },
+		{ k: 'Ціна' 				, v: '1400 грн' 				, },
 	],
 },
 {
@@ -1762,92 +1863,34 @@ const arrListDevice = [
 		{ k: 'Маркування' 		, v: 'SB-3120' 		, },
 		{ k: 'Продавець' 		, v: 'ElMir' 		, href: 'https://elmir.ua/ua/household_scales/scales_mirta_sb-3120.html', },
 		{ k: 'Дата' 			, v: '2019-11-19' 	, },
-		{ k: 'Ціна' 			, v: '0 грн' 		, },
 	],
 },
 {
-	id: 'lenovo_ideapad_320_15', title: 'Lenovo Ideapad 320-15 IKB', type: 'Ноутбук', cat: { electronics: 1, }, 
+	id: '20180312_seagate', title: 'Seagate Barracuda', type: 'HDD', cat: { pc: 1, },
 	keyval: [
-		
-		{ k: 'ноутбук' 			, v: 'Lenovo Ideapad 320-15 IKB' 	, },
-		{ k: 'модель' 			, v: '80XL03WBRA' 					, },
-		{ k: 's/n' 				, v: 'PF10DUAV' 					, },
-		{ backspace: true },
-
-		{ k: 'MainBoard' 		, v: 'Lenovo' 			, },
-		{ k: 'model' 			, v: 'LNVNB161216' 		, },
-		{ k: '' 				, v: 'DDR4' 			, },
-		{ backspace: true },
-
-		{ k: 'CPU' 				, v: '' 					, },
-		{ k: '' 				, v: 'Intel Core i3-7130U' 	, },
-		{ k: '' 				, v: '4 * 2.7 GHz' 			, },
-		{ k: '' 				, v: 'Kaby Lake (7)' 		, },
-		{ backspace: true },
-
-		{ k: 'RAM' 				, v: '8 GB // 2 * 4 Гб' 	, },
-		{ k: '' 				, v: 'DDR4' 				, },
-		{ k: '' 				, v: '2133 MHz' 			, },
-		{ k: '' 				, v: 'SODIMM' 				, },
-		{ backspace: true },
-
-		{ k: 'дісплей' 			, v: '15.6&#698;, 1920 x 1080' 							, },
-		{ k: 'відео' 			, v: 'Intel HD Graphic 620' 							, },
-		{ k: '' 				, v: 'nVidia GeForce 640 MX (2 GB)' 					, },
-		{ k: 'SSD' 				, v: '256 GB' 											, },
-		{ backspace: true },
-
-		{ k: 'BIOS' 			, v: ' F2' 							, },
-		{ k: 'Boot' 			, v: ' F12' 						, },
-		{ backspace: true },
-
-		{ k: 'Блок живлення' 	, v: '' 							, },
-		{ k: '- модель' 		, v: 'ADLX65CDGE2A' 				, },
-		{ k: '- input' 			, v: '100-240 V, 1.5 A, 50-60 Hz' 	, },
-		{ k: '- output' 		, v: '20 V, 3.25 A (65 Вт)' 		, },
-		{ backspace: true },
-
-		{ k: 'продавець' 		, v: 'Comfy' 			, gps: 'https://maps.app.goo.gl/gdXKpmaikkyycc99A', }, 	// вул. Героїв Праці, 9
-		{ k: 'ціна' 			, v: '16000 грн' 		, },
-		{ backspace: true },
-
-		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 	, href: 'https://rozetka.com.ua/ua/lenovo_80xl03wbra/p28306433/', },
-		{ k: 'Elmir' 			, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/laptops/notebook_lenovo_ideapad_320-15_80xl03wbra.html', },
-		{ backspace: true },
-
-		{ k: 'Сведения о системе' 	, v: '' 		, },
-		{ k: 'Win + R' 				, v: 'msinfo32' 		, },
-		{ backspace: true },
-
-		{ k: 'Розборка' 			, v: 'youtube.com' 		, href: 'https://www.youtube.com/watch?v=4epRkTuxqLE', },
-		{ backspace: true },
-
+		{ k: 'Диск HDD' 	, v: 'Seagate Barracuda' 	, },
+		{ k: 'Модель' 		, v: 'ST2000DM006' 			, },
+		{ k: 's/n' 			, v: 'Z4Z9X55D' 			, },
+		{ k: 'Form' 		, v: 'SATA' 				, },
+		{ k: 'Об\'єм' 		, v: '2 TB' 				, },
+		{ k: 'Продавець' 	, v: 'ElMir' 				, },
+		{ k: 'Дата' 		, v: '2018-03-12' 			, },
 	],
 },
 {
-	id: '20180312_seagate', title: 'Seagate Barracuda', type: 'HDD', cat: { electronics: 1, },
+	id: '20180123_a55', title: 'Silicon Power A55', type: 'SSD SATA', cat: { pc: 1, },
 	keyval: [
-		{ k: 'Диск HDD' 	, v: 'Seagate Barracuda' , },
-		{ k: 'Form' 		, v: 'SATA' 			, },
-		{ k: 'Об\'єм' 		, v: '2 TB' 			, },
-		{ k: 'Продавець' 	, v: 'ElMir' 			, },
-		{ k: 'Дата' 		, v: '2018-03-12' 		, },
+		{ k: 'Диск SSD' 	, v: 'Silicon Power A55' 	, },
+		{ k: 'Модель' 		, v: 'SP128GBSS3A55S25' 	, },
+		{ k: 'Form' 		, v: 'SATA' 				, },
+		{ k: 'Об\'єм' 		, v: '128 Gb' 				, },
+		{ k: 'Продавець' 	, v: 'ElMir' 				, },
+		{ k: 'Дата' 		, v: '2018-01-23' 			, },
+		{ k: 'Ціна' 		, v: '1480 грн' 			, },
 	],
 },
 {
-	id: '20180123_a55', title: 'Silicon Power', type: 'SSD', cat: { electronics: 1, },
-	keyval: [
-		{ k: 'Диск SSD' 	, v: 'Silicon Power' 	, },
-		{ k: 'Модель' 		, v: 'A55' 				, },
-		{ k: 'Form' 		, v: 'SATA' 			, },
-		{ k: 'Об\'єм' 		, v: 'GB' 				, },
-		{ k: 'Продавець' 	, v: 'ElMir' 			, },
-		{ k: 'Дата' 		, v: '2018-01-23' 		, },
-		{ k: 'Ціна' 		, v: '1480 грн' 		, },
-	],
-},
-{
-	id: '20170929_flash', title: 'GoodRam', type: 'USB Flash', cat: { electronics: 1, },
+	id: '20170929_flash', title: 'GoodRam', type: 'USB Flash', cat: { pc: 1, },
 	keyval: [
 		{ k: 'USB Flash' 	, v: 'GoodRam' 		, },
 		{ k: 'Маркування' 	, v: 'UTS3' 		, },
@@ -1857,16 +1900,118 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20080616_mustek', title: 'Mustek', type: 'UPS ДЖБ', cat: { electronics: 1, },
+	id: '20161223_a60', title: 'Silicon Power A60', type: 'SSD SATA', cat: { pc: 1, },
+	keyval: [
+		{ k: 'Диск SSD' 	, v: 'Silicon Power A60' 	, },
+		{ k: 'Модель' 		, v: 'SP010TBPHDA60S3K' 	, },
+		{ k: 's/n' 			, v: '4712702635997' 		, },
+		{ k: 'Form' 		, v: 'SATA' 				, },
+		{ k: 'Об\'єм' 		, v: '1 Tb' 				, },
+		{ k: 'Продавець' 	, v: 'ElMir' 				, },
+		{ k: 'Дата' 		, v: '2016-12-23' 			, },
+
+	],
+},
+{
+	id: '20100929_samsung', title: 'Samsung', type: 'Пилосос', cat: { hh_techno: 1, },
+	keyval: [
+		{ k: 'Пилосос' 		, v: 'Samsung' 			, },
+		{ k: 'Модель' 		, v: 'SC4325' 			, },
+		{ k: 's/n' 			, v: '278781BZ400147' 	, },
+		{ k: 'Продавець' 	, v: 'Техноточка' 		, },
+		{ k: 'Дата' 		, v: '2010-09-29' 		, },
+
+	],
+},
+{
+	id: '20080616_mustek', title: 'Mustek', type: 'UPS ДЖБ', cat: { pc: 1, },
 	keyval: [
 		{ k: 'Джерело безперебійного живлення' 	, v: 'Mustek' 				, },
 		{ k: 'Модель' 							, v: 'PowerMust 1400 USB' 	, },
+		{ k: 's/n' 								, v: '73609C00217' 			, },
 		{ k: 'Продавець' 						, v: 'ElMir' 				, },
 		{ k: 'Дата' 							, v: '2008-06-16' 			, },
 	],
 },
 {
-	id: '20071121_casio', title: 'Casio', type: 'Сінтезатор', cat: { car: 1, },
+	id: '20080323_thermaltake', title: 'Thermaltake', type: 'Блок живлення', cat: { pc: 1, },
+	keyval: [
+		{ k: 'Блок живлення' 	, v: 'Thermaltake' 			, },
+		{ k: 'Потужність' 		, v: '750 Вт' 				, },
+		{ k: 's/n' 				, v: 'W0117RE0703000447' 	, },
+		{ k: 'Продавець' 		, v: 'ElMir' 				, },
+		{ k: 'Дата' 			, v: '2008-03-23' 			, },
+	],
+},
+{
+	id: '20080323_cooler_master', title: 'Cooler Master Elite', type: 'Корпус ПК', cat: { pc: 1, },
+	keyval: [
+		{ k: 'Корпус ПК' 	, v: 'Cooler Master Elite' 	, },
+		{ k: 'Модель' 		, v: 'RC-331' 				, },
+		{ k: 'FormFactor' 	, v: 'Middle Tower ATX' 	, },
+		{ k: 'Продавець' 	, v: 'ElMir' 				, },
+		{ k: 'Дата' 		, v: '2008-03-23' 			, },
+	],
+},
+{
+	id: '20080323_seagate', title: 'Seagate Barracuda', type: 'HDD', cat: { pc: 1, },
+	keyval: [
+		{ k: 'Корпус' 		, v: 'Seagate Barracuda' 	, },
+		{ k: 's/n' 			, v: '3QK08098' 			, },
+		{ k: 'Об\'єм' 		, v: '750 Gb' 				, },
+		{ k: 'rpm' 			, v: '7200.11' 	, },
+		{ k: 'Продавець' 	, v: 'ElMir' 				, },
+		{ k: 'Дата' 		, v: '2008-03-23' 			, },
+	],
+},
+{
+	id: '20080322_corsair', title: 'Corsair', type: 'RAM', cat: { pc: 1, },
+	keyval: [
+		{ k: 'RAM' 			, v: 'Corsair' 					, },
+		{ k: 'Модель' 		, v: 'TWIN 2X 2048-6400 C5DHX' 	, },
+		{ k: 'Type' 		, v: 'DDR2' 					, },
+		{ k: 'Об\'єм' 		, v: '2 GB' 					, },
+		{ k: 'Частота' 		, v: '800 MHz' 					, },
+		{ k: 'Продавець' 	, v: 'ElMir' 					, },
+		{ k: 'Дата' 		, v: '2008-03-22' 				, },
+		{ k: 'Rozetka' 		, v: 'rozetka.com.ua' 			, href: 'https://hard.rozetka.com.ua/ua/23619/p23619/', },
+	],
+},
+{
+	id: '20080322_zotac', title: 'Zotac', type: 'Відеокарта', cat: { pc: 1, },
+	keyval: [
+		{ k: 'Відеокарта' 	, v: 'Zotac' 				, },
+		{ k: 'Модель' 		, v: 'GeForce 8800 GT AMP' 	, },
+		{ k: 'Об\'єм' 		, v: '512 Gb' 				, },
+		{ k: 'Частота' 		, v: '2000 MHz' 			, },
+		{ k: 'Шина' 		, v: '256 bit' 				, },
+		{ k: 'Продавець' 	, v: 'Stels' 					, },
+		{ k: 'Дата' 		, v: '2008-03-22' 				, },
+	],
+},
+{
+	id: '20080322_apc', title: 'APC', type: 'Стабілізатор', cat: { pc: 1, },
+	keyval: [
+		{ k: 'Стабілізатор' 	, v: 'APC' 				, },
+		{ k: 'Модель' 			, v: 'Line-R 1200' 		, },
+		{ k: 'Продавець' 		, v: 'МКС' 				, },
+		{ k: 'Дата' 			, v: '2008-03-22' 		, },
+		{ k: 'Ціна' 			, v: '294 грн' 			, },
+		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 	, href: 'https://rozetka.com.ua/ua/apc_regulator_1200va/p144790/', },
+	],
+},
+ {
+	id: '20080317_gigabyte', title: 'Gigabyte', type: 'Плата материнська', cat: { pc: 1, },
+	keyval: [
+		{ k: 'Плата материнська' 	, v: 'Gigabyte' 		, },
+		{ k: 'Модель' 				, v: 'GA-P35-DS3L' 		, },
+		{ k: 'Продавець' 			, v: 'ElMir' 			, },
+		{ k: 'Дата' 				, v: '2008-03-17' 		, },
+		{ k: 'Rozetka' 				, v: 'rozetka.com.ua' 	, href: 'https://hard.rozetka.com.ua/ua/22824/p22824/', },
+	],
+},
+{
+	id: '20071121_casio', title: 'Casio', type: 'Сінтезатор', cat: { electronics: 1, },
 	keyval: [
 		{ k: 'Сінтезатор' 	, v: 'Casio' 		, },
 		{ k: 'Модель' 		, v: 'CDP 100' 		, },
@@ -1875,20 +2020,67 @@ const arrListDevice = [
 		{ k: 'Ціна' 		, v: '3510 грн' 	, },
 	],
 },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+{
+	id: '20070714_anabel', title: 'Анабель', type: 'Ліжко', cat: { home: 1, },
+	keyval: [
+		{ k: 'Ліжко' 	, v: 'Анабель' 		, },
+		{ k: 'Дата' 	, v: '2007-07-14' 	, },
+		{ k: 'Ціна' 	, v: '1600 грн' 	, },
+	],
+},
+{
+	id: '20070319_sven', title: 'Sven', type: 'Колонки', cat: { pc: 1, },
+	keyval: [
+		{ k: 'Колонки' 		, v: 'Sven ' 		, },
+		{ k: 'Модель' 		, v: 'BF-21 ' 		, },
+		{ k: 'Продавець' 	, v: 'МКС' 			, },
+		{ k: 'Дата' 		, v: '2007-03-19' 	, },
+		{ k: 'Ціна' 		, v: '178 грн' 		, },
+	],
+},
+{
+	id: 'jts_js_1e', title: 'JTS', type: 'Мікрофон', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Мікрофон' 	, v: 'JTS' 			, },
+		{ k: 'Модель' 		, v: 'JS-1E' 		, },
+		{ k: 'Продавець' 	, v: 'Атланта-Шоу' 	, },
+	],
+},
+{
+	id: '20070831_mbox_2', title: 'Mbox 2', type: 'Карта звукова', cat: { pc: 1, },
+	keyval: [
+		{ k: 'Карта звукова' 	, v: 'Mbox' 		, },
+		{ k: 'Модель' 			, v: '2 Factory' 	, },
+		{ k: 'Продавець' 		, v: 'Атланта-Шоу' 	, },
+		{ k: 'Дата' 			, v: '2007-08-31' 	, },
+	],
+},
+{
+	id: 'akg_k240', title: 'AKG K240', type: 'Навушники', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Навушники' 	, v: 'AKG' 		, },
+		{ k: 'Модель' 		, v: 'K240 Studio' 	, },
+		{ k: 'Продавець' 	, v: 'Атланта-Шоу' 	, },
+	],
+},
+{
+	id: '20040705_lg', title: 'LG', type: 'Магнітофон/CD/Radio', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Магнітофон' 	, v: 'LG' 			, },
+		{ k: 'Модель' 		, v: 'LPC-LM735X' 	, },
+		{ k: 'Продавець' 	, v: 'Атланта-Шоу' 	, },
+		{ k: 'Дата' 		, v: '2004-07-05' 	, },
+	],
+},
+{
+	id: '20040605_creative', title: 'Creative', type: 'Карта звукова', cat: { pc: 1, },
+	keyval: [
+		{ k: 'Карта звукова' 	, v: 'Creative 5.1 Live' 	, },
+		{ k: 'Продавець' 		, v: 'МКС' 					, },
+		{ k: 'Дата' 			, v: '2004-06-05' 			, },
+		{ k: 'Ціна' 			, v: '210 грн' 				, },
+	],
+},
 
 
 
