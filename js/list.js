@@ -6,17 +6,17 @@
 
 const arrListCat = [
 
-	{ id: 'all' 			, title: 'Усі' 					, },
-	{ id: 'pc' 				, title: 'PC' 					, },
-	{ id: 'car' 			, title: 'Авто' 				, },
-	{ id: 'warstore' 		, title: 'ВійськТорг' 			, },
-	{ id: 'home' 			, title: 'Дім' 					, },
-	{ id: 'electronics' 	, title: 'Електроніка' 			, },
-	{ id: 'tools' 			, title: 'Інструмент' 			, },
-	{ id: 'clothing' 		, title: 'Одяг' 				, },
-	{ id: 'hh_techno' 		, title: 'Техніка побутова' 	, }, //household appliances
-	{ id: 'chemical' 		, title: 'Хімія' 				, },
-	{ id: 'other' 			, title: 'Інші' 				, },
+	{ id: 'all' 			, title: 'Усі' 				, },
+	{ id: 'pc' 				, title: 'PC' 				, },
+	{ id: 'car' 			, title: 'Авто' 			, },
+	{ id: 'warstore' 		, title: 'Військторг' 		, },
+	{ id: 'home' 			, title: 'Дім' 				, },
+	{ id: 'electronics' 	, title: 'Електроніка' 		, },
+	{ id: 'tools' 			, title: 'Інструмент' 		, },
+	{ id: 'clothing' 		, title: 'Одяг' 			, },
+	{ id: 'hh_techno' 		, title: 'Техніка' 			, }, //household appliances
+	{ id: 'chemical' 		, title: 'Хімія' 			, },
+	{ id: 'other' 			, title: 'Інші' 			, },
 
 ];
 
@@ -29,7 +29,6 @@ const arrListCat = [
 
 
 const arrListDevice = [
-
 
 
 {
@@ -246,8 +245,6 @@ const arrListDevice = [
 		{ k: '--- Заміна масла' , v: '' 	, },
 
 
-
-
 		{ k: 'Дата' 	, v: '2024-12-12' 			, },
 		{ k: 'Пробіг' 	, v: '454680 км' 			, },
 		{ k: 'СТО' 		, v: 'Мерефа-133' 			, },
@@ -266,12 +263,8 @@ const arrListDevice = [
 		{ k: 'Продавець' 			, v: 'Лоск 2/4, Макс' 		, },
 		{ k: 'Дата' 				, v: '2024-11-30' 			, },
 
-
-
-
 	],
 },
-
 {
 	id: 'pc_desktop', title: 'PC', type: 'Компьютер', cat: { pc: 1, }, 
 	keyval: [
@@ -378,8 +371,6 @@ const arrListDevice = [
 		{ k: 'Ціна' 			, v: '1500 грн' 					, },
 	],
 },
-
-
 {
 	id: '20180604_lenovo', title: 'Lenovo Ideapad 320-15 IKB', type: 'Ноутбук', cat: { pc: 1, }, 
 	keyval: [
@@ -440,11 +431,6 @@ const arrListDevice = [
 
 	],
 },
-
-
-
-
-
 {
 	id: '20250817_tolsen', title: 'Tolsen', type: 'Тримач-присоска', cat: { tools: 1, },
 	keyval: [
@@ -516,7 +502,7 @@ const arrListDevice = [
 	keyval: [
 		
 		{ k: 'планшет' 			, v: 'Samsung Galaxy Tab A9' 	, },
-		{ k: 'модель' 			, v: 'SM-X210' 					, },
+		{ k: 'Модель' 			, v: 'SM-X210' 					, },
 		{ k: 's/n' 				, v: 'R9TY504VHJJ' 				, },
 		{ backspace: true },
 
@@ -528,9 +514,9 @@ const arrListDevice = [
 		{ k: 'діагональ' 		, v: '11&#698;' 				, },
 		{ backspace: true },
 
-		{ k: 'продавець' 		, v: 'Rozetka' 					, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
-		{ k: 'ціна' 			, v: '8600 грн' 				, },
-		{ k: 'дата' 			, v: '2025-06-20' 				, },
+		{ k: 'Продавець' 		, v: 'Rozetka' 					, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
+		{ k: 'Ціна' 			, v: '8600 грн' 				, },
+		{ k: 'Дата' 			, v: '2025-06-20' 				, },
 		{ backspace: true },
 
 		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 			, href: 'https://rozetka.com.ua/ua/samsung-sm-a266bzkceuc/p484698759/', },		
@@ -541,11 +527,11 @@ const arrListDevice = [
 	keyval: [
 		
 		{ k: 'Навушники' 		, v: 'JBL Tune 720 BT' 	, },
-		{ k: 'модель' 			, v: 'JBLT720BTBLK' 		, },
+		{ k: 'Модель' 			, v: 'JBLT720BTBLK' 		, },
 		{ backspace: true },
 
-		{ k: 'продавець' 		, v: 'Vodafon' 				, gps: 'https://maps.app.goo.gl/nWUMVZoFYBLeWAv26', },
-		{ k: 'ціна' 			, v: '3300 грн' 			, },
+		{ k: 'Продавець' 		, v: 'Vodafon' 				, gps: 'https://maps.app.goo.gl/nWUMVZoFYBLeWAv26', },
+		{ k: 'Ціна' 			, v: '3300 грн' 			, },
 		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 		, href: 'https://rozetka.com.ua/ua/jbl_jblt720btblk/p369896661/?gad_source=1&gad_campaignid=17661883199&gbraid=0AAAAADk6sCd3iLfBACBL6OS4CptGJqbqG&gclid=EAIaIQobChMIqezusOPnjgMVpg-iAx3DNALYEAQYBiABEgKnCvD_BwE', },
 	],
 },
@@ -553,14 +539,14 @@ const arrListDevice = [
 	id: 'xiaomi_redmi_8f', title: 'Xiaomi Redmi 8A', type: 'Телефон', cat: { electronics: 1, }, 
 	keyval: [
 		
-		{ k: 'телефон' 			, v: 'Xiaomi Redmi 8A' 		, },
-		{ k: 'модель' 			, v: 'M1908C3KG' 			, },
+		{ k: 'Телефон' 			, v: 'Xiaomi Redmi 8A' 		, },
+		{ k: 'Модель' 			, v: 'M1908C3KG' 			, },
 		{ k: 'Процесор' 		, v: 'Qualcomm Snapdragon 439, 4 x 1.95 ГГц + 4 x 1.45 ГГц' 			, },
 		{ k: 'ОЗУ' 				, v: '2 Гб' 				, },
 		{ backspace: true },
 
-		{ k: 'продавець' 		, v: 'Цитрус' 				, },
-		{ k: 'ціна' 			, v: '3000 грн' 			, },
+		{ k: 'Продавець' 		, v: 'Цитрус' 				, },
+		{ k: 'Ціна' 			, v: '3000 грн' 			, },
 		{ backspace: true },
 
 		{ k: 'Цитрус' 			, v: 'ctrs.com.ua' 			, href: 'https://www.ctrs.com.ua/ru/smartfony/redmi-8a-232gb-midnight-black-xiaomi-ua-652981.html', },
@@ -571,10 +557,39 @@ const arrListDevice = [
 	id: '20250704_maxtop', title: 'Maxtop Dragon Hair Clipper', type: 'Машинка для стрижки', cat: { hh_techno: 1, },
 	keyval: [
 		{ k: 'Машинка для стрижки' 	, v: 'Maxtop Dragon Hair Clipper' 	, },
-		{ k: 'модель' 				, v: 'M 99' 						, },
-		{ k: 'продавець' 			, v: 'MobiWorld' 					, gps: 'https://maps.app.goo.gl/JR38CkZZmcePUvxZ7', }, // кіоск в супермаркеті Чудо
-		{ k: 'ціна' 				, v: '280 грн' 						, },
-		{ k: 'дата' 				, v: '2025-07-04' 					, },
+		{ k: 'Модель' 				, v: 'M 99' 						, },
+		{ k: 'Продавець' 			, v: 'MobiWorld' 					, gps: 'https://maps.app.goo.gl/JR38CkZZmcePUvxZ7', }, // кіоск в супермаркеті Чудо
+		{ k: 'Ціна' 				, v: '280 грн' 						, },
+		{ k: 'Дата' 				, v: '2025-07-04' 					, },
+	],
+},
+{
+	id: '20250500_sleep_bag', title: 'спальний', type: 'Мішок', cat: { warstore: 1, },
+	keyval: [
+		{ k: 'Мішок спальний' 	, v: 'полегшений' 	, },
+		{ k: 'Продавець' 		, v: 'Військторг' 	, gps: 'https://maps.app.goo.gl/FffAsnj8rrf78RjU6', }, 
+		{ k: 'Ціна' 			, v: '1800 грн' 	, },
+		{ k: 'Дата' 			, v: '~ 2025-05' 	, },
+	],
+},
+{
+	id: '20250500_flashlight', title: 'тактичний', type: 'Ліхтарик', cat: { electronics: 1, warstore: 1, },
+	keyval: [
+		{ k: 'Ліхтарик' 		, v: 'тактичний' 	, },
+		{ k: 'Призначення' 		, v: 'на шолом' 	, },
+		{ k: 'Продавець' 		, v: 'Військторг' 	, gps: 'https://maps.app.goo.gl/YyobRpykjZj4AZQ47', }, 
+		{ k: 'Дата' 			, v: '~ 2025-05' 	, },
+	],
+},
+{
+	id: '20250526_videx', title: 'Videx', type: 'Ліхтарик налобний', cat: { electronics: 1, warstore: 1, },
+	keyval: [
+		{ k: 'Ліхтарик налобний' 	, v: 'Videx' 			, },
+		{ k: 'Модель' 				, v: 'HI89' 			, },
+		{ k: 'Індекс' 				, v: 'VLF-H189' 		, },
+		{ k: 'Продавець' 			, v: 'Uarm' 			, gps: 'https://maps.app.goo.gl/Hg9bKgcMGDJe7juA9', }, 
+		{ k: 'Ціна' 				, v: '1100 грн' 		, },
+		{ k: 'Дата' 				, v: '2025-05-26' 		, },
 	],
 },
 {
@@ -1913,6 +1928,30 @@ const arrListDevice = [
 	],
 },
 {
+	id: '20150000_', title: '', type: 'Причіп велосипедний', cat: { home: 1, },
+	keyval: [
+		{ k: 'Причіп велосипедний' 	, v: '' 			, },
+		{ k: 'Колеса' 				, v: '29' 			, },
+		{ k: 'Дата' 				, v: '~ 2015' 		, },
+	],
+},
+{
+	id: '20140000_pride', title: 'Pride', type: 'Велосипед', cat: { home: 1, },
+	keyval: [
+		{ k: 'Велосипед' 	, v: 'Pride' 			, },
+		{ k: 'Колеса' 		, v: '29' 				, },
+		{ k: 'Дата' 		, v: '~ 2013-2014' 		, },
+	],
+},
+{
+	id: '20100000_gorenje', title: 'Gorenje', type: 'Машина пральна', cat: { hh_techno: 1, },
+	keyval: [
+		{ k: 'Машина пральна' 		, v: 'Gorenje' 		, },
+		{ k: 'Продавець' 			, v: 'Техноточка' 	, },
+		{ k: 'Дата' 				, v: '~ 2010' 		, },
+	],
+},
+{
 	id: '20100929_samsung', title: 'Samsung', type: 'Пилосос', cat: { hh_techno: 1, },
 	keyval: [
 		{ k: 'Пилосос' 		, v: 'Samsung' 			, },
@@ -1920,7 +1959,6 @@ const arrListDevice = [
 		{ k: 's/n' 			, v: '278781BZ400147' 	, },
 		{ k: 'Продавець' 	, v: 'Техноточка' 		, },
 		{ k: 'Дата' 		, v: '2010-09-29' 		, },
-
 	],
 },
 {
@@ -2070,6 +2108,23 @@ const arrListDevice = [
 		{ k: 'Модель' 		, v: 'LPC-LM735X' 	, },
 		{ k: 'Продавець' 	, v: 'Атланта-Шоу' 	, },
 		{ k: 'Дата' 		, v: '2004-07-05' 	, },
+	],
+},
+{
+	id: '20040000_beko', title: 'Beko', type: 'Холодильник', cat: { hh_techno: 1, },
+	keyval: [
+		{ k: 'Холодильник' 	, v: 'Beko' 	, },
+		{ k: 'Продавець' 	, v: 'ЦУМ' 		, }, // Ц.Ринок
+		{ k: 'Дата' 		, v: '~ 2004' 	, },
+	],
+},
+{
+	id: '20040000_lg', title: 'LG', type: 'Телевізор', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Телевізор' 	, v: 'LG' 		, },
+		{ k: 'Діагональ' 	, v: '25' 		, },
+		{ k: 'Продавець' 	, v: 'Target' 	, }, // Ак.Павлова
+		{ k: 'Дата' 		, v: '~ 2004' 	, },
 	],
 },
 {
