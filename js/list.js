@@ -677,6 +677,26 @@ const arrListDevice = [
 	],
 },
 {
+	id: '20250505_samsung', title: 'Samsung A042', type: 'Телефон', cat: { electronics: 1, }, 
+	keyval: [
+		{ k: 'Телефон' 		, v: 'Samsung Galaxy A042' 	, },
+		{ k: 'Модель' 		, v: 'SM-A042FLBHSEK' 		, },
+		{ k: 's/n' 			, v: 'R8YW91LY1WE' 			, },
+		{ k: 'Діагональ' 	, v: '6.5"' 				, },
+		{ k: 'Екран' 		, v: '720х1600' 			, },
+		{ k: 'Процесор' 	, v: 'Helio G35' 			, },
+		{ k: '' 			, v: '8 * 2.3 GHz' 			, },
+		{ k: 'RAM' 			, v: '3 GB' 				, },
+		{ k: 'Пам\'ять' 	, v: '64 GB' 				, },
+		{ k: 'Акумулятор' 	, v: '5000  mAh' 			, },
+		{ k: 'Продавець' 	, v: 'ElMir' 				, },
+		{ k: 'Подарунок' 	, v: 'для мами )))' 		, },
+		{ k: 'Ціна' 		, v: '3400 грн' 			, },
+		{ k: 'Дата' 		, v: '2024-05-05' 			, },
+		{ k: 'Elmir' 		, v: 'elmir.ua' 			, href: 'https://elmir.ua/ua/cell_phones/mobile_phone_samsung_a042_galaxy_a04e_3_64gb_light_blue_sm-a042flbhsek.html', },
+	],
+},
+{
 	id: '20240303_polmostrow', title: 'Polmostrow', type: 'Глушник середній', cat: { car: 1, },
 	keyval: [
 		{ k: 'Глушник середній' 	, v: 'Polmostrow' 		, },
@@ -2136,6 +2156,20 @@ const arrListDevice = [
 		{ k: 'Ціна' 			, v: '210 грн' 				, },
 	],
 },
+{
+	id: '20040323_gp', title: 'GP', type: 'Пристрій зарядний', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Пристрій зарядний' 	, v: 'GP' 			, },
+		{ k: 'Типорозмір батарей' 	, v: 'ААА' 			, },
+		{ k: 'Кількість батарей' 	, v: '4 шт' 		, },
+		{ k: 'Дата' 				, v: '2004-03-23' 	, },
+		{ k: 'Ціна' 				, v: '65 грн' 		, },
+	],
+},
+
+
+
+
 
 
 
