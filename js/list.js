@@ -536,24 +536,6 @@ const arrListDevice = [
 	],
 },
 {
-	id: 'xiaomi_redmi_8f', title: 'Xiaomi Redmi 8A', type: 'Телефон', cat: { electronics: 1, }, 
-	keyval: [
-		
-		{ k: 'Телефон' 			, v: 'Xiaomi Redmi 8A' 		, },
-		{ k: 'Модель' 			, v: 'M1908C3KG' 			, },
-		{ k: 'Процесор' 		, v: 'Qualcomm Snapdragon 439, 4 x 1.95 ГГц + 4 x 1.45 ГГц' 			, },
-		{ k: 'ОЗУ' 				, v: '2 Гб' 				, },
-		{ backspace: true },
-
-		{ k: 'Продавець' 		, v: 'Цитрус' 				, },
-		{ k: 'Ціна' 			, v: '3000 грн' 			, },
-		{ backspace: true },
-
-		{ k: 'Цитрус' 			, v: 'ctrs.com.ua' 			, href: 'https://www.ctrs.com.ua/ru/smartfony/redmi-8a-232gb-midnight-black-xiaomi-ua-652981.html', },
-		{ k: 'Allo' 			, v: 'allo.ua' 				, href: 'https://allo.ua/ua/products/mobile/xiaomi-redmi-8a-2-32-midnight-black.html?srsltid=AfmBOooXfbqmdQF3x71KBS5MKa4FLh3iMliz4iDfhl1di1s0gW3J6uARl', },	
-	],
-},
-{
 	id: '20250704_maxtop', title: 'Maxtop Dragon Hair Clipper', type: 'Машинка для стрижки', cat: { hh_techno: 1, },
 	keyval: [
 		{ k: 'Машинка для стрижки' 	, v: 'Maxtop Dragon Hair Clipper' 	, },
@@ -593,9 +575,9 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20240000_1', title: '', type: 'Наручники', cat: { warstore: 1, },
+	id: '20240000_vurgun', title: 'Vurgun', type: 'Кайданки шарнірні', cat: { warstore: 1, },
 	keyval: [
-		{ k: 'Наручники' 		, v: '' 				, },
+		{ k: 'Кайданки шарнірні' 		, v: 'Vurgun' 				, },
 		{ k: 'Продавець' 		, v: 'Patch KH' 		, }, // Харків, вул. Ярославська, 2/2
 		{ k: 'Дата' 			, v: '~ 2024-09..12' 	, },
 		{ k: 'Ціна' 			, v: '900 грн' 		, },
@@ -1889,6 +1871,20 @@ const arrListDevice = [
 		{ k: 'Продавець' 			, v: 'Лоск, InsideParts UA' , },
 		{ k: 'Дата' 				, v: '2020-08-10' 			, },
 		{ k: 'Ціна' 				, v: '900 грн' 				, },
+	],
+},
+{
+	id: '20200426_xiaomi_redmi_8a', title: 'Xiaomi Redmi 8A', type: 'Телефон', cat: { electronics: 1, }, 
+	keyval: [
+		{ k: 'Телефон' 			, v: 'Xiaomi Redmi 8A' 		, },
+		{ k: 'Модель' 			, v: 'M1908C3KG' 			, },
+		{ k: 'Процесор' 		, v: 'Qualcomm Snapdragon 439, 4 x 1.95 ГГц + 4 x 1.45 ГГц' 			, },
+		{ k: 'ОЗУ' 				, v: '2 Гб' 				, },
+		{ k: 'Продавець' 		, v: 'Алло' 				, },
+		{ k: 'Ціна' 			, v: '3000 грн' 			, },
+		{ k: 'Дата' 			, v: '2020-04-26' 			, },
+		{ k: 'Allo' 			, v: 'allo.ua' 				, href: 'https://allo.ua/ua/products/mobile/xiaomi-redmi-8a-2-32-midnight-black.html?srsltid=AfmBOooXfbqmdQF3x71KBS5MKa4FLh3iMliz4iDfhl1di1s0gW3J6uARl', },	
+		{ k: 'Цитрус' 			, v: 'ctrs.com.ua' 			, href: 'https://www.ctrs.com.ua/ru/smartfony/redmi-8a-232gb-midnight-black-xiaomi-ua-652981.html', },
 	],
 },
 {
