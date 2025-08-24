@@ -9,6 +9,7 @@ const arrListCat = [
 	{ id: 'all' 			, title: 'Усі' 				, },
 	{ id: 'pc' 				, title: 'PC' 				, },
 	{ id: 'car' 			, title: 'Авто' 			, },
+	{ id: 'car_service' 	, title: 'СТО' 				, },
 	{ id: 'warstore' 		, title: 'Військторг' 		, },
 	{ id: 'home' 			, title: 'Дім' 				, },
 	{ id: 'electronics' 	, title: 'Електроніка' 		, },
@@ -397,6 +398,24 @@ const arrListDevice = [
 		{ k: '' 				, v: 'SODIMM' 				, },
 		{ backspace: true },
 
+		{ k: 'Відеокарта' 		, v: 'nVidia GeForce 940 MX' 	, },
+		{ k: 'Шина' 			, v: '64 bit' 					, },
+		{ k: 'Частота' 			, v: 'MHz' 						, },
+		{ k: '' 				, v: '40.1 Gb/s' 				, },
+		{ backspace: true },
+		
+		{ k: 'Відеоядро' 		, v: 'Intel Graphics 620' 		, },
+		{ k: 'Шина' 			, v: '128 bit' 					, },
+		{ k: 'Частота' 			, v: 'MHz' 						, },
+		{ k: '' 				, v: '34.1 Gb/s' 				, },
+		{ backspace: true },
+
+
+
+
+
+
+
 		{ k: 'дісплей' 			, v: '15.6&#698;, 1920 x 1080' 							, },
 		{ k: 'відео' 			, v: 'Intel HD Graphic 620' 							, },
 		{ k: '' 				, v: 'nVidia GeForce 640 MX (2 GB)' 					, },
@@ -523,7 +542,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: 'headphones_jbl_720bt', title: 'JBL Tune 720 BT', type: 'Навушники', cat: { electronics: 1, },
+	id: 'jbl_720bt', title: 'JBL Tune 720 BT', type: 'Навушники', cat: { electronics: 1, },
 	keyval: [
 		
 		{ k: 'Навушники' 		, v: 'JBL Tune 720 BT' 	, },
@@ -575,45 +594,70 @@ const arrListDevice = [
 	],
 },
 {
+	id: '20241228_lpg', title: 'ГБО 4', type: 'Фільтри', cat: { car_service: 1, },
+	keyval: [
+		{ k: 'Фільтри ГБО 4' 		, v: '' 				, },
+		{ k: 'Спеціаліст' 			, v: 'Тітов Микола' 	, }, 
+		{ k: 'Пробіг' 				, v: '455185 км' 		, },
+		{ k: 'Заміна' 				, v: '2024-12-28' 		, },
+	],
+},
+{
 	id: '20240000_vurgun', title: 'Vurgun', type: 'Кайданки шарнірні', cat: { warstore: 1, },
 	keyval: [
-		{ k: 'Кайданки шарнірні' 		, v: 'Vurgun' 				, },
-		{ k: 'Продавець' 		, v: 'Patch KH' 		, }, // Харків, вул. Ярославська, 2/2
-		{ k: 'Дата' 			, v: '~ 2024-09..12' 	, },
-		{ k: 'Ціна' 			, v: '900 грн' 		, },
+		{ k: 'Кайданки шарнірні' 	, v: 'Vurgun' 		, },
+		{ k: 'Продавець' 			, v: 'Patch KH' 		, }, // Харків, вул. Ярославська, 2/2
+		{ k: 'Дата' 				, v: '~ 2024-09..12' 	, },
+		{ k: 'Ціна' 				, v: '900 грн' 			, },
 	],
 },
 {
-	id: '20241130_filter', title: 'Kolbenschmidt', type: 'Фільтр масляний', cat: { car: 1, },
+	id: '20241130_filter', title: 'Kolbenschmidt', type: 'Фільтр масляний', cat: { car: 1, car_service: 1, },
 	keyval: [
-		{ k: 'Фільтр масляний' 	, v: 'Kolbenschmidt' 	, },
-		{ k: 'Код' 				, v: '50 013 073' 		, },
-		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 	, },
-		{ k: 'Дата' 			, v: '2024-11-30' 		, },
+		{ k: 'Фільтр масляний' 	, v: 'Kolbenschmidt' 		, },
+		{ k: 'Код' 				, v: '50 013 073' 			, },
+		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 		, },
+		{ k: 'Дата' 			, v: '2024-11-30' 			, },
+		{ backspace: true },
+		{ k: 'Заміна' 			, v: '2024-12-12' 			, },
+		{ k: 'Пробіг' 			, v: '454680 км' 			, },
+		{ k: 'СТО' 				, v: 'Авто сервіс Center' 	, gps: 'https://maps.app.goo.gl/dYrU5L2LQ11xoYZT8', },
+		{ k: 'Спеціаліст' 		, v: 'Денищенко Віталій' 	, },
 	],
 },
 {
-	id: '20241130_oil', title: 'Liqui Moly', type: 'Масло', cat: { car: 1, chemical: 1, },
+	id: '20241130_oil', title: 'Liqui Moly', type: 'Масло', cat: { car: 1, chemical: 1, car_service: 1, },
 	keyval: [
-		{ k: 'Масло моторне' 	, v: ' Liqui Moly' 		, },
+		{ k: 'Масло моторне' 	, v: ' Liqui Moly' 										, },
 		{ k: 'Маркування' 		, v: '10W-40, ACEA A3/B4, API SN, VW 50101/50500' 		, },
-		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 	, },
-		{ k: 'Дата' 			, v: '2024-11-30' 		, },
-		{ k: 'Ціна' 			, v: '2000 грн за 5 л' 	, },
+		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 									, },
+		{ k: 'Дата' 			, v: '2024-11-30' 										, },
+		{ k: 'Ціна' 			, v: '2000 грн за 5 л' 									, },
+		{ backspace: true },
+
+		{ k: 'Заміна' 			, v: '2024-12-12' 			, },
+		{ k: 'Пробіг' 			, v: '454680 км' 			, },
+		{ k: 'СТО' 				, v: 'Авто сервіс Center' 	, gps: 'https://maps.app.goo.gl/dYrU5L2LQ11xoYZT8', },
+		{ k: 'Спеціаліст' 		, v: 'Денищенко Віталій' 	, },
 	],
 },
 {
-	id: '20241130_adriauto', title: 'Adriauto', type: 'Трос спідометра', cat: { car: 1, },
+	id: '20241130_adriauto', title: 'Adriauto', type: 'Трос спідометра', cat: { car: 1, car_service: 1, },
 	keyval: [
 		{ k: 'Трос спідометра' 	, v: 'Adriauto' 						, },
 		{ k: 'Код' 				, v: '55.1524' 							, },
 		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 					, },
 		{ k: 'Дата' 			, v: '2024_11_30' 						, },
-		{ k: 'Ціна' 			, v: '350 грн за 2 шт (лівий/правий)' 	, },
+		{ backspace: true },
+
+		{ k: 'Заміна' 			, v: '2024-12-12' 			, },
+		{ k: 'Пробіг' 			, v: '454680 км' 			, },
+		{ k: 'СТО' 				, v: 'Авто сервіс Center' 	, gps: 'https://maps.app.goo.gl/dYrU5L2LQ11xoYZT8', },
+		{ k: 'Спеціаліст' 		, v: 'Денищенко Віталій' 	, },
 	],
 },
 {
-	id: '20240909_meyle', title: 'Meyle', type: 'Бачок розширювальний', cat: { car: 1, },
+	id: '20240909_meyle', title: 'Meyle', type: 'Бачок розширювальний', cat: { car: 1, car_service: 1, },
 	keyval: [
 		{ k: 'Бачок для антифріза' 	, v: 'Meyle' 			, },
 		{ k: 'Код' 					, v: '1001210033' 		, },
@@ -623,7 +667,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20240409_lamps', title: 'ліхтарів заднього ходу', type: 'Лампи діодні', cat: { car: 1, },
+	id: '20240409_lamps', title: 'ліхтарів заднього ходу', type: 'Лампи діодні', cat: { car: 1, car_service: 1, },
 	keyval: [
 		{ k: 'Лампи діодні ліхтарів заднього ходу' 	, v: '' 				, },
 		{ k: 'Продавець' 							, v: 'Лоск' 			, },
@@ -632,7 +676,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20240409_button', title: 'ліхтарів заднього ходу', type: 'Датчик-вимикач', cat: { car: 1, },
+	id: '20240409_button', title: 'ліхтарів заднього ходу', type: 'Датчик-вимикач', cat: { car: 1, car_service: 1, },
 	keyval: [
 		{ k: 'Датчик-вимикач' 		, v: 'ліхтарів заднього ходу' 	, },
 		{ k: 'Продавець' 			, v: 'Лоск 2/4, Макс' 			, },
@@ -679,33 +723,50 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20240303_polmostrow', title: 'Polmostrow', type: 'Глушник середній', cat: { car: 1, },
+	id: '20240303_polmostrow', title: 'Polmostrow', type: 'Глушник середній', cat: { car: 1, car_service: 1, },
 	keyval: [
 		{ k: 'Глушник середній' 	, v: 'Polmostrow' 		, },
 		{ k: 'Код' 					, v: '3020' 			, },
 		{ k: 'Продавець' 			, v: 'Лоск' 			, },
 		{ k: 'Дата' 				, v: '2024-03-03' 		, },
 		{ k: 'Ціна' 				, v: '1800 грн' 		, },
+		{ backspace: true },
+
+		{ k: 'Заміна' 			, v: '2024-04-01' 			, },
+		{ k: 'Пробіг' 			, v: '452060 км' 			, },
+		{ k: 'СТО' 				, v: 'Авто сервіс Center' 	, gps: 'https://maps.app.goo.gl/dYrU5L2LQ11xoYZT8', },
+		{ k: 'Спеціаліст' 		, v: 'Денищенко Віталій' 	, },
 	],
 },
 {
-	id: '20240303_polmostrow', title: 'Polmostrow', type: 'Труба вихлопна проміжна', cat: { car: 1, },
+	id: '20240303_polmostrow', title: 'Polmostrow', type: 'Труба вихлопна проміжна', cat: { car: 1, car_service: 1, },
 	keyval: [
 		{ k: 'Труба вихлопна проміжна' 	, v: 'Polmostrow' 		, },
 		{ k: 'Код' 						, v: '30347' 			, },
 		{ k: 'Продавець' 				, v: 'Лоск 2/4, Макс' 	, },
 		{ k: 'Дата' 					, v: '2024-03-03' 		, },
 		{ k: 'Ціна' 					, v: '400 грн' 			, },
+		{ backspace: true },
+
+		{ k: 'Заміна' 			, v: '2024-04-01' 			, },
+		{ k: 'Пробіг' 			, v: '452060 км' 			, },
+		{ k: 'СТО' 				, v: 'Авто сервіс Center' 	, gps: 'https://maps.app.goo.gl/dYrU5L2LQ11xoYZT8', },
+		{ k: 'Спеціаліст' 		, v: 'Денищенко Віталій' 	, },
 	],
 },
 {
-	id: '20240303_clamp', title: 'трубні', type: 'Хомути', cat: { car: 1, },
+	id: '20240303_clamp', title: 'трубні', type: 'Хомути', cat: { car: 1, car_service: 1, },
 	keyval: [
-		{ k: 'Хомути трубні' 	, v: '' 				, },
-		{ k: 'Продавець' 		, v: 'Лоск' 			, },
-		{ k: 'Дата' 			, v: '2024-03-03' 		, },
-		{ k: 'Ціна' 			, v: '150 грн за 3 шт' 	, },
+		{ k: 'Хомути трубні' 	, v: '' 					, },
+		{ k: 'Продавець' 		, v: 'Лоск' 				, },
+		{ k: 'Дата' 			, v: '2024-03-03' 			, },
+		{ k: 'Ціна' 			, v: '150 грн за 3 шт' 		, },
+		{ backspace: true },
 
+		{ k: 'Заміна' 			, v: '2024-04-01' 			, },
+		{ k: 'Пробіг' 			, v: '452060 км' 			, },
+		{ k: 'СТО' 				, v: 'Авто сервіс Center' 	, gps: 'https://maps.app.goo.gl/dYrU5L2LQ11xoYZT8', },
+		{ k: 'Спеціаліст' 		, v: 'Денищенко Віталій' 	, },
 	],
 },
 {
@@ -719,6 +780,18 @@ const arrListDevice = [
 	],
 },
 {
+	id: '20240301_welding', title: 'труби', type: 'Зваварювання', cat: { car_service: 1, },
+	keyval: [
+		{ k: 'Зваварювання труби' 	, v: '' 						, },
+		{ k: 'Призначення' 			, v: 'на місце каталізатора' 	, },
+		{ backspace: true },
+		{ k: 'Заміна' 				, v: '2024-03-01' 			, },
+		{ k: 'Пробіг' 				, v: '451070 км' 			, },
+		{ k: 'СТО' 					, v: 'Авто сервіс Center' 	, gps: 'https://maps.app.goo.gl/dYrU5L2LQ11xoYZT8', },
+		{ k: 'Спеціаліст' 			, v: 'Денищенко Віталій' 	, },
+	],
+},
+{
 	id: '20231202_doorlock', title: 'водійської двері', type: 'Замок', cat: { car: 1, },
 	keyval: [
 		{ k: 'Замок водійської двері' 	, v: 'внутрішній механізм' 	, },
@@ -727,12 +800,44 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20231201_febi', title: 'Febi', type: 'Підшипник', cat: { car: 1, },
+	id: '20231201_aral', title: 'Aral', type: 'Масло моторне', cat: { car: 1, car_service: 1, },
 	keyval: [
-		{ k: 'Підшипник' 	, v: 'Febi' 			, },
-		{ k: 'Призначення' 	, v: 'Задній лівий' 	, },
-		{ k: 'Продавець' 	, v: 'Лоск 2/4, Макс' 	, },
-		{ k: 'Дата' 		, v: '2023-12-01' 		, },
+		{ k: 'Масло моторне' 	, v: 'Aral' 				, },
+		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 		, },
+		{ k: 'Дата' 			, v: '2023-12-01' 			, },
+		{ backspace: true },
+		{ k: 'Заміна' 			, v: '2024-12-04' 			, },
+		{ k: 'Пробіг' 			, v: '450660 км' 			, },
+		{ k: 'СТО' 				, v: 'Авто сервіс Center' 	, gps: 'https://maps.app.goo.gl/dYrU5L2LQ11xoYZT8', },
+		{ k: 'Спеціаліст' 		, v: 'Денищенко Віталій' 	, },
+	],
+},
+{
+	id: '20231201_filter', title: 'масляний', type: 'Фільтр', cat: { car: 1, car_service: 1, },
+	keyval: [
+		{ k: 'Фільтр масляний' 	, v: '' 					, },
+		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 		, },
+		{ k: 'Дата' 			, v: '2023-12-01' 			, },
+		{ backspace: true },
+		{ k: 'Заміна' 			, v: '2024-12-04' 			, },
+		{ k: 'Пробіг' 			, v: '450660 км' 			, },
+		{ k: 'СТО' 				, v: 'Авто сервіс Center' 	, gps: 'https://maps.app.goo.gl/dYrU5L2LQ11xoYZT8', },
+		{ k: 'Спеціаліст' 		, v: 'Денищенко Віталій' 	, },
+	],
+},
+{
+	id: '20231201_febi', title: 'Febi', type: 'Підшипник', cat: { car: 1, car_service: 1, },
+	keyval: [
+		{ k: 'Підшипник' 		, v: 'Febi' 				, },
+		{ k: 'Призначення' 		, v: 'Задній лівий' 		, },
+		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 		, },
+		{ k: 'Дата' 			, v: '2023-12-01' 			, },
+		{ backspace: true },
+
+		{ k: 'Заміна' 			, v: '2024-12-04' 			, },
+		{ k: 'Пробіг' 			, v: '450660 км' 			, },
+		{ k: 'СТО' 				, v: 'Авто сервіс Center' 	, gps: 'https://maps.app.goo.gl/dYrU5L2LQ11xoYZT8', },
+		{ k: 'Спеціаліст' 		, v: 'Денищенко Віталій' 	, },
 	],
 },
 {
@@ -2115,6 +2220,26 @@ const arrListDevice = [
 		{ k: 'Навушники' 	, v: 'AKG' 		, },
 		{ k: 'Модель' 		, v: 'K240 Studio' 	, },
 		{ k: 'Продавець' 	, v: 'Атланта-Шоу' 	, },
+	],
+},
+{
+	id: '20040000_pump_elite', title: 'Elite', type: 'Насос', cat: { home: 1, },
+	keyval: [
+		{ k: 'Насос' 				, v: 'Elite' 								, },
+		{ k: 'Призначення' 			, v: 'для підсидення тиску води (у ванні)' 	, },
+		{ k: 'Модель' 				, v: 'X15G0.6-10' 							, },
+		{ k: 'Rated voltage' 		, v: '220-240 V' 							, },
+		{ k: 'Rated power' 			, v: '50 Hz' 								, },
+		{ k: 'Rated power' 			, v: '120 W' 								, },
+		{ k: 'Current' 				, v: '0.58 A' 								, },
+		{ k: 'Speed' 				, v: '2860 rpm' 							, },
+		{ k: 'Highest head' 		, v: '15 m' 								, },
+		{ k: 'Rated head' 			, v: '10 m' 								, },
+		{ k: 'Max. capacity' 		, v: '1.5 m<sup>3</sup>/h' 					, },
+		{ k: 'Rated Capacity' 		, v: '0.6 m<sup>3</sup>/h' 					, },
+		{ k: 'Insulation class' 	, v: 'B' 									, },
+		{ k: 'Дата' 				, v: '~ 2004-2005' 							, },
+		{ k: 'Ціна' 				, v: '300 грн' 								, },
 	],
 },
 {
