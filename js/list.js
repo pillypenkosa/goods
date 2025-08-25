@@ -62,7 +62,6 @@ const arrListDevice = [
 		{ k: 'Об\'єм охолоджувальної рідини' 	, v: '5 л' 						, },
 		{ k: 'Об\'єм масла в двигуні' 			, v: '4 л' 						, },
 		{ k: 'Масло' 							, v: 'VW 500.00/501.01/502.00, ACEA - A3, API - SH,SJ' 			, },		
-		
 		{ k: 'Двигун 2E' 						, v: 'otoba.ru' 				, href: 'https://otoba.ru/dvigatel/vw/2e.html', },
 		{ backspace: true },
 
@@ -81,6 +80,25 @@ const arrListDevice = [
 		{ k: 'Редуктор' 	, v: 'Tomasetto' 						, },
 		{ k: 'Форсунки' 	, v: 'Valtek' 							, },
 		{ k: 'Бак' 			, v: 'Stag (42 л), старий від ГБО-2' 	, },
+		{ backspace: true },
+
+		{ k: 'Акумулятор' 		, v: 'Povver' 				, },
+		{ k: '' 				, v: '12 V' 				, },
+		{ k: '' 				, v: '60 Ah' 				, },
+		{ k: '' 				, v: '600 A' 				, },
+		{ k: '' 				, v: '540 (EN)' 			, },
+		{ k: '' 				, v: 'L.B2.60.054.A' 		, },
+		{ backspace: true },
+
+		{ k: 'Акумулятор' 		, v: 'Exide' 				, },
+		{ k: 'Модель' 			, v: 'Premium EA 640' 		, },
+		{ k: '' 				, v: 'Carbon Boost 2.0' 	, },
+		{ k: '' 				, v: '12 V' 				, },
+		{ k: '' 				, v: '64 Ah' 				, },
+		{ k: '' 				, v: '640 A(EN)' 			, },
+		{ k: 'exide.info' 		, v: 'exide.info' 			, href: 'https://www.exidegroup.com/eu/en/battery/EA640', },
+		{ k: '' 				, v: 'UK:027TE' 			, },
+		{ k: 'barcode' 			, v: '3 661024 034227' 		, },
 		{ backspace: true },
 
 		{ k: '--- Руль' 			, v: '' 							, },
