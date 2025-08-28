@@ -296,7 +296,10 @@ const arrListDevice = [
 		{ k: 'Об\'єм RAM' 			, v: '64 Гб' 							, },
 		{ k: 'Частоти пам\'яті' 	, v: '2133 МГц, 2400 МГц, 2666 МГц' 	, },
 		
-		{ k: 'Продавець' 			, v: 'PC Shop' 			, },
+		{ k: 'Продавець' 			, v: 'PC Shop' 							, },
+		{ k: 'Дата' 				, v: '2018-02-16' 						, },
+		{ k: 'Ціна' 				, v: '4068 грн' 						, },
+
 		{ k: 'ElMir' 				, v: 'elmir.ua' 		, href: 'https://elmir.ua/motherboards/motherboard_gigabyte_z370_hd3_s-1151_z370.html' 	, },
 		{ k: 'Rozetka' 				, v: 'rozetka.com.ua' 	, href: 'https://hard.rozetka.com.ua/ua/gigabyte_z370_hd3/p24386964/'					, },
 		{ k: 'Процесори для Z370' 	, v: 'gigabyte.com' 	, href: 'https://www.gigabyte.com/Motherboard/Z370-HD3-rev-10/support#support-cpu' 		, },
@@ -324,16 +327,18 @@ const arrListDevice = [
 		{ k: 'Rozetka' 				, v: 'rozetka.com.ua' 			, href: 'https://hard.rozetka.com.ua/intel_core_i3_8100/p23602096/characteristics/' 							, },
 		{ backspace: true },
 
-		{ k: '--- RAM' 			, v: '' 					, },
-		{ k: 'Модель' 			, v: 'HyperX Fury Black' 	, },
-		{ k: 'Код' 				, v: 'HX426C16FB3K2/16' 	, },
-		{ k: 'Тип' 				, v: 'DDR4' 				, },
-		{ k: 'Об\'єм' 			, v: '16 Гб = 8GB * 2' 		, },
-		{ k: 'Частота' 			, v: '2666(1333) МГц' 		, },
-		{ k: 'Таймінги' 		, v: 'CL16' 				, },
-		{ k: 'Напруга' 			, v: '1,2 В' 				, },
-
-		{ k: 'Продавець' 		, v: 'PC Shop' 				, },
+		{ k: '--- RAM' 			, v: '' 						, },
+		{ k: 'Модель' 			, v: 'HyperX Fury Black' 		, },
+		{ k: 'Код' 				, v: 'HX426C16FB3K2/16' 		, },
+		{ k: 'Тип' 				, v: 'DDR4' 					, },
+		{ k: 'Об\'єм' 			, v: '16 Гб = 8GB * 2' 			, },
+		{ k: 'Частота' 			, v: '2666(1333) МГц' 			, },
+		{ k: 'Таймінги' 		, v: 'CL16' 					, },
+		{ k: 'Напруга' 			, v: '1,2 В' 					, },
+		{ k: 'Продавець' 		, v: 'PC Shop' 					, },
+		{ k: 'Дата' 			, v: '2018-02-16' 				, },
+		{ k: 'Ціна' 			, v: '6216 грн за 2 планки' 	, },
+		
 		{ k: 'ElMir' 			, v: 'elmir.ua' 			, href: 'https://elmir.ua/memory_modules/memory_module_hyperx_ddr4_16gb_2x8gb_2666mhz_fury_black_hx426c16fb3k2_16.html', },
 		{ backspace: true },
 
@@ -341,6 +346,8 @@ const arrListDevice = [
 		{ k: 'Модель' 			, v: 'Chieftec Core BBS-700S' 	, },
 		{ k: 'Потужність' 		, v: '700 Вт' 					, },
 		{ k: 'Продавець' 		, v: 'PC Shop' 					, },
+		{ k: 'Дата' 			, v: '2018-02-20' 				, },
+		{ k: 'Ціна' 			, v: '1679 грн' 				, },
 		{ k: 'ElMir' 			, v: 'elmir.ua' 				, href: 'https://elmir.ua/power_supplies/power_supply_unit_700w_chieftec_core_bbs-700s.html', },
 		{ backspace: true },
 
