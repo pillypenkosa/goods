@@ -17,6 +17,7 @@ const arrListCat = [
 	{ id: 'clothing' 		, title: 'Одяг' 			, },
 	{ id: 'hh_techno' 		, title: 'Техніка' 			, }, //household appliances
 	{ id: 'chemical' 		, title: 'Хімія' 			, },
+	{ id: 'service' 		, title: 'Послуги' 			, },
 	{ id: 'other' 			, title: 'Інші' 			, },
 
 ];
@@ -479,11 +480,8 @@ const arrListDevice = [
 
 
 
-
-
-
 {
-	id: '20241130_charger', title: 'зарядний', type: 'Пристрій', cat: { car: 1, },
+	id: '20251130_charger', title: 'зарядний', type: 'Пристрій', cat: { car: 1, },
 	keyval: [
 		{ k: 'Пристрій зарядний' 	, v: '' 				, },
 		{ k: 'Особливість' 			, v: 'з вольтметром' 	, },
@@ -725,6 +723,20 @@ const arrListDevice = [
 		{ k: 'Продавець' 			, v: 'Лоск 2/4, Макс' 			, },
 		{ k: 'Дата' 				, v: '2024-04-09' 				, },
 		{ k: 'Ціна' 				, v: '350 грн' 					, },
+	],
+},
+{
+	id: '20240901_alfa_garant', title: 'Альфа-Гарант', type: 'Страховка', cat: { service: 1, car_service: 1, },
+	keyval: [
+		{ k: 'Поліс ОСЦПВ' 		, v: 'Альфа-Гарант' 	, },
+		{ k: '' 				, v: '№ 223172258' 		, },
+		{ k: 'Строк дії' 		, v: 'до 2025-08-31' 	, },
+		{ k: 'Поліс ОСЦПВ' 		, v: 'alfagarant.com' 	, href: 'https://agent.alfagarant.com/Policy?code=q1QqwoYq2QqwJx7WXVAF7sN8pqeJNAq3Qqw&type=0534', },
+		{ k: 'Пароль' 			, v: '0534' 			, },
+		{ k: 'Сайт' 			, v: 'alfagarant.com' 	, href: 'https://alfagarant.com/', },
+		{ k: 'Продавець' 		, v: 'Олексій' 			, gps: 'https://maps.app.goo.gl/C4XtzbJeynAiHjvz7', },
+		{ k: 'Дата' 			, v: '2024-09-01' 		, },
+		{ k: 'Ціна' 			, v: '953 грн' 			, },
 	],
 },
 {
