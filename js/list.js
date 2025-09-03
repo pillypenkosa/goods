@@ -480,6 +480,24 @@ const arrListDevice = [
 
 
 
+
+
+
+
+{
+	id: '20250902_kniazha', title: 'Княжа', type: 'ПОСЦПВ', cat: { service: 1, car_service: 1, },
+	keyval: [
+		{ k: 'Страхова компанія' 	, v: 'Княжа' 			, },
+		{ k: '' 					, v: '№ EP-232080188' 	, },
+		{ k: 'Строк дії' 			, v: 'до 2026-09-02' 	, },
+		{ k: 'Поліс ОСЦПВ' 			, v: 'mtsbu.ua' 		, href: 'https://policy.mtsbu.ua/qr/policyinfo/ua?md=365E96C0034AD5A221A658ED05F25316E0DD4E77AB2EB8184950C5134E5B6D0C', },
+		{ k: '' 					, v: 'Документ для роздрукування в мережі не знайдено. Тільки pdf-файл у Телеграмі' 		,  },
+		{ k: 'Офіційний сайт' 		, v: 'kniazha.ua' 		, href: 'https://kniazha.ua/', },
+		{ k: 'Продавець' 			, v: 'Олексій' 			, gps: 'https://maps.app.goo.gl/C4XtzbJeynAiHjvz7', },
+		{ k: 'Дата' 				, v: '2025-09-02' 		, },
+		{ k: 'Ціна' 				, v: '2851 грн' 		, },
+	],
+},
 {
 	id: '20251130_charger', title: 'зарядний', type: 'Пристрій', cat: { car: 1, },
 	keyval: [
@@ -726,17 +744,17 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20240901_alfa_garant', title: 'Альфа-Гарант', type: 'Страховка', cat: { service: 1, car_service: 1, },
+	id: '20240901_alfa_garant', title: 'Альфа-Гарант', type: 'ПОСЦПВ', cat: { service: 1, car_service: 1, },
 	keyval: [
-		{ k: 'Поліс ОСЦПВ' 		, v: 'Альфа-Гарант' 	, },
-		{ k: '' 				, v: '№ 223172258' 		, },
-		{ k: 'Строк дії' 		, v: 'до 2025-08-31' 	, },
-		{ k: 'Поліс ОСЦПВ' 		, v: 'alfagarant.com' 	, href: 'https://agent.alfagarant.com/Policy?code=q1QqwoYq2QqwJx7WXVAF7sN8pqeJNAq3Qqw&type=0534', },
-		{ k: 'Пароль' 			, v: '0534' 			, },
-		{ k: 'Сайт' 			, v: 'alfagarant.com' 	, href: 'https://alfagarant.com/', },
-		{ k: 'Продавець' 		, v: 'Олексій' 			, gps: 'https://maps.app.goo.gl/C4XtzbJeynAiHjvz7', },
-		{ k: 'Дата' 			, v: '2024-09-01' 		, },
-		{ k: 'Ціна' 			, v: '953 грн' 			, },
+		{ k: 'Страхова компанія' 	, v: 'Альфа-Гарант' 	, },
+		{ k: '' 					, v: '№ 223172258' 		, },
+		{ k: 'Строк дії' 			, v: 'до 2025-08-31' 	, },
+		{ k: 'Поліс ОСЦПВ' 			, v: 'alfagarant.com' 	, href: 'https://agent.alfagarant.com/Policy?code=q1QqwoYq2QqwJx7WXVAF7sN8pqeJNAq3Qqw&type=0534', },
+		{ k: 'Пароль' 				, v: '0534' 			, },
+		{ k: 'Сайт' 				, v: 'alfagarant.com' 	, href: 'https://alfagarant.com/', },
+		{ k: 'Продавець' 			, v: 'Олексій' 			, gps: 'https://maps.app.goo.gl/C4XtzbJeynAiHjvz7', },
+		{ k: 'Дата' 				, v: '2024-09-01' 		, },
+		{ k: 'Ціна' 				, v: '953 грн' 			, },
 	],
 },
 {
