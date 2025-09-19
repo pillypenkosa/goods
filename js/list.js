@@ -579,7 +579,7 @@ const arrListDevice = [
 	id: '20250620_samsung', title: 'Samsung', type: 'Планшет', cat: { electronics: 1, }, 
 	keyval: [
 		
-		{ k: 'планшет' 			, v: 'Samsung Galaxy Tab A9' 	, },
+		{ k: 'планшет' 			, v: 'Samsung Galaxy Tab A9+' 	, },
 		{ k: 'Модель' 			, v: 'SM-X210' 					, },
 		{ k: 's/n' 				, v: 'R9TY504VHJJ' 				, },
 		{ backspace: true },
@@ -597,7 +597,7 @@ const arrListDevice = [
 		{ k: 'Дата' 			, v: '2025-06-20' 				, },
 		{ backspace: true },
 
-		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 			, href: 'https://rozetka.com.ua/ua/samsung-sm-a266bzkceuc/p484698759/', },		
+		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 			, href: 'https://rozetka.com.ua/ua/samsung-sm-x210nzaesek/p412084374/', },		
 	],
 },
 {
