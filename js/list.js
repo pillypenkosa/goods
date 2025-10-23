@@ -482,6 +482,19 @@ const arrListDevice = [
 
 
 
+
+
+{
+	id: '20251023_wheel', title: 'колес', type: 'Балансування', cat: { car_service: 1, },
+	keyval: [
+		{ k: 'СТО' 			, v: 'Шиномонтаж' 						, gps: 'https://maps.app.goo.gl/7DScbGHwV8krWyJEA', },
+		{ k: 'Результат' 	, v: 'Диски збалансовані' 				, },
+		{ k: '' 			, v: 'Диски рівні, катати не треба' 	, },
+		{ k: 'Пробіг' 		, v: '? км' 							, },
+		{ k: 'Ціна' 		, v: '400 грн' 							, },
+	],
+},
+
 {
 	id: '20251023_powerbank', title: 'Hoco DB03 Max', type: 'PowerBank', cat: { electronics: 1, },
 	keyval: [
@@ -726,8 +739,8 @@ const arrListDevice = [
 {
 	id: '20240000_vurgun', title: 'Vurgun', type: 'Кайданки шарнірні', cat: { warstore: 1, },
 	keyval: [
-		{ k: 'Кайданки шарнірні' 	, v: 'Vurgun' 		, },
-		{ k: 'Продавець' 			, v: 'Patch KH' 		, }, // Харків, вул. Ярославська, 2/2
+		{ k: 'Кайданки шарнірні' 	, v: 'Vurgun' 			, },
+		{ k: 'Продавець' 			, v: 'Patch KH' 		, gps: 'https://maps.app.goo.gl/Rsv7hPdSSJngQK2q6', }, // Харків, вул. Ярославська, 2/2
 		{ k: 'Дата' 				, v: '~ 2024-09..12' 	, },
 		{ k: 'Ціна' 				, v: '900 грн' 			, },
 	],
@@ -749,7 +762,7 @@ const arrListDevice = [
 {
 	id: '20241130_oil', title: 'Liqui Moly', type: 'Масло', cat: { car: 1, chemical: 1, car_service: 1, },
 	keyval: [
-		{ k: 'Масло моторне' 	, v: ' Liqui Moly' 										, },
+		{ k: 'Масло моторне' 	, v: 'Liqui Moly' 										, },
 		{ k: 'Маркування' 		, v: '10W-40, ACEA A3/B4, API SN, VW 50101/50500' 		, },
 		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 									, },
 		{ k: 'Дата' 			, v: '2024-11-30' 										, },
@@ -823,16 +836,16 @@ const arrListDevice = [
 	id: '20240600_strike_face', title: 'Strike Face', type: 'Бронеплити', cat: { warstore: 1, },
 	keyval: [
 		{ k: 'Бронеплити' 		, v: 'Strike Face' 			, },
-		{ k: 'Продавець' 		, v: 'Patch KH' 			, }, // Харків, вул. Ярославська, 2/2
+		{ k: 'Продавець' 		, v: 'Patch KH' 			, gps: 'https://maps.app.goo.gl/Rsv7hPdSSJngQK2q6', }, // Харків, вул. Ярославська, 2/2
 		{ k: 'Дата' 			, v: '~ 2024-06' 			, },
 		{ k: 'Ціна' 			, v: '16000 грн за 2 шт.' 	, },
 	],
 },
 {
-	id: '20240600_1', title: '', type: 'Плитоноска', cat: { warstore: 1, },
+	id: '20240600_plate_carrier', title: '', type: 'Плитоноска', cat: { warstore: 1, },
 	keyval: [
 		{ k: 'Плитоноска' 		, v: '' 			, },
-		{ k: 'Продавець' 		, v: 'Patch KH' 	, }, // Харків, вул. Ярославська, 2/2
+		{ k: 'Продавець' 		, v: 'Patch KH' 	, gps: 'https://maps.app.goo.gl/Rsv7hPdSSJngQK2q6', }, // Харків, вул. Ярославська, 2/2
 		{ k: 'Дата' 			, v: '~ 2024-06' 	, },
 		{ k: 'Ціна' 			, v: '4000 грн' 	, },
 	],
