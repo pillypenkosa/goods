@@ -482,8 +482,70 @@ const arrListDevice = [
 
 
 
+{
+	id: '20251023_powerbank', title: 'Hoco DB03 Max', type: 'PowerBank', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'PowerBank' 			, v: 'Hoco' 						, },
+		{ k: 'Модель' 				, v: 'DB03 Max' 					, },
+
+		{ k: '' 					, v: '100000 mAh' 					, },
+		{ k: '' 					, v: '54000 mAh' 					, },
+		{ k: '' 					, v: '65 W' 						, },
+		{ k: '' 					, v: '22.5 W' 						, },
+		{ k: '' 					, v: 'QC 3.0' 						, },
+		{ k: '' 					, v: '370 W/h' 						, },
 
 
+		{ k: 'Магазин' 				, v: 'Rozetka' 						, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
+		{ k: 'Товар' 				, v: 'rozetka.com.ua' 				, href: 'https://rozetka.com.ua/ua/476905469/p476905469/', },
+		{ k: 'Нові акси' 			, v: 'rozetka.com.ua' 				, href: 'https://rozetka.com.ua/ua/seller/nov-aksi/goods/', },
+		{ k: 'Відправник' 			, v: 'Якименко Наталія Віталіївна' 	, },
+		{ k: '' 					, v: 'м. Одеса, вул. Сахарова, 1Б' 	, },
+		{ k: '' 					, v: '+380660705725' 				, },
+
+		{ k: 'Дата' 				, v: '2025-10-23' 					, },
+		{ k: 'Ціна' 				, v: '4300 грн' 					, },
+	],
+},
+{
+	id: '20251022_hoco', title: 'Hoco M83', type: 'Навушники', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Навушники' 		, v: 'Hoco' 				, },
+		{ k: 'Модель' 			, v: 'M83' 					, },
+		{ k: 'Штекер' 			, v: 'Type-C' 				, },
+		{ k: '' 				, v: 'дротові' 				, },
+		{ k: '' 				, v: 'вакуумні' 			, },
+		{ k: '' 				, v: 'з мікрофоном' 		, },
+		{ k: 'Магазин' 			, v: 'Rozetka' 				, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
+		{ k: 'Товар' 			, v: 'rozetka.com.ua' 		, href: 'https://rozetka.com.ua/ua/339972349/p339972349/', },
+		{ k: 'Gadget OFF' 		, v: 'rozetka.com.ua' 		, href: 'https://rozetka.com.ua/ua/seller/gadget-off/goods/', },
+		{ k: 'Дата' 			, v: '2025-10-23' 			, },
+		{ k: 'Ціна' 			, v: '230 грн' 				, },
+	],
+},
+
+{
+	id: '20251022_glass', title: 'Tempered Glass 0.3mm', type: 'Скло захисне', cat: { electronics: 1, },
+	keyval: [
+		{ k: 'Скло захисне' 	, v: '' 							, },
+		{ k: 'Модель' 			, v: 'Tempered Glass 0.3mm' 		, },
+		{ k: 'Призначення' 		, v: 'для телефона Samsung A26 5G' 	, },
+		{ k: 'Продавець' 		, v: 'vest.in.ua' 					, href: 'https://vest.in.ua/accessories-for-phones/plenki/zahisne-sklo-tempered-glass-03mm-dlya-samsung-galaxy-a26-5g' 	, },
+		{ k: 'Дата' 			, v: '2025-10-22' 					, },
+		{ k: 'Ціна' 			, v: '260 грн ( 2 шт по 130 грн )' 	, },
+	],
+},
+
+{
+	id: '20251010_knife', title: 'викидний', type: 'Ніж', cat: { warstore: 1, },
+	keyval: [
+		{ k: 'Ніж' 				, v: 'викидний' 		, },
+		{ k: 'Колір' 			, v: 'чорний' 			, },
+		{ k: 'Продавець' 		, v: 'Військторг' 		, gps: 'https://maps.app.goo.gl/aL6BWYRp46y8K6ow8', }, 
+		{ k: 'Ціна' 			, v: '200 грн' 			, },
+		{ k: 'Дата' 			, v: '2025-10-10' 		, },
+	],
+},
 {
 	id: '20250902_kniazha', title: 'Княжа', type: 'ПОСЦПВ', cat: { service: 1, car_service: 1, },
 	keyval: [
