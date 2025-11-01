@@ -479,11 +479,27 @@ const arrListDevice = [
 
 
 
+{
+	id: '20251031_hoco', title: 'Hoco 65 W', type: 'Пристрій зарядний', cat: { electronics: 1, },
+	keyval: [
+		
+		{ k: 'Пристрій зарядний' 	, v: 'Hoco 65 W' 	, },
+		{ k: 'Модель' 				, v: 'CS44A' 		, },
+		{ backspace: true, },
 
+		{ k: 'Input' 		, v: 'AC 110-240 V, 50-60 Hz, 1.5 A' 	, },
+		{ k: 'Output' 		, v: '' 								, },
+		{ k: 'USB C1' 		, v: '19.7-19.9 V, 2.8-3.1 A' 			, },
+		{ k: 'USB C2' 		, v: '11.4-11.6 V, 1.6-1.7 A' 			, },
+		{ k: 'USB A' 		, v: '' 								, },
+		{ k: 'Колір' 		, v: 'жовтий' 							, },
+		{ backspace: true, },
 
-
-
-
+		{ k: 'Продавець' 	, v: 'Vodafon' 					, gps: 'https://maps.app.goo.gl/LXe5XDmNFuaugXv38', },
+		{ k: 'Ціна' 		, v: '900 грн' 					, },
+		{ k: 'Дата' 		, v: '2025-10-31' 				, },
+	],
+},
 {
 	id: '20251023_wheel', title: 'колес', type: 'Балансування', cat: { car_service: 1, },
 	keyval: [
@@ -494,7 +510,6 @@ const arrListDevice = [
 		{ k: 'Ціна' 		, v: '400 грн' 							, },
 	],
 },
-
 {
 	id: '20251023_powerbank', title: 'Hoco DB03 Max', type: 'PowerBank', cat: { electronics: 1, },
 	keyval: [
@@ -574,7 +589,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20251130_charger', title: 'зарядний', type: 'Пристрій', cat: { car: 1, },
+	id: '20250827_charger', title: 'зарядний', type: 'Пристрій', cat: { car: 1, },
 	keyval: [
 		{ k: 'Пристрій зарядний' 	, v: '' 				, },
 		{ k: 'Особливість' 			, v: 'з вольтметром' 	, },
@@ -629,6 +644,15 @@ const arrListDevice = [
 		
 		{ k: 'Пристрій зарядний' 	, v: 'WUW Fast Charger 48w' 	, },
 		{ k: 'Модель' 				, v: 'C212' 					, },
+		{ backspace: true, },
+
+		{ k: 'USB C1' 				, v: '4.5 V, 2.6 A' 			, },
+		{ k: 'USB C2' 				, v: '4.5 V, 2.6 A' 			, },
+		{ k: 'USB A1' 				, v: '' 						, },
+		{ k: 'USB A2' 				, v: '' 						, },
+		{ k: 'Колір' 				, v: 'жовтий' 					, },
+		{ backspace: true, },
+
 		{ k: 'Продавець' 			, v: 'Комп\'ютерний всесвіт' 	, gps: 'https://maps.app.goo.gl/zeagAPopSe8TQ8oX6', },
 		{ k: 'Ціна' 				, v: '145 грн' 					, },
 		{ k: 'Дата' 				, v: '2025-07-30' 				, },
