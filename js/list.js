@@ -479,6 +479,36 @@ const arrListDevice = [
 
 
 
+
+{
+	id: '20251115_flysky', title: 'FlySky', type: 'Пульт', cat: { electronics: 1, pc: 1, },
+	keyval: [
+		{ k: 'Підштанніки' 		, v: 'FlySky' 			, },
+		{ k: 'Модель' 			, v: 'FS-SM001' 		, },
+		{ k: 'Магазин' 			, v: 'prom.ua' 			, gps: 'https://prom.ua/ua/p2047990659-flysky-sm001-usb.html', }, 
+		{ k: '' 				, v: 'Mobipoisk ' 		, gps: 'https://prom.ua/ua/c1000722-mobipoisk-ekonom-umno.html', }, 
+		{ k: 'Ціна' 			, v: '1780 грн' 		, },
+		{ k: 'Дата' 			, v: '2025-11-15' 		, },
+	],
+},
+
+
+
+
+
+
+
+{
+	id: '20251010_m_tac', title: 'M-Tac', type: 'Підштанніки', cat: { warstore: 1, },
+	keyval: [
+		{ k: 'Підштанніки' 		, v: 'M-Tac' 							, },
+		{ k: 'Колір' 			, v: 'зелені' 							, },
+		{ k: 'Магазин' 			, v: 'UArm' 							, gps: 'https://maps.app.goo.gl/Gvu2N6Tdd3t5oigb6', }, 
+		{ k: 'Ціна' 			, v: '2100 грн = 2 шт ( по 1050 грн )' 	, },
+		{ k: 'Дата' 			, v: '2025-11-06' 						, },
+	],
+},
+
 {
 	id: '20251031_hoco', title: 'Hoco 65 W', type: 'Пристрій зарядний', cat: { electronics: 1, },
 	keyval: [
@@ -563,7 +593,6 @@ const arrListDevice = [
 		{ k: 'Ціна' 			, v: '260 грн ( 2 шт по 130 грн )' 	, },
 	],
 },
-
 {
 	id: '20251010_knife', title: 'викидний', type: 'Ніж', cat: { warstore: 1, },
 	keyval: [
