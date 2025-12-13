@@ -885,6 +885,33 @@ const arrListDevice = [
 		{ k: 'Ціна' 				, v: '953 грн' 			, },
 	],
 },
+
+
+
+{
+	id: '20240901_mtsbu', title: 'МТСБУ', type: 'Страхові компанії', cat: { service: 1, car_service: 1, },
+	keyval: [
+
+
+		{ k: 'Страхові компанії' 			, v: 'mtsbu.ua' 	, href: 'https://mtsbu.ua/about/insurances', },
+
+	],
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
 	id: '20240600_strike_face', title: 'Strike Face', type: 'Бронеплити', cat: { warstore: 1, },
 	keyval: [
