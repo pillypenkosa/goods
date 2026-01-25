@@ -33,6 +33,24 @@ const arrListCat = [
 const arrListDevice = [
 
 
+
+
+
+
+
+{
+	id: '20260113_tplink', title: 'TP-Link Archer A64', type: 'Модем', cat: { electronics: 1, pc: 1, },
+	keyval: [
+
+		{ k: 'Назва' 		, v: 'TP-Link' 				, },
+		{ k: '' 			, v: 'AC 1200 Archer A64' 	, },
+		{ backspace: true },
+
+		{ k: 'Ціна' 		, v: '1600 грн' 			, },
+		{ k: 'Дата' 		, v: '2026-01-13' 			, },
+	],
+},
+
 {
 	id: 'vw_passat_b4', title: 'VW Passat B4', type: 'Автомобіль', cat: { car: 1, },
 	keyval: [
