@@ -19,6 +19,7 @@ const arrListCat = [
 	{ id: 'chemical' 		, title: 'Хімія' 			, },
 	{ id: 'service' 		, title: 'Послуги' 			, },
 	{ id: 'other' 			, title: 'Інші' 			, },
+	{ id: 'shop' 			, title: 'Shop' 			, },
 
 ];
 
@@ -31,6 +32,62 @@ const arrListCat = [
 
 
 const arrListDevice = [
+
+
+
+
+
+
+{
+	id: 'shop_charging_station', title: 'Зарядні станції', type: 'Модем', cat: { shop: 1, },
+	keyval: [
+
+
+		{ k: 'EcoFlow DELTA 2' 					, v: 'prom.ua ( 39999 грн )' 	, href: 'https://prom.ua/ua/p2898768098-zaryadnaya-stantsiya-ecoflow.html', },
+		{ k: 'EcoFlow DELTA 2' 					, v: 'prom.ua ( 39999 грн )' 	, href: 'https://prom.ua/ua/m-5186198135285791527-zaryadnaya-stantsiya-ecoflow.html?p=2897658993', },
+		{ k: 'EcoFlow DELTA 3' 					, v: 'prom.ua ( 47999 грн )' 	, href: 'https://prom.ua/ua/m7620941634501787398-portativnaya-zaryadnaya-stantsiya.html?p=2859893934', },
+		{ k: 'Bluetti Premium 100 V2' 			, v: 'prom.ua ( 49740 грн )' 	, href: 'https://prom.ua/ua/m-144990511695468569-zaryadnaya-stantsiya-bluetti.html?p=2813562372', },
+		{ k: 'Bluetti Premium 100 V2' 			, v: 'prom.ua ( 49999 грн )' 	, href: 'https://prom.ua/ua/m-552248763068070301-zaryadna-stantsiya-bluetti.html?p=2865577173', },
+		{ k: 'EcoFlow DELTA Max 1600' 			, v: 'prom.ua ( 52200 грн )' 	, href: 'https://prom.ua/ua/m-7157656642042441245-portativnaya-zaryadnaya-stantsiya.html?p=2295134147', },
+		{ k: 'EcoFlow DELTA 3' 					, v: 'prom.ua ( 53499 грн )' 	, href: 'https://prom.ua/ua/m-8440541048811083028-zaryadnaya-stantsiya-ecoflow.html?p=2867632234', },
+		{ k: 'EcoFlow DELTA 3' 					, v: 'prom.ua ( 54999 грн )' 	, href: 'https://prom.ua/ua/m6465133373363039490-zaryadnaya-stantsiya-ecoflow.html?p=2788760717', },
+		{ k: 'Bluetti AC 200 P PowerOak' 		, v: 'prom.ua ( 59990 грн )' 	, href: 'https://prom.ua/ua/p2828196174-zaryadnaya-stantsiya-bluetti.html', },
+		{ k: 'Bluetti Elite 200 V2' 			, v: 'prom.ua ( 68490 грн )' 	, href: 'https://prom.ua/ua/m3631957916452936899-zaryadnaya-stantsiya-bluetti.html?p=2889940758', },
+		{ k: 'Bluetti AC 180 P' 				, v: 'prom.ua ( 68800 грн )' 	, href: 'https://prom.ua/ua/m1172457368892856692-zaryadnaya-stantsiya-bluetti.html?p=2855944058', },
+		{ k: 'Bluetti AC 200 P' 				, v: 'prom.ua ( 75479 грн )' 	, href: 'https://prom.ua/ua/m-4250389505616742284-zaryadnaya-stantsiya-bluetti.html?p=2860180852', },
+		{ k: 'Bluetti AC 200 MAX' 				, v: 'prom.ua ( 77099 грн )' 	, href: 'https://prom.ua/ua/p2828191584-zaryadnaya-stantsiya-bluetti.html', },
+		{ k: 'Bluetti AC 200 P' 				, v: 'prom.ua ( 78649 грн )' 	, href: 'https://prom.ua/ua/m2943538617703163306-zaryadnaya-stantsiya-bluetti.html?p=2547739881', },
+		{ k: 'Bluetti AC 240 P' 				, v: 'prom.ua ( 78957 грн )' 	, href: 'https://prom.ua/ua/m2775532499780664605-zaryadnaya-stantsiya-bluetti.html?p=2896899333', },
+		{ k: 'Bluetti AC 200 L' 				, v: 'prom.ua ( 79553 грн )' 	, href: 'https://prom.ua/ua/m-1532316739723515504-zaryadna-stantsiya-bluetti.html?p=2865577160', },
+		{ k: 'Bluetti AC 200 P' 				, v: 'prom.ua ( 80649 грн )' 	, href: 'https://prom.ua/ua/m8367082318540542865-zaryadnaya-stantsiya-2000w.html?p=2551323517', },
+		{ k: 'Bluetti Premium 100 V2' 			, v: 'prom.ua ( 83998 грн )' 	, href: 'https://prom.ua/ua/m-738815144368207927-original-zaryadnaya-stantsiya.html?p=2801116843', },
+		{ k: 'Bluetti AC 240 P' 				, v: 'prom.ua ( 84498 грн )' 	, href: 'https://prom.ua/ua/m6215274552985244056-portativnaya-zaryadnaya-stantsiya.html?p=2446543313', },
+		{ k: 'Bluetti AC 200 PL' 				, v: 'prom.ua ( 85000 грн )' 	, href: 'https://prom.ua/ua/m8363107286458363255-zaryadnaya-stantsiya-bluetti.html?p=2339256601', },
+		{ k: 'Bluetti Elite 200 V2' 			, v: 'prom.ua ( 87000 грн )' 	, href: 'https://prom.ua/ua/m7262056723490308457-zaryadnaya-stantsiya-bluetti.html?p=2821332831', },
+		{ k: 'Bluetti AC 200 PL' 				, v: 'prom.ua ( 89178 грн )' 	, href: 'https://prom.ua/ua/p2878836561-zaryadna-stantsiya-bluetti.html', },
+		{ k: 'Bluetti AC 200 MAX Black' 		, v: 'prom.ua ( 90699 грн )' 	, href: 'https://prom.ua/ua/m-9076596144515175805-zaryadnaya-stantsiya-bluetti.html?p=2847334203', },
+		{ k: 'Bluetti AC 200 MAX Black' 		, v: 'prom.ua ( 90699 грн )' 	, href: 'https://prom.ua/ua/p2845470900-zaryadnaya-stantsiya-bluetti.html', },
+		{ k: 'Bluetti AC 200 PL' 				, v: 'prom.ua ( 92199 грн )' 	, href: 'https://prom.ua/ua/p2851149019-zaryadnaya-stantsiya-bluetti.html', },
+		{ k: 'Bluetti AC 200 L' 				, v: 'prom.ua ( 92749 грн )' 	, href: 'https://prom.ua/ua/m7435590534607972460-zaryadnaya-stantsiya-bluetti.html?p=2866220954', },
+		{ k: 'Bluetti AC 200 PL' 				, v: 'prom.ua ( 93000 грн )' 	, href: 'https://prom.ua/ua/m-7690129390849025535-zaryadna-stantsiya-bluetti.html?p=2354789752', },
+		{ k: 'Bluetti AC 200 PL' 				, v: 'prom.ua ( 93800 грн )' 	, href: 'https://prom.ua/ua/m7123796295451332420-zaryadna-stantsiya-bluetti.html?p=2792717023', },
+		{ k: 'Bluetti AC 200 P' 				, v: 'prom.ua ( 95623 грн )' 	, href: 'https://prom.ua/ua/m-4204872323602230967-zaryadnaya-stantsiya-bluetti.html?p=2550319697', },
+		{ k: 'Bluetti AC 200 PL' 				, v: 'prom.ua ( 96029 грн )' 	, href: 'https://prom.ua/ua/m3949601971991477474-zaryadnaya-stantsiya-bluetti.html?p=2314994167', },
+
+
+		
+
+
+
+
+
+
+
+		{ backspace: true },
+
+	],
+},
+
 
 
 
@@ -2321,13 +2378,41 @@ const arrListDevice = [
 {
 	id: '20100929_samsung', title: 'Samsung', type: 'Пилосос', cat: { hh_techno: 1, },
 	keyval: [
-		{ k: 'Пилосос' 		, v: 'Samsung' 			, },
-		{ k: 'Модель' 		, v: 'SC4325' 			, },
-		{ k: 's/n' 			, v: '278781BZ400147' 	, },
-		{ k: 'Продавець' 	, v: 'Техноточка' 		, },
-		{ k: 'Дата' 		, v: '2010-09-29' 		, },
+		{ k: 'Пилосос' 		, v: 'Samsung' 						, },
+		{ k: 'Модель' 		, v: 'SC4325' 						, },
+		{ k: 's/n' 			, v: '278781BZ400147' 				, },
+		{ backspace: true },
+
+		{ k: 'Продавець' 	, v: 'Техноточка' 					, },
+		{ k: 'Ціна' 		, v: '570 грн' 						, },
+		{ k: 'Дата' 		, v: '2010-09-29' 					, },
+		{ backspace: true },
+
+		{ k: '' 			, v: 'Подарунок від Бондар Алли' 	, },
 	],
 },
+
+
+
+
+{
+	id: '20080000_pump', title: 'Водолей', type: 'Насос занурювальний', cat: { hh_techno: 1, },
+	keyval: [
+		{ k: 'Насос' 				, v: 'Водолей' 			, },
+
+		{ k: 'Продавець' 			, v: 'Аква-че-то там' 	, },
+		{ k: 'Дата' 				, v: '~ 2008' 			, },
+	],
+},
+
+
+
+
+
+
+
+
+
 {
 	id: '20080616_mustek', title: 'Mustek', type: 'UPS ДЖБ', cat: { pc: 1, },
 	keyval: [
@@ -2500,11 +2585,21 @@ const arrListDevice = [
 {
 	id: '20040000_beko', title: 'Beko', type: 'Холодильник', cat: { hh_techno: 1, },
 	keyval: [
-		{ k: 'Холодильник' 	, v: 'Beko' 	, },
-		{ k: 'Продавець' 	, v: 'ЦУМ' 		, }, // Ц.Ринок
-		{ k: 'Дата' 		, v: '~ 2004' 	, },
+		{ k: 'Холодильник' 	, v: 'Beko' 				, },
+		{ k: 'Модель' 		, v: 'можливо RCH 3750' 	, },
+		{ k: 's/n' 	, v: '051 029 7305' 				, },
+
+		{ k: 'Напруга' 			, v: '230 В, 50 Гц' 	, },
+		{ k: 'Потужність' 		, v: '100 Вт' 			, },
+		{ k: 'Ток' 				, v: '0.5 А' 			, },
+
+		{ k: 'Продавець' 	, v: 'ЦУМ' 					, }, // Ц.Ринок
+		{ k: 'Дата' 		, v: '~ 2004' 				, },
+
+
 	],
 },
+
 {
 	id: '20040000_lg', title: 'LG', type: 'Телевізор', cat: { electronics: 1, },
 	keyval: [
