@@ -96,6 +96,57 @@ const arrListDevice = [
 
 
 
+{
+	id: '20260210_bluetti', title: 'Bluetti', type: 'Зарядна станція', cat: { electronics: 1, home: 1, },
+	keyval: [
+
+		{ k: 'Назва' 			, v: 'Bluetti' 				, },
+		{ k: 'Модель' 			, v: 'Premium 100 V2' 		, },
+		{ backspace: true },
+
+		{ k: 'Потужність' 				, v: '2000 Вт' 			, },
+		{ k: 'Потужність пікова' 		, v: '3600 Вт' 			, },
+		{ k: 'Акумулятор' 				, v: 'LiFePO4' 			, },
+		{ k: 'Ємність' 					, v: '1024 Вт*г' 		, },
+		{ backspace: true },
+
+
+
+
+		{ k: 'Вхід від мережі ~220' 	, v: '~230 В, 1200 Вт' 	, },
+		{ backspace: true },
+
+		{ k: 'Вхід від "сонця"' 		, v: '' 				, },
+		{ k: 'Напруга' 		 			, v: '12 - 60 В' 		, },
+		{ k: 'Струм' 					, v: '20 А' 			, },
+		{ k: 'Потужність' 		 		, v: '1000 Вт' 			, },
+		{ k: 'Роз\'єм' 		 			, v: 'XT 60' 			, },
+
+
+
+
+
+
+
+
+
+
+		{ backspace: true },
+
+
+
+
+
+		{ k: 'Розміри' 					, v: '320 x 250 x 215' 	, },
+		{ k: 'Вага' 					, v: '11.5 кг' 			, },
+		{ backspace: true },
+
+		{ k: 'Продавець' 	, v: 'davi.com.ua' 		, href: 'https://davi.com.ua/zariadna-stantsiia-bluetti-premium-100-v2/95479/', },
+		{ k: 'Ціна' 		, v: '38000 грн' 		, },
+		{ k: 'Дата' 		, v: '2026-02-10' 		, },
+	],
+},
+
 
 
 {
@@ -110,7 +161,6 @@ const arrListDevice = [
 		{ k: 'Дата' 		, v: '2026-01-13' 			, },
 	],
 },
-
 {
 	id: 'vw_passat_b4', title: 'VW Passat B4', type: 'Автомобіль', cat: { car: 1, },
 	keyval: [
