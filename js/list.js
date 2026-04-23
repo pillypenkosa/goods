@@ -39,7 +39,7 @@ const arrListDevice = [
 
 
 {
-	id: 'shop_charging_station', title: 'Зарядні станції', type: 'Модем', cat: { shop: 1, },
+	id: 'shop_charging_station', title: 'Зарядні станції', type: 'вибір', cat: { shop: 1, },
 	keyval: [
 
 
@@ -90,6 +90,15 @@ const arrListDevice = [
 
 	],
 },
+
+
+
+
+
+
+
+
+
 
 
 
@@ -604,6 +613,30 @@ const arrListDevice = [
 
 	],
 },
+
+
+
+
+
+{
+	id: '20260411_mirror', title: 'пасажирське ( 2E )', type: 'Дзеркало', cat: { car: 1, },
+	keyval: [
+		{ k: 'Дзеркало' 		, v: 'Alkar' 						, },
+		{ k: 'Код' 				, v: '6402154' 						, },
+		{ k: 'VAG' 				, v: '357857508' 					, },
+		{ k: 'VAG' 				, v: '357857522' 					, },
+
+		{ k: '' 				, v: 'Скло, відображуючий елемент' 		, },
+		{ k: 'Призначення' 		, v: 'Праве пасажирське ( Passat 2E )' 	, },
+
+
+		{ k: 'Продавець' 		, v: 'dok.ua' 					, href: 'https://dok.ua/ua/art-6402154-alkar-74839?showAnalogs=true&artNum=357857522&brandId=2268&utm_source=google&utm_medium=cpc&utm_campaign=22511470317&utm_content=&utm_term=&utm_id=&gad_source=1&gad_campaignid=22511468397&gbraid=0AAAAAC8xs_807On9It109Mxy08htNvToP&gclid=CjwKCAjwnN3OBhA8EiwAfpTYeqb20bmitvAQsUCkXXBR2lo9HRFq4UZ0LCcnGh7aih7qqVtdqF_hgRoC09MQAvD_BwE', },
+		{ k: 'Дата' 			, v: '2026-04-11' 				, },
+		{ k: 'Ціна' 			, v: '275 грн' 					, },
+	],
+},
+
+
 
 
 
