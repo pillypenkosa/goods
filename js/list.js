@@ -37,6 +37,46 @@ const arrListDevice = [
 
 
 
+{
+	id: '20260423_dalley', title: 'Dalley', type: 'Сумка-барсетка', cat: { clothing: 1, },
+	keyval: [
+		{ k: 'Сумка-барсетка' 	, v: 'Dalley-430' 		, },
+		{ k: 'Продавець' 		, v: 'prom.ua' 			, href: 'https://prom.ua/ua/p993608063-takticheskaya-nagrudnaya-sumka.html' , },
+		{ k: '' 				, v: 'Usmivka :)' 		, href: 'https://prom.ua/ua/c2151774-usmivka.html' , },
+
+		{ k: 'Дата' 			, v: '2026-04-23' 		, },
+		{ k: 'Ціна' 			, v: '317 грн' 			, },
+	],
+},
+
+
+
+
+
+
+{
+	id: '20260423_arvisa', title: 'Arvisa', type: 'Мішок спальний', cat: { home: 1, },
+	keyval: [
+		{ k: 'Мішок спальний' 		, v: 'Arvisa' 			, },
+		{ k: 'Розміри' 				, v: '250 х 130 см' 	, },
+
+		{ k: 'Продавець' 			, v: 'rozetka.com.ua' 	, href: 'https://rozetka.com.ua/ua/429248144/p429248144/', }, 
+		{ k: 'Магазин' 				, v: 'Rozetka' 			, gps: 'https://maps.app.goo.gl/kD53Lfs6WcjnqskM9', }, 
+
+		{ k: 'Ціна' 				, v: '2100 грн' 		, },
+		{ k: 'Дата' 				, v: '2026-04-23' 		, },
+	],
+},
+
+
+
+
+
+
+
+
+
+
 
 {
 	id: 'shop_charging_station', title: 'Зарядні станції', type: 'вибір', cat: { shop: 1, },
@@ -1332,7 +1372,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20231023_dalley', title: ' Dalley', type: 'Сумка-барсетка', cat: { clothing: 1, },
+	id: '20231023_dalley', title: 'Dalley', type: 'Сумка-барсетка', cat: { clothing: 1, },
 	keyval: [
 		{ k: 'Сумка-барсетка' 	, v: 'Dalley' 				, },
 		{ k: 'Продавець' 		, v: 'likebags.com.ua' 		, href: 'https://likebags.com.ua/catalog/takticheskie-ryukzaki-armeyskie/10392-cholovicha-sumka-barsetka-dalley/' , },
