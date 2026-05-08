@@ -37,6 +37,33 @@ const arrListDevice = [
 
 
 
+
+{
+	id: '20260507_samsung', title: 'Samsung', type: 'Телевізор', cat: { electronics: 1, }, 
+	keyval: [
+		
+		{ k: 'Телевізор' 		, v: 'Samsung ' 		, },
+		{ k: 'модель' 			, v: 'UE40F6000FUXUA' 	, },
+		//{ k: 's/n' 				, v: 'PF10DUAV' 		, },
+		{ backspace: true },
+
+
+		{ k: 'Діагональ' 				, v: '40' 							, },
+		{ k: 'Екран' 					, v: '1920 х 1080 ( Full HD )' 		, },
+
+		{ k: 'Операційна система' 		, v: 'Tizen' 			, },
+		{ backspace: true },
+
+		{ k: 'Магазин' 					, v: '' 				, gps: 'https://maps.app.goo.gl/MHkLXEa1vif5u3SF6', }, 	// вул. Миколаївська, 6
+		{ k: 'Elmir' 					, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/tvs/tv-samsung-ue40f6000fuxua.html', },
+
+		{ k: 'Ціна' 					, v: '12500 грн' 		, },
+		{ k: 'Дата' 					, v: '2026-05-07' 		, },
+		{ backspace: true },
+
+	],
+},
+
 {
 	id: '20260423_dalley', title: 'Dalley', type: 'Сумка-барсетка', cat: { clothing: 1, },
 	keyval: [
@@ -48,11 +75,6 @@ const arrListDevice = [
 		{ k: 'Ціна' 			, v: '317 грн' 			, },
 	],
 },
-
-
-
-
-
 
 {
 	id: '20260423_arvisa', title: 'Arvisa', type: 'Мішок спальний', cat: { home: 1, },
@@ -67,14 +89,6 @@ const arrListDevice = [
 		{ k: 'Дата' 				, v: '2026-04-23' 		, },
 	],
 },
-
-
-
-
-
-
-
-
 
 
 
@@ -852,6 +866,8 @@ const arrListDevice = [
 	keyval: [
 		{ k: 'Bluetooth гарнітура' 	, v: 'F19 TWS' 			, },
 		{ k: 'Модель' 				, v: '87344006' 		, },
+		{ k: 'Акумулятор' 			, v: '350 мА*г' 		, },
+
 		{ k: 'Продавець' 			, v: 'Rozetka' 			, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
 		{ k: 'Дата' 				, v: '2025-08-12' 		, },
 		{ k: 'Ціна' 				, v: '500 грн' 			, },
