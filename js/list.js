@@ -38,193 +38,13 @@ const arrListDevice = [
 
 
 
-{
-	id: '20260507_samsung', title: 'Samsung', type: 'Телевізор', cat: { electronics: 1, }, 
-	keyval: [
-		
-		{ k: 'Телевізор' 		, v: 'Samsung ' 		, },
-		{ k: 'модель' 			, v: 'UE40F6000FUXUA' 	, },
-		//{ k: 's/n' 				, v: 'PF10DUAV' 		, },
-		{ backspace: true },
 
 
-		{ k: 'Діагональ' 				, v: '40' 							, },
-		{ k: 'Екран' 					, v: '1920 х 1080 ( Full HD )' 		, },
 
-		{ k: 'Операційна система' 		, v: 'Tizen' 			, },
-		{ backspace: true },
 
-		{ k: 'Магазин' 					, v: '' 				, gps: 'https://maps.app.goo.gl/MHkLXEa1vif5u3SF6', }, 	// вул. Миколаївська, 6
-		{ k: 'Elmir' 					, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/tvs/tv-samsung-ue40f6000fuxua.html', },
 
-		{ k: 'Ціна' 					, v: '12500 грн' 		, },
-		{ k: 'Дата' 					, v: '2026-05-07' 		, },
-		{ backspace: true },
 
-	],
-},
-
-{
-	id: '20260423_dalley', title: 'Dalley', type: 'Сумка-барсетка', cat: { clothing: 1, },
-	keyval: [
-		{ k: 'Сумка-барсетка' 	, v: 'Dalley-430' 		, },
-		{ k: 'Продавець' 		, v: 'prom.ua' 			, href: 'https://prom.ua/ua/p993608063-takticheskaya-nagrudnaya-sumka.html' , },
-		{ k: '' 				, v: 'Usmivka :)' 		, href: 'https://prom.ua/ua/c2151774-usmivka.html' , },
-
-		{ k: 'Дата' 			, v: '2026-04-23' 		, },
-		{ k: 'Ціна' 			, v: '317 грн' 			, },
-	],
-},
-
-{
-	id: '20260423_arvisa', title: 'Arvisa', type: 'Мішок спальний', cat: { home: 1, },
-	keyval: [
-		{ k: 'Мішок спальний' 		, v: 'Arvisa' 			, },
-		{ k: 'Розміри' 				, v: '250 х 130 см' 	, },
-
-		{ k: 'Продавець' 			, v: 'rozetka.com.ua' 	, href: 'https://rozetka.com.ua/ua/429248144/p429248144/', }, 
-		{ k: 'Магазин' 				, v: 'Rozetka' 			, gps: 'https://maps.app.goo.gl/kD53Lfs6WcjnqskM9', }, 
-
-		{ k: 'Ціна' 				, v: '2100 грн' 		, },
-		{ k: 'Дата' 				, v: '2026-04-23' 		, },
-	],
-},
-
-
-
-{
-	id: 'shop_charging_station', title: 'Зарядні станції', type: 'вибір', cat: { shop: 1, },
-	keyval: [
-
-
-
-		{ k: 'EcoFlow DELTA 3' 					, v: 'prom.ua ( 36850 грн )' 	, href: 'https://prom.ua/ua/m5370450233234829607-portativnaya-elektrostantsiya-ecoflow.html?p=2901916733', },
-
-		{ k: 'Bluetti Premium 100 V2' 			, v: 'prom.ua ( 44687 грн )' 	, href: 'https://prom.ua/ua/m-552248763068070301-zaryadna-stantsiya-bluetti.html?p=2865577173', },
-		//{ k: 'EcoFlow DELTA 3' 					, v: 'prom.ua ( 47999 грн )' 	, href: 'https://prom.ua/ua/m7620941634501787398-portativnaya-zaryadnaya-stantsiya.html?p=2859893934', },
-		
-		//{ k: 'Bluetti AC 180' 					, v: 'prom.ua ( 51869 грн )' 	, href: 'https://prom.ua/ua/m3980490852142641914-zaryadnaya-stantsiya-bluetti.html?p=2859174873', },
-		
-
-		{ k: 'Bluetti AC 180' 					, v: 'prom.ua ( 47749 грн )' 	, href: 'https://prom.ua/ua/m5765087407037767217-zaryadna-stantsiya-bluetti.html?p=2814401509', },
-		{ k: 'EcoFlow DELTA Max 1600' 			, v: 'prom.ua ( 52200 грн )' 	, href: 'https://prom.ua/ua/m-7157656642042441245-portativnaya-zaryadnaya-stantsiya.html?p=2295134147', },
-		{ k: 'Bluetti AC 200 P PowerOak' 		, v: 'prom.ua ( 59990 грн )' 	, href: 'https://prom.ua/ua/p2828196174-zaryadnaya-stantsiya-bluetti.html', },
-		{ k: 'Bluetti Premium 200 V2' 			, v: 'elmir.ua ( 67999 грн )' 	, href: 'https://elmir.ua/ua/zaryadnye_stantsii/charging-station-bluetti-premium-200-v2.html', },
-		{ k: 'Bluetti Elite 200 V2' 			, v: 'prom.ua ( 68490 грн )' 	, href: 'https://prom.ua/ua/m3631957916452936899-zaryadnaya-stantsiya-bluetti.html?p=2889940758', },
-		{ k: 'Bluetti AC 200 P' 				, v: 'prom.ua ( 75479 грн )' 	, href: 'https://prom.ua/ua/m-4250389505616742284-zaryadnaya-stantsiya-bluetti.html?p=2860180852', },
-	
-
-
-
-
-		{ k: 'Bluetti Premium 200 V2' 			, v: 'prom.ua ( 75936 грн )' 	, href: 'https://prom.ua/ua/m1783659987726584004-zaryadnaya-stantsiya-bluetti.html?p=2748074272', },
-	
-
-
-
-		{ k: 'Bluetti AC 200 MAX' 				, v: 'prom.ua ( 77099 грн )' 	, href: 'https://prom.ua/ua/p2828191584-zaryadnaya-stantsiya-bluetti.html', },
-
-		{ k: 'Bluetti AC 200 L' 				, v: 'prom.ua ( 79553 грн )' 	, href: 'https://prom.ua/ua/m-1532316739723515504-zaryadna-stantsiya-bluetti.html?p=2865577160', },
-
-		{ k: 'Bluetti Premium 100 V2' 			, v: 'prom.ua ( 83998 грн )' 	, href: 'https://prom.ua/ua/m-738815144368207927-original-zaryadnaya-stantsiya.html?p=2801116843', },
-
-		{ k: 'Bluetti AC 200 PL' 				, v: 'prom.ua ( 85000 грн )' 	, href: 'https://prom.ua/ua/m8363107286458363255-zaryadnaya-stantsiya-bluetti.html?p=2339256601', },
-		{ k: 'Bluetti Elite 200 V2' 			, v: 'prom.ua ( 87000 грн )' 	, href: 'https://prom.ua/ua/m7262056723490308457-zaryadnaya-stantsiya-bluetti.html?p=2821332831', },
-
-		{ k: 'Bluetti AC 200 MAX Black' 		, v: 'prom.ua ( 90699 грн )' 	, href: 'https://prom.ua/ua/m-9076596144515175805-zaryadnaya-stantsiya-bluetti.html?p=2847334203', },
-		{ k: 'Bluetti AC 200 MAX Black' 		, v: 'prom.ua ( 90699 грн )' 	, href: 'https://prom.ua/ua/p2845470900-zaryadnaya-stantsiya-bluetti.html', },
-		
-
-
-
-
-
-
-		{ backspace: true },
-
-	],
-},
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{
-	id: '20260210_bluetti', title: 'Bluetti', type: 'Зарядна станція', cat: { electronics: 1, home: 1, },
-	keyval: [
-
-		{ k: 'Назва' 			, v: 'Bluetti' 				, },
-		{ k: 'Модель' 			, v: 'Premium 100 V2' 		, },
-		{ backspace: true },
-
-		{ k: 'Потужність' 				, v: '2000 Вт' 			, },
-		{ k: 'Потужність пікова' 		, v: '3600 Вт' 			, },
-		{ k: 'Акумулятор' 				, v: 'LiFePO4' 			, },
-		{ k: 'Ємність' 					, v: '1024 Вт*г' 		, },
-		{ backspace: true },
-
-
-
-
-		{ k: 'Вхід від мережі ~220' 	, v: '~230 В, 1200 Вт' 	, },
-		{ backspace: true },
-
-		{ k: 'Вхід від "сонця"' 		, v: '' 				, },
-		{ k: 'Напруга' 		 			, v: '12 - 60 В' 		, },
-		{ k: 'Струм' 					, v: '20 А' 			, },
-		{ k: 'Потужність' 		 		, v: '1000 Вт' 			, },
-		{ k: 'Роз\'єм' 		 			, v: 'XT 60' 			, },
-
-
-
-
-
-
-
-
-
-
-		{ backspace: true },
-
-
-
-
-
-		{ k: 'Розміри' 					, v: '320 x 250 x 215' 	, },
-		{ k: 'Вага' 					, v: '11.5 кг' 			, },
-		{ backspace: true },
-
-		{ k: 'Продавець' 	, v: 'davi.com.ua' 		, href: 'https://davi.com.ua/zariadna-stantsiia-bluetti-premium-100-v2/95479/', },
-		{ k: 'Ціна' 		, v: '38000 грн' 		, },
-		{ k: 'Дата' 		, v: '2026-02-10' 		, },
-	],
-},
-
-
-
-{
-	id: '20260113_tplink', title: 'TP-Link Archer A64', type: 'Модем', cat: { electronics: 1, pc: 1, },
-	keyval: [
-
-		{ k: 'Назва' 		, v: 'TP-Link' 				, },
-		{ k: '' 			, v: 'AC 1200 Archer A64' 	, },
-		{ backspace: true },
-
-		{ k: 'Ціна' 		, v: '1600 грн' 			, },
-		{ k: 'Дата' 		, v: '2026-01-13' 			, },
-	],
-},
-{
+{ // ----------------------------------------------------------------------------------------------------------------------------------------------------
 	id: 'vw_passat_b4', title: 'VW Passat B4', type: 'Автомобіль', cat: { car: 1, },
 	keyval: [
 		
@@ -476,6 +296,7 @@ const arrListDevice = [
 
 	],
 },
+
 {
 	id: 'pc_desktop', title: 'PC', type: 'Компьютер', cat: { pc: 1, }, 
 	keyval: [
@@ -628,11 +449,6 @@ const arrListDevice = [
 		{ backspace: true },
 
 
-
-
-
-
-
 		{ k: 'дісплей' 			, v: '15.6&#698;, 1920 x 1080' 							, },
 		{ k: 'відео' 			, v: 'Intel HD Graphic 620' 							, },
 		{ k: '' 				, v: 'nVidia GeForce 640 MX (2 GB)' 					, },
@@ -665,6 +481,190 @@ const arrListDevice = [
 		{ k: 'Розборка' 			, v: 'youtube.com' 		, href: 'https://www.youtube.com/watch?v=4epRkTuxqLE', },
 		{ backspace: true },
 
+	],
+}, 
+
+// ----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+{
+	id: '20260607_ledstop', title: 'Led Stop', type: 'Повторитель стопов', cat: { car: 1, },
+	keyval: [
+		{ k: 'Повторитель стопов  ' 	, v: 'Led Stop Plus' 	, },
+		{ k: 'Модель ' 					, v: '64948' 			, },
+		{ k: 'Призначення' 				, v: 'на заднє скло' 	, },
+		{ k: 'Продавець' 				, v: 'Лоск' 			,  },
+		{ k: 'Дата' 					, v: '2026-06-07' 		, },
+		{ k: 'Ціна' 					, v: '300 грн' 			, },
+	],
+},
+{
+	id: '20260602_aquatica', title: 'Aquatica', type: 'Насос циркуляційний', cat: { home: 1, },
+	keyval: [
+		{ k: 'Насос циркуляційний' 	, v: 'Aquatica' 					, },
+		{ k: 'Модель' 				, v: '' 	, },
+		{ k: 'Призначення' 			, v: 'для циркуляції води в батареях' 	, },
+
+
+
+		{ k: 'Продавець' 			, v: 'sigma.ua' 			, href: 'https://sigma.ua/ru/buy/nasos-tsirkulyatsionnyy-65vt-hmax-4m-qmax-63l-min-1-180mm-gayki-1-774112/', },
+		{ k: 'Продавець' 			, v: 'Боровик' 			,  },
+		{ k: 'Дата' 				, v: '2026-06-02' 				, },
+		{ k: 'Ціна' 				, v: '2266 грн ( ~1500-1600 грн зы скидкою від Борюнделя )' 				, },
+	],
+},
+{
+	id: '20260507_samsung', title: 'Samsung', type: 'Телевізор', cat: { electronics: 1, }, 
+	keyval: [
+		
+		{ k: 'Телевізор' 		, v: 'Samsung ' 		, },
+		{ k: 'модель' 			, v: 'UE40F6000FUXUA' 	, },
+		//{ k: 's/n' 				, v: 'PF10DUAV' 		, },
+		{ backspace: true },
+
+
+		{ k: 'Діагональ' 				, v: '40' 							, },
+		{ k: 'Екран' 					, v: '1920 х 1080 ( Full HD )' 		, },
+
+		{ k: 'Операційна система' 		, v: 'Tizen' 			, },
+		{ backspace: true },
+
+		{ k: 'Магазин' 					, v: '' 				, gps: 'https://maps.app.goo.gl/MHkLXEa1vif5u3SF6', }, 	// вул. Миколаївська, 6
+		{ k: 'Elmir' 					, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/tvs/tv-samsung-ue40f6000fuxua.html', },
+
+		{ k: 'Ціна' 					, v: '12500 грн' 		, },
+		{ k: 'Дата' 					, v: '2026-05-07' 		, },
+		{ backspace: true },
+
+	],
+},
+
+
+
+{
+	id: '20260423_dalley', title: 'Dalley', type: 'Сумка-барсетка', cat: { clothing: 1, },
+	keyval: [
+		{ k: 'Сумка-барсетка' 	, v: 'Dalley-430' 		, },
+		{ k: 'Продавець' 		, v: 'prom.ua' 			, href: 'https://prom.ua/ua/p993608063-takticheskaya-nagrudnaya-sumka.html' , },
+		{ k: '' 				, v: 'Usmivka :)' 		, href: 'https://prom.ua/ua/c2151774-usmivka.html' , },
+
+		{ k: 'Дата' 			, v: '2026-04-23' 		, },
+		{ k: 'Ціна' 			, v: '317 грн' 			, },
+	],
+},
+
+{
+	id: '20260423_arvisa', title: 'Arvisa', type: 'Мішок спальний', cat: { home: 1, },
+	keyval: [
+		{ k: 'Мішок спальний' 		, v: 'Arvisa' 			, },
+		{ k: 'Розміри' 				, v: '250 х 130 см' 	, },
+
+		{ k: 'Продавець' 			, v: 'rozetka.com.ua' 	, href: 'https://rozetka.com.ua/ua/429248144/p429248144/', }, 
+		{ k: 'Магазин' 				, v: 'Rozetka' 			, gps: 'https://maps.app.goo.gl/kD53Lfs6WcjnqskM9', }, 
+
+		{ k: 'Ціна' 				, v: '2100 грн' 		, },
+		{ k: 'Дата' 				, v: '2026-04-23' 		, },
+	],
+},
+
+
+
+{
+	id: 'shop_charging_station', title: 'Зарядні станції', type: 'вибір', cat: { shop: 1, },
+	keyval: [
+
+		{ k: 'EcoFlow DELTA 3' 					, v: 'prom.ua ( 36850 грн )' 	, href: 'https://prom.ua/ua/m5370450233234829607-portativnaya-elektrostantsiya-ecoflow.html?p=2901916733', },
+		{ k: 'Bluetti Premium 100 V2' 			, v: 'prom.ua ( 44687 грн )' 	, href: 'https://prom.ua/ua/m-552248763068070301-zaryadna-stantsiya-bluetti.html?p=2865577173', },
+		//{ k: 'EcoFlow DELTA 3' 					, v: 'prom.ua ( 47999 грн )' 	, href: 'https://prom.ua/ua/m7620941634501787398-portativnaya-zaryadnaya-stantsiya.html?p=2859893934', },
+		
+		//{ k: 'Bluetti AC 180' 					, v: 'prom.ua ( 51869 грн )' 	, href: 'https://prom.ua/ua/m3980490852142641914-zaryadnaya-stantsiya-bluetti.html?p=2859174873', },
+	
+		{ k: 'Bluetti AC 180' 					, v: 'prom.ua ( 47749 грн )' 	, href: 'https://prom.ua/ua/m5765087407037767217-zaryadna-stantsiya-bluetti.html?p=2814401509', },
+		{ k: 'EcoFlow DELTA Max 1600' 			, v: 'prom.ua ( 52200 грн )' 	, href: 'https://prom.ua/ua/m-7157656642042441245-portativnaya-zaryadnaya-stantsiya.html?p=2295134147', },
+		{ k: 'Bluetti AC 200 P PowerOak' 		, v: 'prom.ua ( 59990 грн )' 	, href: 'https://prom.ua/ua/p2828196174-zaryadnaya-stantsiya-bluetti.html', },
+		{ k: 'Bluetti Premium 200 V2' 			, v: 'elmir.ua ( 67999 грн )' 	, href: 'https://elmir.ua/ua/zaryadnye_stantsii/charging-station-bluetti-premium-200-v2.html', },
+		{ k: 'Bluetti Elite 200 V2' 			, v: 'prom.ua ( 68490 грн )' 	, href: 'https://prom.ua/ua/m3631957916452936899-zaryadnaya-stantsiya-bluetti.html?p=2889940758', },
+		{ k: 'Bluetti AC 200 P' 				, v: 'prom.ua ( 75479 грн )' 	, href: 'https://prom.ua/ua/m-4250389505616742284-zaryadnaya-stantsiya-bluetti.html?p=2860180852', },
+	
+		{ k: 'Bluetti Premium 200 V2' 			, v: 'prom.ua ( 75936 грн )' 	, href: 'https://prom.ua/ua/m1783659987726584004-zaryadnaya-stantsiya-bluetti.html?p=2748074272', },
+	
+		{ k: 'Bluetti AC 200 MAX' 				, v: 'prom.ua ( 77099 грн )' 	, href: 'https://prom.ua/ua/p2828191584-zaryadnaya-stantsiya-bluetti.html', },
+		{ k: 'Bluetti AC 200 L' 				, v: 'prom.ua ( 79553 грн )' 	, href: 'https://prom.ua/ua/m-1532316739723515504-zaryadna-stantsiya-bluetti.html?p=2865577160', },
+		{ k: 'Bluetti Premium 100 V2' 			, v: 'prom.ua ( 83998 грн )' 	, href: 'https://prom.ua/ua/m-738815144368207927-original-zaryadnaya-stantsiya.html?p=2801116843', },
+		{ k: 'Bluetti AC 200 PL' 				, v: 'prom.ua ( 85000 грн )' 	, href: 'https://prom.ua/ua/m8363107286458363255-zaryadnaya-stantsiya-bluetti.html?p=2339256601', },
+		{ k: 'Bluetti Elite 200 V2' 			, v: 'prom.ua ( 87000 грн )' 	, href: 'https://prom.ua/ua/m7262056723490308457-zaryadnaya-stantsiya-bluetti.html?p=2821332831', },
+		{ k: 'Bluetti AC 200 MAX Black' 		, v: 'prom.ua ( 90699 грн )' 	, href: 'https://prom.ua/ua/m-9076596144515175805-zaryadnaya-stantsiya-bluetti.html?p=2847334203', },
+		{ k: 'Bluetti AC 200 MAX Black' 		, v: 'prom.ua ( 90699 грн )' 	, href: 'https://prom.ua/ua/p2845470900-zaryadnaya-stantsiya-bluetti.html', },
+		
+		{ backspace: true },
+	],
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+	id: '20260210_bluetti', title: 'Bluetti', type: 'Зарядна станція', cat: { electronics: 1, home: 1, },
+	keyval: [
+
+		{ k: 'Назва' 			, v: 'Bluetti' 				, },
+		{ k: 'Модель' 			, v: 'Premium 100 V2' 		, },
+		{ backspace: true },
+
+		{ k: 'Потужність' 				, v: '2000 Вт' 			, },
+		{ k: 'Потужність пікова' 		, v: '3600 Вт' 			, },
+		{ k: 'Акумулятор' 				, v: 'LiFePO4' 			, },
+		{ k: 'Ємність' 					, v: '1024 Вт*г' 		, },
+		{ backspace: true },
+
+		{ k: 'Вхід від мережі ~220' 	, v: '~230 В, 1200 Вт' 	, },
+		{ backspace: true },
+
+		{ k: 'Вхід від "сонця"' 		, v: '' 				, },
+		{ k: 'Напруга' 		 			, v: '12 - 60 В' 		, },
+		{ k: 'Струм' 					, v: '20 А' 			, },
+		{ k: 'Потужність' 		 		, v: '1000 Вт' 			, },
+		{ k: 'Роз\'єм' 		 			, v: 'XT 60' 			, },
+
+		{ backspace: true },
+
+		{ k: 'Розміри' 					, v: '320 x 250 x 215' 	, },
+		{ k: 'Вага' 					, v: '11.5 кг' 			, },
+		{ backspace: true },
+
+		{ k: 'Продавець' 	, v: 'davi.com.ua' 		, href: 'https://davi.com.ua/zariadna-stantsiia-bluetti-premium-100-v2/95479/', },
+		{ k: 'Ціна' 		, v: '38000 грн' 		, },
+		{ k: 'Дата' 		, v: '2026-02-10' 		, },
+	],
+},
+
+
+
+{
+	id: '20260113_tplink', title: 'TP-Link Archer A64', type: 'Модем', cat: { electronics: 1, pc: 1, },
+	keyval: [
+
+		{ k: 'Назва' 		, v: 'TP-Link' 				, },
+		{ k: '' 			, v: 'AC 1200 Archer A64' 	, },
+		{ backspace: true },
+
+		{ k: 'Ціна' 		, v: '1600 грн' 			, },
+		{ k: 'Дата' 		, v: '2026-01-13' 			, },
 	],
 },
 
