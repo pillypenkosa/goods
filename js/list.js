@@ -491,13 +491,32 @@ const arrListDevice = [
 
 
 
+
+{
+	id: '20250526_videx', title: 'Videx H035C', type: 'Ліхтарик налобний', cat: { electronics: 1, warstore: 1, },
+	keyval: [
+		{ k: 'Ліхтарик налобний' 	, v: 'Videx' 				, },
+		{ k: 'Модель' 				, v: 'VLF-H035C' 			, },
+		
+		{ k: 'Акумулятор' 			, v: 'Li-Pol 1800 mAh' 		, },
+		{ k: '' 					, v: '410 Lm' 				, },
+
+		{ k: 'BarCode' 				, v: '4 820246 481069' 		, },
+
+		{ k: 'Магазин' 				, v: 'біля Мілітаріста, пр. Аерокосмічний, 20а'  }, 
+		{ k: '' 					, v: 'Десь тут' 			, gps: 'https://maps.app.goo.gl/4QAw3k4sAZLyjShv7', }, 
+
+		{ k: 'Ціна' 				, v: '1090 грн' 			, },
+		{ k: 'Дата' 				, v: '2026-06-11' 			, },
+	],
+},
 {
 	id: '20260607_ledstop', title: 'Led Stop', type: 'Повторитель стопов', cat: { car: 1, },
 	keyval: [
 		{ k: 'Повторитель стопов  ' 	, v: 'Led Stop Plus' 	, },
 		{ k: 'Модель ' 					, v: '64948' 			, },
 		{ k: 'Призначення' 				, v: 'на заднє скло' 	, },
-		{ k: 'Продавець' 				, v: 'Лоск' 			,  },
+		{ k: 'Ринок' 					, v: 'Лоск' 			,  },
 		{ k: 'Дата' 					, v: '2026-06-07' 		, },
 		{ k: 'Ціна' 					, v: '300 грн' 			, },
 	],
@@ -505,15 +524,13 @@ const arrListDevice = [
 {
 	id: '20260602_aquatica', title: 'Aquatica', type: 'Насос циркуляційний', cat: { home: 1, },
 	keyval: [
-		{ k: 'Насос циркуляційний' 	, v: 'Aquatica' 					, },
-		{ k: 'Модель' 				, v: '' 	, },
-		{ k: 'Призначення' 			, v: 'для циркуляції води в батареях' 	, },
+		{ k: 'Насос циркуляційний' 	, v: 'Aquatica' 								, },
+		{ k: 'Модель' 				, v: 'GPD25*4S/180 ( 774112 )' 					, },
+		{ k: 'Призначення' 			, v: 'для циркуляції води в батареях опалення' 	, },
 
-
-
-		{ k: 'Продавець' 			, v: 'sigma.ua' 			, href: 'https://sigma.ua/ru/buy/nasos-tsirkulyatsionnyy-65vt-hmax-4m-qmax-63l-min-1-180mm-gayki-1-774112/', },
-		{ k: 'Продавець' 			, v: 'Боровик' 			,  },
-		{ k: 'Дата' 				, v: '2026-06-02' 				, },
+		{ k: 'e-Магазин' 			, v: 'sigma.ua' 			, href: 'https://sigma.ua/ru/buy/nasos-tsirkulyatsionnyy-65vt-hmax-4m-qmax-63l-min-1-180mm-gayki-1-774112/', },
+		{ k: 'Продавець' 			, v: 'Боровик' 				,  },
+		{ k: 'Дата' 				, v: '2026-06-02' 			, },
 		{ k: 'Ціна' 				, v: '2266 грн ( ~1500-1600 грн зы скидкою від Борюнделя )' 				, },
 	],
 },
@@ -534,45 +551,37 @@ const arrListDevice = [
 		{ backspace: true },
 
 		{ k: 'Магазин' 					, v: '' 				, gps: 'https://maps.app.goo.gl/MHkLXEa1vif5u3SF6', }, 	// вул. Миколаївська, 6
-		{ k: 'Elmir' 					, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/tvs/tv-samsung-ue40f6000fuxua.html', },
+		{ k: 'e-Магазин' 				, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/tvs/tv-samsung-ue40f6000fuxua.html', },
 
 		{ k: 'Ціна' 					, v: '12500 грн' 		, },
 		{ k: 'Дата' 					, v: '2026-05-07' 		, },
 		{ backspace: true },
-
 	],
 },
-
-
-
 {
 	id: '20260423_dalley', title: 'Dalley', type: 'Сумка-барсетка', cat: { clothing: 1, },
 	keyval: [
 		{ k: 'Сумка-барсетка' 	, v: 'Dalley-430' 		, },
-		{ k: 'Продавець' 		, v: 'prom.ua' 			, href: 'https://prom.ua/ua/p993608063-takticheskaya-nagrudnaya-sumka.html' , },
+		{ k: 'e-Магазин' 		, v: 'prom.ua' 			, href: 'https://prom.ua/ua/p993608063-takticheskaya-nagrudnaya-sumka.html' , },
 		{ k: '' 				, v: 'Usmivka :)' 		, href: 'https://prom.ua/ua/c2151774-usmivka.html' , },
 
 		{ k: 'Дата' 			, v: '2026-04-23' 		, },
 		{ k: 'Ціна' 			, v: '317 грн' 			, },
 	],
 },
-
 {
 	id: '20260423_arvisa', title: 'Arvisa', type: 'Мішок спальний', cat: { home: 1, },
 	keyval: [
 		{ k: 'Мішок спальний' 		, v: 'Arvisa' 			, },
 		{ k: 'Розміри' 				, v: '250 х 130 см' 	, },
 
-		{ k: 'Продавець' 			, v: 'rozetka.com.ua' 	, href: 'https://rozetka.com.ua/ua/429248144/p429248144/', }, 
+		{ k: 'e-Магазин' 			, v: 'rozetka.com.ua' 	, href: 'https://rozetka.com.ua/ua/429248144/p429248144/', }, 
 		{ k: 'Магазин' 				, v: 'Rozetka' 			, gps: 'https://maps.app.goo.gl/kD53Lfs6WcjnqskM9', }, 
 
 		{ k: 'Ціна' 				, v: '2100 грн' 		, },
 		{ k: 'Дата' 				, v: '2026-04-23' 		, },
 	],
 },
-
-
-
 {
 	id: 'shop_charging_station', title: 'Зарядні станції', type: 'вибір', cat: { shop: 1, },
 	keyval: [
@@ -603,21 +612,6 @@ const arrListDevice = [
 		{ backspace: true },
 	],
 },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 {
 	id: '20260210_bluetti', title: 'Bluetti', type: 'Зарядна станція', cat: { electronics: 1, home: 1, },
 	keyval: [
@@ -647,14 +641,11 @@ const arrListDevice = [
 		{ k: 'Вага' 					, v: '11.5 кг' 			, },
 		{ backspace: true },
 
-		{ k: 'Продавець' 	, v: 'davi.com.ua' 		, href: 'https://davi.com.ua/zariadna-stantsiia-bluetti-premium-100-v2/95479/', },
+		{ k: 'e-Магазин' 	, v: 'davi.com.ua' 		, href: 'https://davi.com.ua/zariadna-stantsiia-bluetti-premium-100-v2/95479/', },
 		{ k: 'Ціна' 		, v: '38000 грн' 		, },
 		{ k: 'Дата' 		, v: '2026-02-10' 		, },
 	],
 },
-
-
-
 {
 	id: '20260113_tplink', title: 'TP-Link Archer A64', type: 'Модем', cat: { electronics: 1, pc: 1, },
 	keyval: [
@@ -667,11 +658,6 @@ const arrListDevice = [
 		{ k: 'Дата' 		, v: '2026-01-13' 			, },
 	],
 },
-
-
-
-
-
 {
 	id: '20260411_mirror', title: 'пасажирське ( 2E )', type: 'Дзеркало', cat: { car: 1, },
 	keyval: [
@@ -683,18 +669,11 @@ const arrListDevice = [
 		{ k: '' 				, v: 'Скло, відображуючий елемент' 		, },
 		{ k: 'Призначення' 		, v: 'Праве пасажирське ( Passat 2E )' 	, },
 
-
 		{ k: 'Продавець' 		, v: 'dok.ua' 					, href: 'https://dok.ua/ua/art-6402154-alkar-74839?showAnalogs=true&artNum=357857522&brandId=2268&utm_source=google&utm_medium=cpc&utm_campaign=22511470317&utm_content=&utm_term=&utm_id=&gad_source=1&gad_campaignid=22511468397&gbraid=0AAAAAC8xs_807On9It109Mxy08htNvToP&gclid=CjwKCAjwnN3OBhA8EiwAfpTYeqb20bmitvAQsUCkXXBR2lo9HRFq4UZ0LCcnGh7aih7qqVtdqF_hgRoC09MQAvD_BwE', },
 		{ k: 'Дата' 			, v: '2026-04-11' 				, },
 		{ k: 'Ціна' 			, v: '275 грн' 					, },
 	],
 },
-
-
-
-
-
-
 {
 	id: '20251115_flysky', title: 'FlySky', type: 'Пульт', cat: { electronics: 1, pc: 1, },
 	keyval: [
@@ -706,13 +685,6 @@ const arrListDevice = [
 		{ k: 'Дата' 			, v: '2025-11-15' 		, },
 	],
 },
-
-
-
-
-
-
-
 {
 	id: '20251010_m_tac', title: 'M-Tac', type: 'Підштанніки', cat: { warstore: 1, },
 	keyval: [
@@ -723,7 +695,6 @@ const arrListDevice = [
 		{ k: 'Дата' 			, v: '2025-11-06' 						, },
 	],
 },
-
 {
 	id: '20251031_hoco', title: 'Hoco 65 W', type: 'Пристрій зарядний', cat: { electronics: 1, },
 	keyval: [
@@ -801,7 +772,7 @@ const arrListDevice = [
 	id: '20251022_glass', title: 'Tempered Glass 0.3mm', type: 'Скло захисне', cat: { electronics: 1, },
 	keyval: [
 		{ k: 'Скло захисне' 	, v: '' 							, },
-		{ k: 'Модель' 			, v: 'Tempered Glass 0.3mm' 		, },
+		{ k: 'Модель' 			, v: 'Tempered Glass 0.3 mm' 		, },
 		{ k: 'Призначення' 		, v: 'для телефона Samsung A26 5G' 	, },
 		{ k: 'Продавець' 		, v: 'vest.in.ua' 					, href: 'https://vest.in.ua/accessories-for-phones/plenki/zahisne-sklo-tempered-glass-03mm-dlya-samsung-galaxy-a26-5g' 	, },
 		{ k: 'Дата' 			, v: '2025-10-22' 					, },
@@ -868,7 +839,7 @@ const arrListDevice = [
 		{ k: 'Модель' 				, v: '87344006' 		, },
 		{ k: 'Акумулятор' 			, v: '350 мА*г' 		, },
 
-		{ k: 'Продавець' 			, v: 'Rozetka' 			, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
+		{ k: 'e-Магазин' 			, v: 'Rozetka' 			, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
 		{ k: 'Дата' 				, v: '2025-08-12' 		, },
 		{ k: 'Ціна' 				, v: '500 грн' 			, },
 		{ k: 'Rozetka' 				, v: 'rozetka.com.ua' 	, href: 'https://rozetka.com.ua/ua/441711929/p441711929/', },
@@ -879,7 +850,7 @@ const arrListDevice = [
 	keyval: [
 		{ k: 'Крісло офісне' 	, v: 'Bonro B-635' 					, },
 		{ k: 'Модель' 			, v: '42400371' 					, },
-		{ k: 'Продавець' 		, v: 'bonro.ua' 					, gps: 'https://bonro.ua/krislo-ofisne-na-kolesakh-bonro-b-635-chorno-chervone-42400371/', },
+		{ k: 'e-Магазин' 		, v: 'bonro.ua' 					, gps: 'https://bonro.ua/krislo-ofisne-na-kolesakh-bonro-b-635-chorno-chervone-42400371/', },
 		{ k: 'Дата' 			, v: '2025-08-01' 					, },
 		{ k: 'Ціна' 			, v: '2550 грн + 400 грн доставка' 	, },
 	],
@@ -899,7 +870,7 @@ const arrListDevice = [
 		{ k: 'Колір' 				, v: 'жовтий' 					, },
 		{ backspace: true, },
 
-		{ k: 'Продавець' 			, v: 'Комп\'ютерний всесвіт' 	, gps: 'https://maps.app.goo.gl/zeagAPopSe8TQ8oX6', },
+		{ k: 'Магазин' 				, v: 'Комп\'ютерний всесвіт' 	, gps: 'https://maps.app.goo.gl/zeagAPopSe8TQ8oX6', },
 		{ k: 'Ціна' 				, v: '145 грн' 					, },
 		{ k: 'Дата' 				, v: '2025-07-30' 				, },
 	],
@@ -913,7 +884,7 @@ const arrListDevice = [
 		{ k: 's/n' 				, v: 'R5CY50LX9QL' 				, },
 		{ k: 'IMEI 1' 			, v: '351728903444736' 			, },
 		{ k: 'IMEI 2' 			, v: '352285783444731' 			, },
-		{ k: 'Продавець' 		, v: 'Rozetka' 					, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
+		{ k: 'e-Магазин' 		, v: 'Rozetka' 					, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
 		{ k: 'Ціна' 			, v: '12000 грн' 				, },
 		{ k: 'Дата' 			, v: '2025-07-04' 				, },
 		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 			, href: 'https://rozetka.com.ua/ua/samsung-sm-a266bzkceuc/p484698759/', },
@@ -937,7 +908,7 @@ const arrListDevice = [
 		{ k: 'діагональ' 		, v: '11&#698;' 				, },
 		{ backspace: true },
 
-		{ k: 'Продавець' 		, v: 'Rozetka' 					, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
+		{ k: 'e-Магазин' 		, v: 'Rozetka' 					, gps: 'https://maps.app.goo.gl/6KWWmiohW8VsZS4x5', },
 		{ k: 'Ціна' 			, v: '8600 грн' 				, },
 		{ k: 'Дата' 			, v: '2025-06-20' 				, },
 		{ backspace: true },
@@ -953,7 +924,7 @@ const arrListDevice = [
 		{ k: 'Модель' 			, v: 'JBLT720BTBLK' 		, },
 		{ backspace: true },
 
-		{ k: 'Продавець' 		, v: 'Vodafon' 				, gps: 'https://maps.app.goo.gl/nWUMVZoFYBLeWAv26', },
+		{ k: 'Магазин' 			, v: 'Vodafon' 				, gps: 'https://maps.app.goo.gl/nWUMVZoFYBLeWAv26', },
 		{ k: 'Ціна' 			, v: '3300 грн' 			, },
 		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 		, href: 'https://rozetka.com.ua/ua/jbl_jblt720btblk/p369896661/?gad_source=1&gad_campaignid=17661883199&gbraid=0AAAAADk6sCd3iLfBACBL6OS4CptGJqbqG&gclid=EAIaIQobChMIqezusOPnjgMVpg-iAx3DNALYEAQYBiABEgKnCvD_BwE', },
 	],
@@ -963,7 +934,7 @@ const arrListDevice = [
 	keyval: [
 		{ k: 'Машинка для стрижки' 	, v: 'Maxtop Dragon Hair Clipper' 	, },
 		{ k: 'Модель' 				, v: 'M 99' 						, },
-		{ k: 'Продавець' 			, v: 'MobiWorld' 					, gps: 'https://maps.app.goo.gl/JR38CkZZmcePUvxZ7', }, // кіоск в супермаркеті Чудо
+		{ k: 'Магазин' 				, v: 'MobiWorld' 					, gps: 'https://maps.app.goo.gl/JR38CkZZmcePUvxZ7', }, // кіоск в супермаркеті Чудо
 		{ k: 'Ціна' 				, v: '280 грн' 						, },
 		{ k: 'Дата' 				, v: '2025-07-04' 					, },
 	],
@@ -972,7 +943,7 @@ const arrListDevice = [
 	id: '20250500_sleep_bag', title: 'спальний', type: 'Мішок', cat: { warstore: 1, },
 	keyval: [
 		{ k: 'Мішок спальний' 	, v: 'полегшений' 	, },
-		{ k: 'Продавець' 		, v: 'Військторг' 	, gps: 'https://maps.app.goo.gl/FffAsnj8rrf78RjU6', }, 
+		{ k: 'Магазин' 			, v: 'Військторг' 	, gps: 'https://maps.app.goo.gl/FffAsnj8rrf78RjU6', }, 
 		{ k: 'Ціна' 			, v: '1800 грн' 	, },
 		{ k: 'Дата' 			, v: '~ 2025-05' 	, },
 	],
@@ -982,17 +953,22 @@ const arrListDevice = [
 	keyval: [
 		{ k: 'Ліхтарик' 		, v: 'тактичний' 	, },
 		{ k: 'Призначення' 		, v: 'на шолом' 	, },
-		{ k: 'Продавець' 		, v: 'Військторг' 	, gps: 'https://maps.app.goo.gl/YyobRpykjZj4AZQ47', }, 
+		{ k: 'Магазин' 			, v: 'Військторг' 	, gps: 'https://maps.app.goo.gl/YyobRpykjZj4AZQ47', }, 
 		{ k: 'Дата' 			, v: '~ 2025-05' 	, },
 	],
 },
 {
-	id: '20250526_videx', title: 'Videx', type: 'Ліхтарик налобний', cat: { electronics: 1, warstore: 1, },
+	id: '20250526_videx', title: 'Videx H189', type: 'Ліхтарик налобний', cat: { electronics: 1, warstore: 1, },
 	keyval: [
 		{ k: 'Ліхтарик налобний' 	, v: 'Videx' 			, },
-		{ k: 'Модель' 				, v: 'HI89' 			, },
-		{ k: 'Індекс' 				, v: 'VLF-H189' 		, },
-		{ k: 'Продавець' 			, v: 'Uarm' 			, gps: 'https://maps.app.goo.gl/Hg9bKgcMGDJe7juA9', }, 
+		{ k: 'Модель' 				, v: 'VLF-H189' 		, },
+		
+		{ k: 'Акумулятор' 			, v: 'Li-Pol 1800 mAh' 		, },
+		{ k: '' 					, v: '300 Lm' 				, },
+		{ k: 'BarCode' 				, v: '4 820246 486811' 		, },
+
+		{ k: 'Магазин' 				, v: 'Uarm' 			, gps: 'https://maps.app.goo.gl/Hg9bKgcMGDJe7juA9', }, 
+		
 		{ k: 'Ціна' 				, v: '1100 грн' 		, },
 		{ k: 'Дата' 				, v: '2025-05-26' 		, },
 	],
