@@ -1,4 +1,4 @@
-// 2025
+// 
 
 
 
@@ -6,21 +6,32 @@
 
 const arrListCat = [
 
-	{ id: 'all' 			, title: 'Усі' 				, },
-	{ id: 'pc' 				, title: 'PC' 				, },
-	{ id: 'car' 			, title: 'Авто' 			, },
-	{ id: 'car_service' 	, title: 'СТО' 				, },
-	{ id: 'warstore' 		, title: 'Військторг' 		, },
-	{ id: 'home' 			, title: 'Дім' 				, },
-	{ id: 'electronics' 	, title: 'Електроніка' 		, },
-	{ id: 'tools' 			, title: 'Інструмент' 		, },
-	{ id: 'clothing' 		, title: 'Одяг' 			, },
-	{ id: 'hh_techno' 		, title: 'Техніка' 			, }, //household appliances
-	{ id: 'chemical' 		, title: 'Хімія' 			, },
-	{ id: 'service' 		, title: 'Послуги' 			, },
-	{ id: 'other' 			, title: 'Інші' 			, },
-	{ id: 'shop' 			, title: 'Shop' 			, },
-
+	[
+		//{ id: 'all' 			, title: 'Усі' 				, },
+	],
+	[
+		{ id: 'car' 			, title: 'Авто' 			, },
+		{ id: 'service_2e' 		, title: 'Service 2E' 		, },
+		{ id: 'service_agg' 	, title: 'Service AGG' 		, },
+		{ id: 'bicycle' 		, title: 'Велосипед' 		, },
+		{ id: 'tools' 			, title: 'Інструмент' 		, },
+	],
+	[
+		{ id: 'pc' 				, title: 'PC' 				, },
+		{ id: 'electronics' 	, title: 'Електроніка' 		, },
+		{ id: 'hh_techno' 		, title: 'Техніка' 			, }, //household appliances
+	],
+	[
+		{ id: 'home' 			, title: 'Дім' 				, },
+		{ id: 'warstore' 		, title: 'Військторг' 		, },
+		{ id: 'clothing' 		, title: 'Одяг' 			, },
+		{ id: 'chemical' 		, title: 'Хімія' 			, },
+	],
+	[
+		{ id: 'service' 		, title: 'Послуги' 			, },
+		{ id: 'shop' 			, title: 'Вибір' 			, },
+		{ id: 'other' 			, title: 'Інше' 			, },
+	],
 ];
 
 
@@ -301,25 +312,29 @@ const arrListDevice = [
 	id: 'pc_desktop', title: 'PC', type: 'Компьютер', cat: { pc: 1, }, 
 	keyval: [
 		
-		{ k: '--- MotherBoard' 		, v: '' 								, },
-		{ k: 'Модель' 				, v: 'Gigabyte Z370 HD3' 				, },
-		{ k: 'Сокет' 				, v: 's-1151' 							, },
-		{ k: 'Чипсет' 				, v: 'Intel Z370' 						, },
-		{ k: 'Тип RAM' 				, v: 'DDR4 * 4 шт' 						, },
-		{ k: 'Об\'єм RAM' 			, v: '64 Гб' 							, },
-		{ k: 'Частоти пам\'яті' 	, v: '2133 МГц, 2400 МГц, 2666 МГц' 	, },
-		
-		{ k: 'Продавець' 			, v: 'PC Shop' 							, },
-		{ k: 'Дата' 				, v: '2018-02-16' 						, },
-		{ k: 'Ціна' 				, v: '4068 грн' 						, },
 
-		{ k: 'ElMir' 				, v: 'elmir.ua' 		, href: 'https://elmir.ua/motherboards/motherboard_gigabyte_z370_hd3_s-1151_z370.html' 	, },
-		{ k: 'Rozetka' 				, v: 'rozetka.com.ua' 	, href: 'https://hard.rozetka.com.ua/ua/gigabyte_z370_hd3/p24386964/'					, },
+
+		{ k: '--- Материнська плата' 	, v: 'Gigabyte Z370 HD3' 				, },
+		{ k: 'Сокет' 					, v: 's-1151' 							, },
+		{ k: 'Чипсет' 					, v: 'Intel Z370' 						, },
+		{ k: 'Тип RAM' 					, v: 'DDR4 * 4 шт' 						, },
+		{ k: 'Об\'єм RAM' 				, v: '64 Гб' 							, },
+		{ k: 'Частоти пам\'яті' 		, v: '2133 МГц, 2400 МГц, 2666 МГц' 	, },
+		
+		{ k: 'Магазин' 		, v: 'PC Shop' 							, },
+		{ k: 'Дата' 		, v: '2018-02-16' 						, },
+		{ k: 'Ціна' 		, v: '4068 грн' 						, },
+
+		{ k: 'Приклад' 				, v: 'elmir.ua' 		, href: 'https://elmir.ua/motherboards/motherboard_gigabyte_z370_hd3_s-1151_z370.html' 	, },
+		{ k: 'Приклад' 				, v: 'rozetka.com.ua' 	, href: 'https://hard.rozetka.com.ua/ua/gigabyte_z370_hd3/p24386964/'					, },
 		{ k: 'Процесори для Z370' 	, v: 'gigabyte.com' 	, href: 'https://www.gigabyte.com/Motherboard/Z370-HD3-rev-10/support#support-cpu' 		, },
 		{ backspace: true },
 		
-		{ k: '--- CPU' 				, v: '' 					, },
-		{ k: 'Модель' 				, v: 'Intel Core i3-8100' 	, },
+
+
+
+
+		{ k: '--- Процесор' 		, v: 'Intel Core i3-8100' 	, },
 		{ k: 'Частота ядра' 		, v: '3.6 ГГц' 				, },
 		{ k: 'Кількість ядер' 		, v: 4 						, },
 		{ k: 'Тип пам\'яти' 		, v: 'DDR4' 				, },
@@ -335,57 +350,94 @@ const arrListDevice = [
 		{ k: 'Пропускна здатність' 	, v: '42.7 GB/s' 				, },
 		{ k: 'Шина' 				, v: '128 bit' 					, },
 
-		{ k: 'Продавець' 			, v: 'PC Shop' 					, },
-		{ k: 'ElMir' 				, v: 'elmir.ua' 				, href: 'https://elmir.ua/processors/processor_intel_core_i3-8100_s-1151_3_6ghz_6mb_box_bx80684i38100.html' 	, },
-		{ k: 'Rozetka' 				, v: 'rozetka.com.ua' 			, href: 'https://hard.rozetka.com.ua/intel_core_i3_8100/p23602096/characteristics/' 							, },
+		{ k: 'Магазин' 				, v: 'PC Shop' 					, },
+		{ k: 'Приклад' 				, v: 'elmir.ua' 				, href: 'https://elmir.ua/processors/processor_intel_core_i3-8100_s-1151_3_6ghz_6mb_box_bx80684i38100.html' 	, },
+		{ k: 'Приклад' 				, v: 'rozetka.com.ua' 			, href: 'https://hard.rozetka.com.ua/intel_core_i3_8100/p23602096/characteristics/' 							, },
 		{ backspace: true },
 
-		{ k: '--- RAM' 			, v: '' 						, },
-		{ k: 'Модель' 			, v: 'HyperX Fury Black' 		, },
-		{ k: 'Код' 				, v: 'HX426C16FB3K2/16' 		, },
-		{ k: 'Тип' 				, v: 'DDR4' 					, },
-		{ k: 'Об\'єм' 			, v: '16 Гб = 8GB * 2' 			, },
-		{ k: 'Частота' 			, v: '2666(1333) МГц' 			, },
-		{ k: 'Таймінги' 		, v: 'CL16' 					, },
-		{ k: 'Напруга' 			, v: '1,2 В' 					, },
-		{ k: 'Продавець' 		, v: 'PC Shop' 					, },
+
+
+
+
+		{ k: '--- Оперативна пам\'ять' 		, v: 'HyperX Fury Black' 		, },
+		{ k: 'Код' 							, v: 'HX426C16FB3K2/16' 		, },
+		{ k: 'Тип' 							, v: 'DDR4' 					, },
+		{ k: 'Об\'єм' 						, v: '16 Гб = 8GB * 2' 			, },
+		{ k: 'Частота' 						, v: '2666(1333) МГц' 			, },
+		{ k: 'Таймінги' 					, v: 'CL16' 					, },
+		{ k: 'Напруга' 						, v: '1,2 В' 					, },
+		
+		{ k: 'Магазин' 			, v: 'PC Shop' 					, },
 		{ k: 'Дата' 			, v: '2018-02-16' 				, },
 		{ k: 'Ціна' 			, v: '6216 грн за 2 планки' 	, },
 		
-		{ k: 'ElMir' 			, v: 'elmir.ua' 			, href: 'https://elmir.ua/memory_modules/memory_module_hyperx_ddr4_16gb_2x8gb_2666mhz_fury_black_hx426c16fb3k2_16.html', },
+		{ k: 'Приклад' 			, v: 'elmir.ua' 				, href: 'https://elmir.ua/memory_modules/memory_module_hyperx_ddr4_16gb_2x8gb_2666mhz_fury_black_hx426c16fb3k2_16.html', },
 		{ backspace: true },
 
-		{ k: '--- Power AC/DC' 	, v: '', },
-		{ k: 'Модель' 			, v: 'Chieftec Core BBS-700S' 	, },
-		{ k: 'Потужність' 		, v: '700 Вт' 					, },
-		{ k: 'Продавець' 		, v: 'PC Shop' 					, },
-		{ k: 'Дата' 			, v: '2018-02-20' 				, },
-		{ k: 'Ціна' 			, v: '1679 грн' 				, },
-		{ k: 'ElMir' 			, v: 'elmir.ua' 				, href: 'https://elmir.ua/power_supplies/power_supply_unit_700w_chieftec_core_bbs-700s.html', },
+
+
+
+
+		{ k: '--- Диск SSD M.2' 	, v: 'Kingston NV1' 	, },
+		{ k: 'Код' 					, v: '9KXJKEJ4RC6A66' 	, },
+		{ k: 'об\'єм' 				, v: '1 TB' 			, },
+		
+		{ k: 'запис' 			, v: '1700 МБ/с' 		, },
+		{ k: 'зчитування' 		, v: '2100 МБ/с' 		, },
+		{ k: 'ключ' 			, v: 'М' 				, },
+		
+		{ k: 'Магазин' 			, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/ssd-drives/ssd-drive_m_2_1tb_kingston_nv1_snvs_1000g.html', },
+		{ k: 'Дата' 			, v: '2022-12-01' 		, },
+		{ k: 'Ціна' 			, v: '2878 грн' 		, },
 		{ backspace: true },
 
-		{ k: '--- SSD M.2' 		, v: '' 			, },
-		{ k: 'Назва' 			, v: 'Kingston NV1' , },
-		{ k: 'об\'єм' 			, v: '1 TB' 		, },
-		{ k: 'запис' 			, v: '1700 МБ/с' 	, },
-		{ k: 'зчитування' 		, v: '2100 МБ/с' 	, },
-		{ k: 'ключ' 			, v: 'М' 			, },
 
-		{ k: 'Продавець' 		, v: 'ElMir' 		, },
-		{ k: 'ElMir' 			, v: 'elmir.ua' 	, href: 'https://elmir.ua/ua/ssd-drives/ssd-drive_m_2_1tb_kingston_nv1_snvs_1000g.html', },
-		{ backspace: true },
 
-		{ k: '--- SSD SATA-3' 	, v: '' 					, },
-		{ k: 'Назва' 			, v: 'Silicon Power A55' 	, },
+		{ k: '--- Диск SSD SATA-3' 	, v: 'Silicon Power' 		, },
+		{ k: 'Модель' 				, v: 'A55' 					, },
+		{ k: 'Код' 					, v: 'SP128GBSS3A55S25' 	, },
+
+		{ k: 'Form' 			, v: 'SATA-3' 				, },
 		{ k: 'об\'єм' 			, v: '128 GB' 				, },
 		{ k: 'запис' 			, v: '360 МБ/с' 			, },
 		{ k: 'зчитування' 		, v: '460 МБ/с' 			, },
-		{ k: 'Продавець' 		, v: 'ElMir' 				, },
-		{ k: 'ElMir' 			, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/ssd-drives/ssd-drive_2_5_sata_128gb_silicon_power_a55_sp128gbss3a55s25.html', },
+		
+		{ k: 'Магазин' 			, v: 'elmir.ua' 			, href: 'https://elmir.ua/ua/ssd-drives/ssd-drive_2_5_sata_128gb_silicon_power_a55_sp128gbss3a55s25.html', },
+		{ k: 'Дата' 			, v: '2018-01-23' 			, },
+		{ k: 'Ціна' 			, v: '1480 грн' 			, },
 		{ backspace: true },
 
-		{ k: '--- Монітор' 		, v: '' 								, },
-		{ k: 'Назва' 			, v: 'Samsung' 							, },
+
+
+
+
+		{ k: '--- Блок живлення' 			, v: 'Super Flower' 				, }, // psu - power supply unit
+		{ k: 'Модель' 						, v: 'Leadex VII XP Pro Series' 	, },
+		{ k: 'Код' 							, v: 'SF-1000F14XP(BK)' 			, },
+		{ k: 'Потужність' 					, v: '1000 Вт' 						, },
+		{ k: 'Клас рівня ефективності' 	, v: '80 Plus Titanium' 			, },		
+		
+		{ k: 'e-Магазин' 	, v: 'elmir.ua' 		, href: 'https://elmir.ua/ua/power_supplies/power-supply-unit-1000w-super-flower-leadex-vii-xp-pro-series-sf-1000f14xp-black.html#specs', },
+		{ k: 'Дата' 		, v: '2026-06-18' 		, },
+		{ k: 'Ціна' 		, v: '7760 грн' 		, },
+		{ backspace: true },
+
+
+
+
+
+		{ k: '--- Корпус ПК' 	, v: 'Cooler Master Elite' 	, },
+		{ k: 'Модель' 			, v: 'RC-331' 				, },
+		{ k: 'FormFactor' 		, v: 'Middle Tower ATX' 	, },
+		{ k: 'Магазин' 			, v: 'ElMir' 				, },
+		{ k: 'Дата' 			, v: '2008-03-23' 			, },
+		{ backspace: true },
+
+
+
+
+
+		{ k: '--- Монітор' 		, v: 'Samsung' 							, },
 		{ k: 'Модель' 			, v: 'S32D700EAI (LS32D700EAIXCI)' 		, },
 		{ k: 's/n' 				, v: '8806095545035, 0UYNHNBX900040' 	, },
 		{ k: 'Діагональ' 		, v: '32"' 								, },
@@ -395,19 +447,179 @@ const arrListDevice = [
 		{ k: 'Співвідношення' 	, v: '16:9' 							, },
 		{ k: 'Час реакції' 		, v: '5 мс' 							, },
 		{ k: 'HDMI' 			, v: '2.0' 								, },
-		{ k: 'ElMir' 			, v: 'elmir.ua' 						, href: 'https://elmir.ua/ua/monitors/monitor-32-samsung-s32d700eai-ls32d700eaixci.html', },
+		{ k: 'Магазин' 			, v: 'elmir.ua' 						, href: 'https://elmir.ua/ua/monitors/monitor-32-samsung-s32d700eai-ls32d700eaixci.html', },
 		{ k: 'Дата' 			, v: '2024-12-20' 						, },
 		{ k: 'Ціна' 			, v: '12000 грн' 						, },
 		{ backspace: true },
 
-		{ k: '--- Монітор' 		, v: '' 							, },
-		{ k: 'Назва' 			, v: 'LG Flatron' 					, },
+
+
+
+
+		{ backspace: true },
+		{ backspace: true },
+		{ backspace: true },
+		{ backspace: true },
+
+		{ k: '------- Комплектуючі б/в -------' 	, v: '' 	, },
+		{ backspace: true },
+		{ backspace: true },
+
+
+
+
+
+		{ k: '--- Материнські плати ---' 	, v: '' 		, },
+		{ backspace: true },
+
+		{ k: 'Материнська плата' 	, v: 'Gigabyte' 		, },
+		{ k: 'Модель' 				, v: 'GA-P35-DS3L' 		, },
+		{ k: 'Магазин' 				, v: 'ElMir' 			, },
+		{ k: 'Дата' 				, v: '2008-03-17' 		, },
+		{ k: 'Rozetka' 				, v: 'rozetka.com.ua' 	, href: 'https://hard.rozetka.com.ua/ua/22824/p22824/', },
+		{ backspace: true },
+		{ backspace: true },
+
+
+
+
+
+		{ k: '--- Оперативна пам\'ять ---' 		, v: ' ' 		, },
+		{ backspace: true },
+
+		{ k: 'Оперативна пам\'ять' 		, v: 'Corsair' 			, },
+		{ k: 'Модель' 					, v: 'TWIN 2X 2048-6400 C5DHX' 	, },
+		{ k: 'Type' 					, v: 'DDR2' 					, },
+		{ k: 'Частота' 					, v: '800 MHz' 					, },
+		{ k: 'Об\'єм' 					, v: '4 ГБ = 4 планки * 1 Гб' 	, },
+
+		{ k: 'Магазин' 		, v: 'ElMir' 					, },
+		{ k: 'Дата' 		, v: '2008-03-22' 				, },
+		{ k: 'Приклад' 		, v: 'rozetka.com.ua' 			, href: 'https://hard.rozetka.com.ua/ua/23619/p23619/', },
+		
+		{ k: 'Статус' 		, v: 'Резерв' 	, },
+		{ backspace: true },
+		{ backspace: true },
+
+
+
+
+
+		{ k: '--- Диски ---' 		, v: '' 	, },
+		{ backspace: true },
+
+		{ k: 'Диск HDD' 	, v: 'Seagate Barracuda' 	, },
+		{ k: 'Код' 			, v: 'ST2000DM006' 			, },
+		{ k: 's/n' 			, v: 'Z4Z9X55D' 			, },
+		{ k: 'Об\'єм' 		, v: '2 TB' 				, },
+		{ k: 'Form' 		, v: 'SATA' 				, },
+		{ k: 'Магазин' 		, v: 'ElMir' 				, },
+		{ k: 'Дата' 		, v: '2018-03-12' 			, },
+		{ k: 'Статус' 		, v: 'Працює повільно. Резерв' 	, },
+		{ backspace: true },
+
+		{ k: 'Диск HDD' 	, v: 'Seagate Barracuda' 	, },
+		{ k: 's/n' 			, v: '3QK08098' 			, },
+		{ k: 'Об\'єм' 		, v: '750 Gb' 				, },
+		{ k: 'rpm' 			, v: '7200.11' 				, },
+		{ k: 'Продавець' 	, v: 'ElMir' 				, },
+		{ k: 'Дата' 		, v: '2008-03-23' 			, },
+		{ k: 'Статус' 		, v: 'На смітнику' 			, },
+		
+		{ backspace: true },
+		{ backspace: true },
+
+
+
+
+
+		{ k: '--- Блоки живлення ---' 	, v: '' 		, },
+		{ backspace: true },
+
+		{ k: 'Блок живлення' 			, v: 'Chieftec' 		, },
+		{ k: 'Модель' 					, v: 'Core BBS-700S' 	, },
+		{ k: 'Потужність' 				, v: '700 Вт' 			, },
+		{ k: 'Клас рівня ефективності' 	, v: '80 Plus Gold' 	, },		
+		{ k: 'Магазин' 					, v: 'PC Shop' 			, },
+		{ k: 'Дата' 					, v: '2021-08-31' 		, },
+		{ k: 'Ціна' 					, v: '1679 грн' 		, },
+		{ k: 'Приклад' 					, v: 'elmir.ua' 		, href: 'https://elmir.ua/power_supplies/power_supply_unit_700w_chieftec_core_bbs-700s.html', },
+		{ k: 'Статус' 					, v: 'Резерв' 			, },
+		{ backspace: true },
+		
+		{ k: 'Блок живлення' 	, v: 'Chieftec' 				, },
+		{ k: 'Модель' 			, v: 'GPE-700S ( Eco Series )' 	, },
+		{ k: 'Потужність' 		, v: '700 Вт' 					, },
+		{ k: 'Статус' 			, v: 'Стан невідомий' 			, },
+		{ backspace: true },
+
+		{ k: 'Блок живлення' 	, v: 'Thermaltake' 			, },
+		{ k: 'Потужність' 		, v: '750 Вт' 				, },
+		{ k: 's/n' 				, v: 'W0117RE0703000447' 	, },
+		{ k: 'Магазин' 			, v: 'ElMir' 				, },
+		{ k: 'Дата' 			, v: '2008-03-23' 			, },
+		{ k: 'Статус' 			, v: 'На смітнику' 			, },
+		
+		{ backspace: true },
+		{ backspace: true },
+
+
+
+
+
+		{ k: '--- Відеокарти ---' 	, v: 'Zotac' 						, },
+		{ backspace: true },
+		
+		{ k: 'Відеокарта' 	, v: 'Zotac' 						, },
+		{ k: 'Модель' 			, v: 'GeForce 8800 GT AMP' 			, },
+		{ k: 'Об\'єм' 			, v: '512 Gb' 						, },
+		{ k: 'Частота' 			, v: '2000 MHz' 					, },
+		{ k: 'Шина' 			, v: '256 bit' 						, },
+		{ k: 'Магазин' 			, v: 'Stels' 						, },
+		{ k: '' 				, v: 'Відділ в універмазі Харків' 	, },
+		{ k: 'Дата' 			, v: '2008-03-22' 					, },
+
+		{ k: 'Статус' 			, v: 'На смітнику' 			, },
+		{ backspace: true },
+		{ backspace: true },
+
+
+
+
+
+		{ k: '--- Звукові карти ---' 	, v: '' 	, },
+		{ backspace: true },
+
+		{ k: 'Звукова карта' 	, v: 'Creative 5.1 Live' 	, },
+		{ k: 'Продавець' 		, v: 'МКС' 					, },
+		{ k: 'Дата' 			, v: '2004-06-05' 			, },
+		{ k: 'Ціна' 			, v: '210 грн' 				, },
+
+		{ k: 'Статус' 			, v: 'Резерв' 				, },
+		{ backspace: true },
+		{ backspace: true },
+
+
+
+
+
+		{ k: '--- Монітори ---' 	, v: '' 					, },
+		{ backspace: true },
+
+		{ k: 'Монітор' 			, v: 'LG Flatron' 					, },
 		{ k: 'Модель' 			, v: 'L204WT-SF' 					, },
 		{ k: 'Діагональ' 		, v: '20"' 							, },
 		{ k: 'Технологія' 		, v: 'TFT LCD' 						, },
 		{ k: 'Продавець' 		, v: 'відділ в Універмазі Харків' 	, }, // ФОП Яковенко Ігор Сергійович
 		{ k: 'Дата' 			, v: '2008-03-07' 					, },
 		{ k: 'Ціна' 			, v: '1500 грн' 					, },
+
+		{ k: 'Статус' 			, v: 'Працює в парі з ноутбуком' 	, },
+		{ backspace: true },
+		{ backspace: true },
+
+
+
 	],
 },
 {
@@ -483,21 +695,53 @@ const arrListDevice = [
 
 	],
 }, 
+{
+	id: '20140000_pride', title: 'Pride', type: 'Велосипед', cat: { bicycle: 1, },
+	keyval: [
+		{ k: 'Велосипед' 	, v: 'Pride' 			, },
+		{ k: 'Колеса' 		, v: '29' 				, },
+		{ k: 'Ціна' 		, v: '4200 грн' 		, },
+		{ k: 'Дата' 		, v: '~ 2013-2014' 		, },
+	],
+},
+
+
+
+
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------
 
+{
+	id: '20260618_tire', title: 'Schwalbe', type: 'Покришки', cat: { bicycle: 1, },
+	keyval: [
 
+		{ k: 'Покришка' 				, v: 'Schwalbe' 			, },
+		{ k: 'Розмір' 					, v: '29x2.10' 				, },
+		{ k: 'Код' 						, v: '54-622' 				, },
+		{ backspace: true },
 
+		{ k: 'Товар' 					, v: 'prom.ua' 				, href: 'https://prom.ua/ua/p2985862962-pokryshka-29x210-622.html', },
+		{ k: 'e-Магазин' 				, v: 'Велопланета' 			, href: 'https://prom.ua/ua/c4166435-veloplaneta.html', },
+		{ k: 'Дата' 					, v: '2026-06-18' 			, },
+		{ k: 'Ціна' 					, v: '2712 грн = 2 шт * 1356 грн' 		, },
+	],
+},
+{
+	id: '20260618_tube', title: 'Schwalbe', type: 'Камери', cat: { bicycle: 1, },
+	keyval: [
 
+		{ k: 'Камера' 				, v: 'Schwalbe' 			, },
+		{ k: 'Маркування' 			, v: 'AV19 40mm EK AGV' 	, },
+		{ k: 'Код' 					, v: '40/62-584/635' 		, },
+		{ k: 'Розмір' 				, v: '28/29' 				, },
+		{ backspace: true },
 
-
-
-
-
-
-
-
-
+		{ k: 'Товар' 				, v: 'prom.ua' 				, href: 'https://prom.ua/ua/p2985885991-kamera-4062-584635.html', },
+		{ k: 'e-Магазин' 			, v: 'Велопланета' 			, href: 'https://prom.ua/ua/c4166435-veloplaneta.html', },
+		{ k: 'Дата' 				, v: '2026-06-18' 			, },
+		{ k: 'Ціна' 				, v: '1216 грн = 4 шт * 304 грн' 		, },
+	],
+},
 {
 	id: '20260618_gdb1048', title: 'TRW', type: 'Колодки гальмівні передні', cat: { car: 1, },
 	keyval: [
@@ -811,7 +1055,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20251023_wheel', title: 'колес', type: 'Балансування', cat: { car_service: 1, },
+	id: '20251023_wheel', title: 'колес', type: 'Балансування', cat: { service_2e: 1, },
 	keyval: [
 		{ k: 'СТО' 			, v: 'Шиномонтаж' 						, gps: 'https://maps.app.goo.gl/7DScbGHwV8krWyJEA', },
 		{ k: 'Результат' 	, v: 'Диски збалансовані' 				, },
@@ -884,7 +1128,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20250902_kniazha', title: 'Княжа', type: 'ПОСЦПВ', cat: { service: 1, car_service: 1, },
+	id: '20250902_kniazha', title: 'Княжа', type: 'ПОСЦПВ', cat: { service: 1, service_2e: 1, },
 	keyval: [
 		{ k: 'Страхова компанія' 	, v: 'Княжа' 			, },
 		{ k: '' 					, v: '№ EP-232080188' 	, },
@@ -1068,7 +1312,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20241228_lpg', title: 'ГБО 4', type: 'Фільтри', cat: { car_service: 1, },
+	id: '20241228_lpg', title: 'ГБО 4', type: 'Фільтри', cat: { service_2e: 1, },
 	keyval: [
 		{ k: 'Фільтри ГБО 4' 		, v: '' 				, },
 		{ k: 'Спеціаліст' 			, v: 'Тітов Микола' 	, }, 
@@ -1086,7 +1330,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20241130_filter', title: 'Kolbenschmidt', type: 'Фільтр масляний', cat: { car: 1, car_service: 1, },
+	id: '20241130_filter', title: 'Kolbenschmidt', type: 'Фільтр масляний', cat: { car: 1, service_2e: 1, },
 	keyval: [
 		{ k: 'Фільтр масляний' 	, v: 'Kolbenschmidt' 		, },
 		{ k: 'Код' 				, v: '50 013 073' 			, },
@@ -1100,7 +1344,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20241130_oil', title: 'Liqui Moly', type: 'Масло', cat: { car: 1, chemical: 1, car_service: 1, },
+	id: '20241130_oil', title: 'Liqui Moly', type: 'Масло', cat: { car: 1, chemical: 1, service_2e: 1, },
 	keyval: [
 		{ k: 'Масло моторне' 	, v: 'Liqui Moly' 										, },
 		{ k: 'Маркування' 		, v: '10W-40, ACEA A3/B4, API SN, VW 50101/50500' 		, },
@@ -1116,7 +1360,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20241130_adriauto', title: 'Adriauto', type: 'Трос спідометра', cat: { car: 1, car_service: 1, },
+	id: '20241130_adriauto', title: 'Adriauto', type: 'Трос спідометра', cat: { car: 1, service_2e: 1, },
 	keyval: [
 		{ k: 'Трос спідометра' 	, v: 'Adriauto' 						, },
 		{ k: 'Код' 				, v: '55.1524' 							, },
@@ -1131,7 +1375,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20240909_meyle', title: 'Meyle', type: 'Бачок розширювальний', cat: { car: 1, car_service: 1, },
+	id: '20240909_meyle', title: 'Meyle', type: 'Бачок розширювальний', cat: { car: 1, service_2e: 1, },
 	keyval: [
 		{ k: 'Бачок для антифріза' 	, v: 'Meyle' 			, },
 		{ k: 'Код' 					, v: '1001210033' 		, },
@@ -1141,7 +1385,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20240409_lamps', title: 'ліхтарів заднього ходу', type: 'Лампи діодні', cat: { car: 1, car_service: 1, },
+	id: '20240409_lamps', title: 'ліхтарів заднього ходу', type: 'Лампи діодні', cat: { car: 1, service_2e: 1, },
 	keyval: [
 		{ k: 'Лампи діодні ліхтарів заднього ходу' 	, v: '' 				, },
 		{ k: 'Продавець' 							, v: 'Лоск' 			, },
@@ -1150,7 +1394,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20240409_button', title: 'ліхтарів заднього ходу', type: 'Датчик-вимикач', cat: { car: 1, car_service: 1, },
+	id: '20240409_button', title: 'ліхтарів заднього ходу', type: 'Датчик-вимикач', cat: { car: 1, service_2e: 1, },
 	keyval: [
 		{ k: 'Датчик-вимикач' 		, v: 'ліхтарів заднього ходу' 	, },
 		{ k: 'Продавець' 			, v: 'Лоск 2/4, Макс' 			, },
@@ -1159,7 +1403,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20240901_alfa_garant', title: 'Альфа-Гарант', type: 'ПОСЦПВ', cat: { service: 1, car_service: 1, },
+	id: '20240901_alfa_garant', title: 'Альфа-Гарант', type: 'ПОСЦПВ', cat: { service: 1, service_2e: 1, },
 	keyval: [
 		{ k: 'Страхова компанія' 	, v: 'Альфа-Гарант' 	, },
 		{ k: '' 					, v: '№ 223172258' 		, },
@@ -1176,7 +1420,7 @@ const arrListDevice = [
 
 
 {
-	id: '20240901_mtsbu', title: 'МТСБУ', type: 'Страхові компанії', cat: { service: 1, car_service: 1, },
+	id: '20240901_mtsbu', title: 'МТСБУ', type: 'Страхові компанії', cat: { service: 1, service_2e: 1, },
 	keyval: [
 
 
@@ -1238,7 +1482,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20240303_polmostrow', title: 'Polmostrow', type: 'Глушник середній', cat: { car: 1, car_service: 1, },
+	id: '20240303_polmostrow', title: 'Polmostrow', type: 'Глушник середній', cat: { car: 1, service_2e: 1, },
 	keyval: [
 		{ k: 'Глушник середній' 	, v: 'Polmostrow' 		, },
 		{ k: 'Код' 					, v: '3020' 			, },
@@ -1254,7 +1498,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20240303_polmostrow', title: 'Polmostrow', type: 'Труба вихлопна проміжна', cat: { car: 1, car_service: 1, },
+	id: '20240303_polmostrow', title: 'Polmostrow', type: 'Труба вихлопна проміжна', cat: { car: 1, service_2e: 1, },
 	keyval: [
 		{ k: 'Труба вихлопна проміжна' 	, v: 'Polmostrow' 		, },
 		{ k: 'Код' 						, v: '30347' 			, },
@@ -1270,7 +1514,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20240303_clamp', title: 'трубні', type: 'Хомути', cat: { car: 1, car_service: 1, },
+	id: '20240303_clamp', title: 'трубні', type: 'Хомути', cat: { car: 1, service_2e: 1, },
 	keyval: [
 		{ k: 'Хомути трубні' 	, v: '' 					, },
 		{ k: 'Продавець' 		, v: 'Лоск' 				, },
@@ -1295,7 +1539,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20240301_welding', title: 'труби', type: 'Зваварювання', cat: { car_service: 1, },
+	id: '20240301_welding', title: 'труби', type: 'Зваварювання', cat: { service_2e: 1, },
 	keyval: [
 		{ k: 'Зваварювання труби' 	, v: '' 						, },
 		{ k: 'Призначення' 			, v: 'на місце каталізатора' 	, },
@@ -1315,7 +1559,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20231201_aral', title: 'Aral', type: 'Масло моторне', cat: { car: 1, car_service: 1, },
+	id: '20231201_aral', title: 'Aral', type: 'Масло моторне', cat: { car: 1, service_2e: 1, },
 	keyval: [
 		{ k: 'Масло моторне' 	, v: 'Aral' 				, },
 		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 		, },
@@ -1328,7 +1572,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20231201_filter', title: 'масляний', type: 'Фільтр', cat: { car: 1, car_service: 1, },
+	id: '20231201_filter', title: 'масляний', type: 'Фільтр', cat: { car: 1, service_2e: 1, },
 	keyval: [
 		{ k: 'Фільтр масляний' 	, v: '' 					, },
 		{ k: 'Продавець' 		, v: 'Лоск 2/4, Макс' 		, },
@@ -1341,7 +1585,7 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20231201_febi', title: 'Febi', type: 'Підшипник', cat: { car: 1, car_service: 1, },
+	id: '20231201_febi', title: 'Febi', type: 'Підшипник', cat: { car: 1, service_2e: 1, },
 	keyval: [
 		{ k: 'Підшипник' 		, v: 'Febi' 				, },
 		{ k: 'Призначення' 		, v: 'Задній лівий' 		, },
@@ -1837,17 +2081,8 @@ const arrListDevice = [
 		{ k: 'Ціна' 					, v: '50 грн' 			, },
 	],
 },
-{
-	id: '20221201_ssd', title: 'Kingston NV1', type: 'SSD M.2', cat: { pc: 1, },
-	keyval: [
-		{ k: 'SSD M.2' 		, v: 'Kingston NV1' 	, },
-		{ k: 'Об\'єм' 		, v: '1 TB' 			, },
-		{ k: 'Код' 			, v: '9KXJKEJ4RC6A66' 	, },
-		{ k: 'Продавець' 	, v: 'elmir.ua' 		, href: 'https://elmir.ua/ssd-drives/ssd-drive_m_2_1tb_kingston_nv1_snvs_1000g.html', },
-		{ k: 'Дата' 		, v: '2022-12-01' 		, },
-		{ k: 'Ціна' 		, v: '2878 грн' 		, },
-	],
-},
+
+
 {
 	id: '20221118_wilo', title: 'Wilo', type: 'Насос циркуляційний', cat: { home: 1, },
 	keyval: [
@@ -2472,6 +2707,8 @@ const arrListDevice = [
 		{ k: 'Призначення' 		, v: 'для ДБЖ ' 			, },
 		{ k: 'Продавець' 		, v: 'ElMir' 				, },
 		{ k: 'Дата' 			, v: '2020-10-15' 			, },
+
+		{ k: 'Статус' 			, v: 'Встановлені/замінені в ДБЖ Mustek' 	, },
 	],
 },
 {
@@ -2517,66 +2754,39 @@ const arrListDevice = [
 	],
 },
 {
-	id: '20180312_seagate', title: 'Seagate Barracuda', type: 'HDD', cat: { pc: 1, },
-	keyval: [
-		{ k: 'Диск HDD' 	, v: 'Seagate Barracuda' 	, },
-		{ k: 'Модель' 		, v: 'ST2000DM006' 			, },
-		{ k: 's/n' 			, v: 'Z4Z9X55D' 			, },
-		{ k: 'Form' 		, v: 'SATA' 				, },
-		{ k: 'Об\'єм' 		, v: '2 TB' 				, },
-		{ k: 'Продавець' 	, v: 'ElMir' 				, },
-		{ k: 'Дата' 		, v: '2018-03-12' 			, },
-	],
-},
-{
-	id: '20180123_a55', title: 'Silicon Power A55', type: 'SSD SATA', cat: { pc: 1, },
-	keyval: [
-		{ k: 'Диск SSD' 	, v: 'Silicon Power A55' 	, },
-		{ k: 'Модель' 		, v: 'SP128GBSS3A55S25' 	, },
-		{ k: 'Form' 		, v: 'SATA' 				, },
-		{ k: 'Об\'єм' 		, v: '128 Gb' 				, },
-		{ k: 'Продавець' 	, v: 'ElMir' 				, },
-		{ k: 'Дата' 		, v: '2018-01-23' 			, },
-		{ k: 'Ціна' 		, v: '1480 грн' 			, },
-	],
-},
-{
 	id: '20170929_flash', title: 'GoodRam', type: 'USB Flash', cat: { pc: 1, },
 	keyval: [
-		{ k: 'USB Flash' 	, v: 'GoodRam' 		, },
-		{ k: 'Маркування' 	, v: 'UTS3' 		, },
-		{ k: 'Об\'єм' 		, v: '64 GB' 		, },
-		{ k: 'Продавець' 	, v: 'ElMir' 		, },
-		{ k: 'Дата' 		, v: '2017-09-29' 	, },
+		{ k: 'USB Flash' 	, v: 'GoodRam' 			, },
+		{ k: 'Маркування' 	, v: 'UTS3' 			, },
+		{ k: 'Об\'єм' 		, v: '64 GB' 			, },
+		{ k: 'Продавець' 	, v: 'ElMir' 			, },
+		{ k: 'Дата' 		, v: '2017-09-29' 		, },
+
+		{ k: 'Статус' 		, v: 'Вихід з ладу' 	, },
 	],
 },
 {
-	id: '20161223_a60', title: 'Silicon Power A60', type: 'SSD SATA', cat: { pc: 1, },
+	id: '20161223', title: 'Silicon Power', type: 'SSD зовнішній', cat: { pc: 1, },
 	keyval: [
-		{ k: 'Диск SSD' 	, v: 'Silicon Power A60' 	, },
-		{ k: 'Модель' 		, v: 'SP010TBPHDA60S3K' 	, },
-		{ k: 's/n' 			, v: '4712702635997' 		, },
+
+		{ k: 'Диск SSD' 		, v: 'Silicon Power' 		, },
+		{ k: 'Модель' 			, v: 'A60' 					, },
+		{ k: 'Код' 				, v: 'SP010TBPHDA60S3K' 	, },
+		{ k: 's/n' 				, v: '4712702635997' 		, },
+
 		{ k: 'Form' 		, v: 'SATA' 				, },
 		{ k: 'Об\'єм' 		, v: '1 Tb' 				, },
-		{ k: 'Продавець' 	, v: 'ElMir' 				, },
+		{ k: 'Магазин' 		, v: 'ElMir' 				, },
 		{ k: 'Дата' 		, v: '2016-12-23' 			, },
 
+		{ k: 'Статус' 			, v: 'Подарунок жінці' 	, },
 	],
 },
 {
-	id: '20150000_', title: '', type: 'Причіп велосипедний', cat: { home: 1, },
+	id: '20150000_', title: '', type: 'Причіп велосипедний', cat: { bicycle: 1, },
 	keyval: [
 		{ k: 'Причіп велосипедний' 	, v: '' 			, },
-		{ k: 'Колеса' 				, v: '29' 			, },
 		{ k: 'Дата' 				, v: '~ 2015' 		, },
-	],
-},
-{
-	id: '20140000_pride', title: 'Pride', type: 'Велосипед', cat: { home: 1, },
-	keyval: [
-		{ k: 'Велосипед' 	, v: 'Pride' 			, },
-		{ k: 'Колеса' 		, v: '29' 				, },
-		{ k: 'Дата' 		, v: '~ 2013-2014' 		, },
 	],
 },
 {
@@ -2600,7 +2810,7 @@ const arrListDevice = [
 		{ k: 'Дата' 		, v: '2010-09-29' 					, },
 		{ backspace: true },
 
-		{ k: '' 			, v: 'Подарунок від Бондар Алли' 	, },
+		{ k: 'Статус' 			, v: 'Подарунок від Бондар Алли' 	, },
 	],
 },
 
@@ -2616,17 +2826,8 @@ const arrListDevice = [
 		{ k: 'Дата' 				, v: '~ 2008' 			, },
 	],
 },
-
-
-
-
-
-
-
-
-
 {
-	id: '20080616_mustek', title: 'Mustek', type: 'UPS ДЖБ', cat: { pc: 1, },
+	id: '20080616_mustek', title: 'Mustek', type: 'UPS ДБЖ', cat: { pc: 1, },
 	keyval: [
 		{ k: 'Джерело безперебійного живлення' 	, v: 'Mustek' 				, },
 		{ k: 'Модель' 							, v: 'PowerMust 1400 USB' 	, },
@@ -2635,62 +2836,8 @@ const arrListDevice = [
 		{ k: 'Дата' 							, v: '2008-06-16' 			, },
 	],
 },
-{
-	id: '20080323_thermaltake', title: 'Thermaltake', type: 'Блок живлення', cat: { pc: 1, },
-	keyval: [
-		{ k: 'Блок живлення' 	, v: 'Thermaltake' 			, },
-		{ k: 'Потужність' 		, v: '750 Вт' 				, },
-		{ k: 's/n' 				, v: 'W0117RE0703000447' 	, },
-		{ k: 'Продавець' 		, v: 'ElMir' 				, },
-		{ k: 'Дата' 			, v: '2008-03-23' 			, },
-	],
-},
-{
-	id: '20080323_cooler_master', title: 'Cooler Master Elite', type: 'Корпус ПК', cat: { pc: 1, },
-	keyval: [
-		{ k: 'Корпус ПК' 	, v: 'Cooler Master Elite' 	, },
-		{ k: 'Модель' 		, v: 'RC-331' 				, },
-		{ k: 'FormFactor' 	, v: 'Middle Tower ATX' 	, },
-		{ k: 'Продавець' 	, v: 'ElMir' 				, },
-		{ k: 'Дата' 		, v: '2008-03-23' 			, },
-	],
-},
-{
-	id: '20080323_seagate', title: 'Seagate Barracuda', type: 'HDD', cat: { pc: 1, },
-	keyval: [
-		{ k: 'Корпус' 		, v: 'Seagate Barracuda' 	, },
-		{ k: 's/n' 			, v: '3QK08098' 			, },
-		{ k: 'Об\'єм' 		, v: '750 Gb' 				, },
-		{ k: 'rpm' 			, v: '7200.11' 	, },
-		{ k: 'Продавець' 	, v: 'ElMir' 				, },
-		{ k: 'Дата' 		, v: '2008-03-23' 			, },
-	],
-},
-{
-	id: '20080322_corsair', title: 'Corsair', type: 'RAM', cat: { pc: 1, },
-	keyval: [
-		{ k: 'RAM' 			, v: 'Corsair' 					, },
-		{ k: 'Модель' 		, v: 'TWIN 2X 2048-6400 C5DHX' 	, },
-		{ k: 'Type' 		, v: 'DDR2' 					, },
-		{ k: 'Об\'єм' 		, v: '2 GB' 					, },
-		{ k: 'Частота' 		, v: '800 MHz' 					, },
-		{ k: 'Продавець' 	, v: 'ElMir' 					, },
-		{ k: 'Дата' 		, v: '2008-03-22' 				, },
-		{ k: 'Rozetka' 		, v: 'rozetka.com.ua' 			, href: 'https://hard.rozetka.com.ua/ua/23619/p23619/', },
-	],
-},
-{
-	id: '20080322_zotac', title: 'Zotac', type: 'Відеокарта', cat: { pc: 1, },
-	keyval: [
-		{ k: 'Відеокарта' 	, v: 'Zotac' 				, },
-		{ k: 'Модель' 		, v: 'GeForce 8800 GT AMP' 	, },
-		{ k: 'Об\'єм' 		, v: '512 Gb' 				, },
-		{ k: 'Частота' 		, v: '2000 MHz' 			, },
-		{ k: 'Шина' 		, v: '256 bit' 				, },
-		{ k: 'Продавець' 	, v: 'Stels' 					, },
-		{ k: 'Дата' 		, v: '2008-03-22' 				, },
-	],
-},
+
+
 {
 	id: '20080322_apc', title: 'APC', type: 'Стабілізатор', cat: { pc: 1, },
 	keyval: [
@@ -2702,16 +2849,10 @@ const arrListDevice = [
 		{ k: 'Rozetka' 			, v: 'rozetka.com.ua' 	, href: 'https://rozetka.com.ua/ua/apc_regulator_1200va/p144790/', },
 	],
 },
- {
-	id: '20080317_gigabyte', title: 'Gigabyte', type: 'Плата материнська', cat: { pc: 1, },
-	keyval: [
-		{ k: 'Плата материнська' 	, v: 'Gigabyte' 		, },
-		{ k: 'Модель' 				, v: 'GA-P35-DS3L' 		, },
-		{ k: 'Продавець' 			, v: 'ElMir' 			, },
-		{ k: 'Дата' 				, v: '2008-03-17' 		, },
-		{ k: 'Rozetka' 				, v: 'rozetka.com.ua' 	, href: 'https://hard.rozetka.com.ua/ua/22824/p22824/', },
-	],
-},
+
+
+
+
 {
 	id: '20071121_casio', title: 'Casio', type: 'Сінтезатор', cat: { electronics: 1, },
 	keyval: [
@@ -2821,15 +2962,9 @@ const arrListDevice = [
 		{ k: 'Дата' 		, v: '~ 2004' 	, },
 	],
 },
-{
-	id: '20040605_creative', title: 'Creative', type: 'Карта звукова', cat: { pc: 1, },
-	keyval: [
-		{ k: 'Карта звукова' 	, v: 'Creative 5.1 Live' 	, },
-		{ k: 'Продавець' 		, v: 'МКС' 					, },
-		{ k: 'Дата' 			, v: '2004-06-05' 			, },
-		{ k: 'Ціна' 			, v: '210 грн' 				, },
-	],
-},
+
+
+
 {
 	id: '20040323_gp', title: 'GP', type: 'Пристрій зарядний', cat: { electronics: 1, },
 	keyval: [

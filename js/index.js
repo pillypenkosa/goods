@@ -19,8 +19,14 @@ document.querySelector( 'title' ).innerHTML = 'Goods ' + appVersion;
 
 
 let htmlNav = '';
-arrListCat.forEach( nav => {
-	htmlNav += `<div class="btn" data-id="${ nav.id }">${ nav.title }</div>`;
+arrListCat.forEach( k_arr => {
+
+	let htmlArr = '';
+	k_arr.forEach( k_obj => {
+		htmlArr += `<div class="btn" data-id="${ k_obj.id }">${ k_obj.title }</div>`;
+	});
+
+	htmlNav += `<div class="">${ htmlArr }</div>`;
 });
 
 nav.innerHTML = htmlNav;
@@ -62,7 +68,7 @@ function showSpoilers( arr ) {
 					if ( k_keyval.href || k_keyval.gps || k_keyval.clue_manufacturer ) {
 
 						if ( k_keyval.href ) 
-							htmlVal = `<a href="${ k_keyval.href }" target="_blank">www.${ k_keyval.v }${ htmlLinkSign }</a>`;
+							htmlVal = `<a href="${ k_keyval.href }" target="_blank">${ k_keyval.v }${ htmlLinkSign }</a>`;
 
 						if ( k_keyval.gps ) 
 							htmlVal = `<a href="${ k_keyval.gps }" target="_blank">${ k_keyval.v } (GPS${ htmlLinkSign })</a>`;
